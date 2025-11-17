@@ -1,0 +1,878 @@
+:: StoryTitle
+I am Bird | Koro
+
+
+:: StoryData
+{
+	"ifid": "1801AC37-EE11-4118-A8AF-A4188BAF63E8",
+	"format": "SugarCube",
+	"format-version": "2.36.1",
+	"start": "landing",
+	"zoom": 0.6
+}
+
+
+:: Story Stylesheet [stylesheet]
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("../styles/generics.css");
+@import url("../styles/styles.css");
+
+
+:: Story JavaScript [script]
+$('#ui-bar').remove();
+$(document.head).find('#style-ui-bar').remove();
+
+
+/* Google Tag */
+setup.JSLoaded = false;
+ var lockID = LoadScreen.lock();  // Lock loading screen
+ importScripts("https://www.googletagmanager.com/gtag/js?id=G-TNTH69EN2L")
+     .then(function() {
+
+         setup.JSLoaded = true;
+         window.dataLayer = window.dataLayer || [];
+         window.gtag = function (){ dataLayer.push(arguments); };
+         gtag('js', new Date());
+         gtag('config', 'G-TNTH69EN2L');
+          //  console.log("Sending to GA");
+         LoadScreen.unlock(lockID);  // Unlock loading screen
+     }).catch(function(error) {
+         console.log("Error: Could not load 'gtag.js'.");
+      LoadScreen.unlock(lockID);  // Unlock loading screen
+     }
+ );
+
+/* Track Passage Views using SugarCube's passage display events */
+$(document).on(':passagedisplay', function(ev) {
+    var passageName = ev.passage.title;
+    // console.log("sending", passageName, "to GA")
+    // Send passage view event to Google Analytics
+    if (setup.JSLoaded) {
+        gtag('event', 'Passage View', {
+            event_label: passageName,
+            event_category: 'Passage',
+        });
+    }
+});
+
+
+ $(document).on('click', 'a', function (ev) {
+ // Get the destination of the clicked link var passage 
+ var passage = $(this).attr('data-passage');
+ // Send the click event to Google Analytics
+    if (setup.JSLoaded && passage) {
+      // console.log("sending", passage, "click to GA")
+        gtag('event', 'Navigation', {
+            event_label: passage,
+            event_category: 'GuestClick'
+        });
+    }
+ });
+
+// CAPTIONS
+setup.addCaptions = (cuekey) =>  {
+    const audio = document.getElementById("audio");
+     const track = audio.addTextTrack('subtitles', 'English', 'en');
+    track.mode = 'showing';
+    const cues = {
+      track_1: [[7.02,14.82,"I remember being born. They told me it's not possible, but I do."],
+[18.32,23.78,"I remember the darkness. It was hot, humid, quite claustrophobic. I remember feeling stuck. That place was too small for me. Even then, I could feel that. Even then, I knew greater things awaited."],
+[40.62,46.2,"I remember hearing voices outside, they were calling me, inviting me to break free."],
+[48.105,55.905,"There was an urge deep inside my bones to escape. To open my wings. To fly away towards the light, towards infinity."],
+[61.665,65.385,"The sky is the limit, they say."],
+[65.385,75.21,"So I pushed. I hit that wall as hard as I could, and then a little crack, and I saw it. Freedom."]], 
+       cap2: [[0.001,10.444,""],[10.469,13.229,"From the beginning, our citizens just"],[13.259,15.479,"changed and became full of strange and"],[15.479,19.859,"interesting artifacts. As you walk, look"],[19.859,25.169,"around Can you see underground bars to"],[25.169,30.089,"basements of buildings? In our cities,"],[30.329,31.919,"this were quickly adapted to become"],[31.919,35.279,"places to hide from rockets. posters"],[35.279,37.019,"from Music Nights are replaced with"],[37.019,40.469,"science for bumped shelters. As food and"],[40.469,42.779,"water restart for those taking refuge,"],[43.049,45.689,"sometimes for hours, weeks, or even"],[45.689,48.719,"months. On roads such as the one you're"],[48.719,51.089,"watching, people make outposts in"],[51.089,54.059,"preparation for invasion. And artists"],[54.149,56.189,"welded giant metal beams together"],[56.219,58.589,"creating hedge hooks to stop Russian"],[58.589,62.879,"tanks. Famous churches like the one"],[62.879,66.029,"behind and the one in front of you. Were"],[66.029,67.979,"boarded up to stop the stained glass"],[67.979,72.479,"from shattering explosions. Historic"],[72.479,74.57900000000001,"Buildings were protected in unique ways"],[74.729,76.559,"using metal sheets, plywood and"],[76.559,80.489,"scaffolding. Statues similar to the many"],[80.489,82.889,"will pass on your work today. You're"],[82.889,88.589,"covered in sandbags to protect them. The"],[88.589,90.749,"air raid alarm memory from high school"],[90.749,92.699,"drills appears as a present day"],[92.699,95.57900000000001,"nightmare. You're seeing the everyday"],[95.57900000000001,98.09899999999999,"sounds of the streets, it warrants the"],[98.09899999999999,100.34899999999999,"truck it's a camera and you have minutes"],[100.34899999999999,103.469,"to get on the ground. You catch eyes"],[103.469,105.65899999999999,"with strangers in anticipation of what's"],[105.65899999999999,111.364,"to come is an airborne or theory."],[111.38900000000001,113.369,"Millions of people flee the frontline"],[113.369,116.519,"cities. men of all ages are drafted in"],[116.519,119.699,"the military and teachers cancel lessons"],[119.699,120.239,"writing"],[120.264,127.415,""],[127.44,130.02,"there will be no classes today. Stay"],[130.02,133.59,"safe, minus sirens. Go down to the"],[133.59,138.06,"shelter, pack a backpack, bandages and"],[138.09,141.81,"ID in other medications you may need a"],[141.81,145.8,"bottle of water this gets a flashlight"],[146.31,150.75,"and needle with thread money documents a"],[150.75,154.95,"power bank mobile phone write your name"],[154.95,158.1,"surname on your hand. Your blood group,"],[158.55,161.7,"relatives phone number if the explosion"],[161.7,164.94,"is close, run to the bathroom. Keep in"],[164.94,169.8,"touch, breathe deeply. These are go down"],[169.82999999999998,171.21,"in the history books."],[171.235,192.46,""]]
+  }
+    for (let i=0; i<cues[cuekey].length; i++){
+    const cue = new VTTCue(cues[cuekey][i][0],cues[cuekey][i][1],cues[cuekey][i][2]);
+    track.addCue(cue); 
+}
+    track.addEventListener('cuechange', () => {
+    const activeCue = track.activeCues[0];
+    if (activeCue) {
+      document.getElementById('caption').textContent = activeCue.text;
+    }
+  });
+  console.log(audio.track)
+
+
+
+ 
+}
+
+setup.playStoryAudio = () => {
+  
+  const passageName = passage(); // current passage name
+  const audio = document.getElementById("audioPlayer");
+
+  if (!audio) {
+    console.error("Audio element with ID 'audioPlayer' not found.");
+    return;
+  }
+
+  // Reset audio element (remove prior listeners)
+  audio.replaceWith(audio.cloneNode(true));
+  const freshAudio = document.getElementById("audioPlayer");
+
+  let audioFiles = [];
+
+  // --- Passage-specific mode ---
+  const passageMatch = passageName.match(/^(\d+)_/);
+  if (passageMatch) {
+    const num = passageMatch[1]; // extract number before underscore
+    audioFiles = [`../assets/audio/track_${num}.mp3`];
+  }
+
+  let currentTrack = 0;
+
+  function playNext() {
+    if (currentTrack < audioFiles.length) {
+      freshAudio.src = audioFiles[currentTrack];
+        console.log("playing audio", freshAudio.src )
+      freshAudio.play().catch(err => {
+        console.error("Audio play failed:", err);
+      });
+      currentTrack++;
+    }
+  }
+
+  freshAudio.addEventListener("ended", playNext);
+
+  // Start playback
+  if (audioFiles.length > 0) {
+    playNext();
+  } else {
+    console.warn("No audio files determined for this passage:", passageName);
+  }
+};
+
+setup.chooseStoryAudio = () => {
+
+  const passageName = passage(); // current passage name
+  const audio = document.getElementById("audio");
+
+  if (!audio) {
+    console.error("Audio element with ID 'audioPlayer' not found.");
+    return;
+  }
+
+  // Reset audio element to avoid leftover listeners
+  audio.replaceWith(audio.cloneNode(true));
+  const freshAudio = document.getElementById("audio");
+
+  let audioFiles = [];
+
+  // --- Passage-specific mode (expects format "01_intro") ---
+  const passageMatch = passageName.match(/^(\d+)_/);
+  if (passageMatch) {
+    const num = passageMatch[1]; 
+    audioFiles = [`../assets/audio/track_${num}.mp3`];
+    setup.addCaptions(`track_${num}`)
+  }
+
+  let currentTrack = 0;
+
+  function loadNext() {
+    if (currentTrack < audioFiles.length) {
+      freshAudio.src = audioFiles[currentTrack];
+      freshAudio.preload = "auto";  // Ensure browser loads it
+      freshAudio.load();            // Force buffering request
+      console.log("Loaded audio (not playing):", freshAudio.src);
+      currentTrack++;
+    }
+  }
+
+  freshAudio.addEventListener("ended", loadNext);
+
+  // Load but do NOT play
+  if (audioFiles.length > 0) {
+    loadNext();
+  
+  } else {
+    console.warn("No audio files determined for this passage:", passageName);
+  }
+};
+
+setup.chooseStoryAudioNoCaps = () => {
+
+  const passageName = passage(); // current passage name
+  const audio = document.getElementById("audio");
+
+  if (!audio) {
+    console.error("Audio element with ID 'audioPlayer' not found.");
+    return;
+  }
+
+  // Reset audio element to avoid leftover listeners
+  audio.replaceWith(audio.cloneNode(true));
+  const freshAudio = document.getElementById("audio");
+
+  let audioFiles = [];
+
+  // --- Passage-specific mode (expects format "01_intro") ---
+  const passageMatch = passageName.match(/^(\d+)_/);
+  if (passageMatch) {
+    const num = passageMatch[1]; 
+    audioFiles = [`../assets/audio/track_${num}.mp3`];
+  }
+
+  let currentTrack = 0;
+
+  function loadNext() {
+    if (currentTrack < audioFiles.length) {
+      freshAudio.src = audioFiles[currentTrack];
+      freshAudio.preload = "auto";  // Ensure browser loads it
+      freshAudio.load();            // Force buffering request
+      console.log("Loaded audio (not playing):", freshAudio.src);
+      currentTrack++;
+    }
+  }
+
+  freshAudio.addEventListener("ended", loadNext);
+
+  // Load but do NOT play
+  if (audioFiles.length > 0) {
+    loadNext();
+  
+  } else {
+    console.warn("No audio files determined for this passage:", passageName);
+  }
+};
+
+setup.play = () => {
+ const audio = document.getElementById("audio")
+ audio.play();
+  }
+
+setup.pause = () => {
+ const audio = document.getElementById("audio")
+ audio.pause();
+  }
+
+setup.showCap = () => {
+    const track = document.getElementById("captrack")
+    console.log("track", track)
+track.mode = 'showing';
+    document.getElementById("caption").style.visibility = "visible";
+        document.getElementById("caption").classList.remove("hide")
+  }
+
+setup.hideCap = () => {
+    const track = document.getElementById("captrack")
+   track.mode = 'hidden';
+    document.getElementById("caption").style.visibility = "hidden";
+     document.getElementById("caption").classList.add("hide")
+  }
+
+
+
+:: StoryInit {"position":"100,100","size":"100,100"}
+
+:: header[nobr]
+<header class="standard">
+ <div class="logo-wrapper">
+   <img src="../assets/img/replay-sharp-b.png"/>
+   </div>
+   <div class="title-wrapper">
+   <h1>Main title</h1>
+   <h2>Subtitle</h2>
+   </div>
+</header>
+
+:: headerdir [nobr]
+<header class="standard">
+ <div class="footsteps-wrapper">
+   <img src="../assets/img/1-trans.png"/>
+   </div>
+</header>
+
+:: headerchoice [nobr]
+<header class="standard">
+ <div class="footsteps-wrapper">
+   <img src="../assets/img/2-trans.png"/>
+   </div>
+</header>
+
+:: headertrack [nobr]
+<header class="standard">
+ <div class="footsteps-wrapper">
+   <img src="../assets/img/3-trans.png"/>
+   </div>
+</header>
+
+:: footer[nobr]
+
+<footer>
+    <<link [img[../assets/img/back-black.png]]>>
+        <<goto $prevpass>>
+    <</link>>
+
+   
+</footer>
+
+:: navbuttons[nobr]
+
+<div class="footer-icons">
+<<link [img[../assets/img/back-sharp.png][$prevpass]]>>
+    <</link>>
+    <<link [img[../assets/img/replay-sharp.png][$pass]]>>
+    <</link>>
+   
+<div><div/>
+
+</div>
+
+:: navbuttonsb [nobr]
+
+<div class="footer-icons">
+<<link [img[../assets/img/back-sharp-b.png][$prevpass]]>>
+    <</link>>
+    <<link [img[../assets/img/replay-sharp-b.png][$pass]]>>
+    <</link>>
+
+    <div id="captionMount">
+   <<include "captionsbutton">>
+</div>
+
+</div>
+
+:: navbuttonsdir [nobr]
+
+<div class="footer-icons">
+<<link [img[../assets/img/back-sharp-b.png][$prevpass]]>>
+    <</link>>
+    <<link [img[../assets/img/replay-sharp-b.png][$pass]]>>
+    <</link>>
+
+    <div>
+
+</div>
+
+</div>
+
+:: navbuttonstrans [nobr]
+
+<div class="footer-icons">
+<<link [img[../assets/img/back-sharp-b.png][$prevpass]]>>
+    <</link>>
+    <<link [img[../assets/img/replay-sharp-b.png][$pass]]>>
+    <</link>>
+    <div>
+   <<include "transcriptbutton">>
+</div>
+
+</div>
+
+:: playbutton [nobr]
+
+  <<link [img[../assets/img/play-black.png]]>>
+       <<set $showCaptionsButton to true>>
+    <<set $a to setup.play()>>
+    <<set $playing to true>>
+       <<replace "#playBtnContainer">><</replace>>
+    <<timed 0.4s>>
+    <<replace "#playBtnContainer">>
+      <<include "pausebutton">>
+      <</replace>>
+      <</timed>>
+      <</link>>
+
+:: pausebutton [nobr]
+
+  <<link [img[../assets/img/pause-black.png]]>>
+    <<set $a to setup.pause()>>
+     <<set $playing to false>>
+      <<replace "#playBtnContainer">>
+      <<include "playbutton">>
+      <</replace>>
+      <</link>>
+
+:: playpauseContainer [nobr]
+   <<set $showCaptionsButton to true>>
+    <<include "playbutton">>
+  <<replace "#captionMount">>
+    <<include "captionsbutton">>
+    <</replace>>
+
+:: captionsbutton [nobr]
+
+<<if $showCaptionsButton is true>>
+
+ <<link [img[../assets/img/captions.png]]>>
+      <<if $captions is true>>
+           <<set $fn to setup.hideCap()>>
+            <<set $captions to false>>
+            <<removeclass "#msgMount" "hide">>
+          <<else>>
+        <<set $fn to setup.showCap()>>
+         <<set $captions to true>>
+          <<addclass "#msgMount" "hide">>
+        <</if>>
+    <</link>>
+<</if>>
+
+
+:: transcriptbutton [nobr]
+<<if $showCaptionsButton>>
+ <<link [img[../assets/img/transcript.png]]>>
+      <<if $transcript is true>>
+        <<addclass "#transcriptMount" "hide">>
+            <<removeclass "#msgMount" "hide">>
+            <<replace "#transcriptMount">><</replace>>
+            <<set $transcript to false>>
+          <<else>>
+         <<addclass "#msgMount" "hide">>
+             <<removeclass "#transcriptMount" "hide">>
+            <<replace "#transcriptMount">>
+              <<include "2_transcript">>
+              <</replace>>
+            <<set $transcript to true>>
+        <</if>>
+    <</link>>
+<</if>>
+
+:: footeroptionappears[nobr]
+<<set $showWallet to false>>
+<footer class="grid-item footer">
+  <<link [img[../assets/img/back-black.png]]>>
+        <<goto $prevpass>>
+    <</link>>
+  /* <<link "W">>
+        <<set $showWallet to true>>
+        <<goto "wallet">>
+        <</link>> */
+           /* <<link [img[../assets/img/for-black.png]]>>
+        <<goto $nextpass>>
+    <</link>> */
+    <div id="nextButtonContainer">
+     </div>
+</footer>
+
+:: headerlanding[nobr]
+<header class="standard scrollable">
+ <div class="logo-wrapper">
+   <img src="../assets/img/replay-sharp-b.png"/>
+   </div>
+</header>
+
+:: landing [nobr] 
+<<set $prevpass to "landing">>
+<<set $pass to "landing">>
+<<set $nextpass to "welcome_1">>
+<<set $captions to false>>
+<<set $transcript to false>>
+<<set $playing to false>>
+<<set $showCaptionsButton to false>>
+
+<main class="landing flex-col-cen start">
+
+ <div class="inline-img-wrapper"> 
+     <img src="../assets/img/landing.png"/>
+     </div>
+
+   <h1>I AM BIRD</h1>
+   <span class="phrase">An interactive storytelling experience
+</span>
+<<button "Start now">>
+    <<goto $nextpass>>
+<</button>>
+   
+</main>
+
+:: _templateWelcome [nobr]
+<<include "headerdir">>
+<main>
+/* <div id="audioMount"><audio id="audioPlayer" src="" autoplay>Audio is not supported on your device</audio></div> */
+    <div id="msgMount"> </div>
+        <<if $pass>>
+             <<set $uniqueContent to $pass+"_content">>
+            <<silently>>
+            <<timed 0.1s>>
+            <<append "#msgMount">>
+              <<include $uniqueContent>>
+              <</append>>
+              <</timed>>
+            <</silently>>
+               <div class="btn-container" id="btnContainer">
+            </div>
+        <<else>>
+            No content provided.
+        <</if>>
+
+</main>
+<<include "navbuttonsb">>
+
+/* <<done>><<set $a to setup.chooseStoryAudio()>><</done>> */
+
+:: _templateStory [nobr]
+<<include "headerdir">>
+<main>
+<div id="audioMount">
+<audio id="audio" >
+  <source src="">
+  <track kind="captions" srclang="en" label="English captions" id="captrack" default>
+</audio>
+</div>
+    <div id="msgMount"> </div>
+     <div class="play-button-container" id="playBtnContainer"></div>
+    <div id="caption" class="hide"></div>
+    
+        <<if $pass>>
+             <<set $uniqueContent to $pass+"_content">>
+            <<silently>>
+            <<timed 0.1s>>
+            <<append "#msgMount">>
+              <<include $uniqueContent>>
+              <</append>>
+              <</timed>>
+            <</silently>>
+               <div class="btn-container" id="btnContainer">
+            </div>
+        <<else>>
+            No content provided.
+        <</if>>
+   
+</main>
+<<include "navbuttonsb">>
+
+<<done>><<set $a to setup.chooseStoryAudio()>><</done>>
+
+
+:: _templateDir [nobr]
+<<include "headerdir">>
+<main>
+
+    <div id="msgMount"> </div>
+    <div id="caption" class="hide"></div>
+    
+        <<if $pass>>
+             <<set $uniqueContent to $pass+"_content">>
+            <<silently>>
+            <<timed 0.1s>>
+            <<append "#msgMount">>
+              <<include $uniqueContent>>
+              <</append>>
+              <</timed>>
+            <</silently>>
+               <div class="btn-container" id="btnContainer">
+            </div>
+        <<else>>
+            No content provided.
+        <</if>>
+   
+</main>
+<<include "navbuttonsdir">>
+
+
+
+
+:: _templateStoryTrans [nobr]
+<<include "headerdir">>
+<main>
+<div id="audioMount">
+<audio id="audio" >
+  <source src="">
+  <track kind="captions" srclang="en" label="English captions" id="captrack" default>
+</audio>
+</div>
+    <div id="msgMount"> </div>
+     <div class="play-button-container" id="playBtnContainer"></div>
+    <div id="transcriptMount" class="hide"></div>
+    
+        <<if $pass>>
+             <<set $uniqueContent to $pass+"_content">>
+            <<silently>>
+            <<timed 0.1s>>
+            <<append "#msgMount">>
+              <<include $uniqueContent>>
+              <</append>>
+              <</timed>>
+            <</silently>>
+               <div class="btn-container" id="btnContainer">
+            </div>
+        <<else>>
+            No content provided.
+        <</if>>
+   
+</main>
+<<include "navbuttonstrans">>
+
+<<done>><<set $a to setup.chooseStoryAudioNoCaps()>><</done>>
+
+:: welcome_1 [nobr]
+<<set $prevpass to "landing">>
+<<set $pass to "welcome_1">>
+<<set $nextpass to "welcome_2">>
+<<audio ":all" "stop">>
+
+<<include "_templateWelcome">>
+
+:: welcome_1_content [nobr]
+ <<timed 0.1s>>
+  <<replace "#msgMount">>
+<p> Welcome.</p><</replace>>
+<</timed>>
+
+ <<timed 2s>>
+    <<append "#msgMount">>
+<p>I am Bird is an interactive storytelling experience exploring library spaces. </p>
+ <</append>>
+<</timed>>
+
+ <<timed 4s>>
+    <<append "#msgMount">>
+<p>This mobile website will be your guide on your journey.</p>
+ <</append>>
+<</timed>>
+
+
+ <<timed 6s>>
+    <<append "#msgMount">>
+<p>The following symbols will help you find your way across the library. When you see one on your screen, you will need to find the matching symbol on the library shelves. </p>
+ <</append>>
+<</timed>>
+
+​ <<timed 8s>>
+    <<append "#msgMount">>
+<div class="img-container-symbol">
+<img src="assets/img/0-Sample.png"/>
+</div>
+ <</append>>
+<</timed>>
+
+
+<<timed 10s>>
+    <<append "#btnContainer">>
+    <<button "Got it">>
+            <<goto $nextpass>>
+        <</button>>
+        /* <<include "navbuttons">> */
+    <</append>>
+<</timed>>
+
+:: welcome_2 [nobr]
+<<set $prevpass to "welcome_1">>
+<<set $pass to "welcome_2">>
+<<set $nextpass to "1_story">>
+<<audio ":all" "stop">>
+
+<<include "_templateWelcome">>
+
+:: welcome_2_content [nobr]
+ <<timed 0.1s>>
+  <<replace "#msgMount">>
+<p>Next to each symbol, you will find a book art installation and be invited to listen to a story. </p>
+<</replace>>
+<</timed>>
+​
+ <<timed 2s>>
+  <<append "#msgMount">>
+<p>You can play the audio track by pressing the little triangle below. Should we test if it works?</p>
+ <</append>>
+<</timed>>
+
+ <<timed 4s>>
+  <<append "#msgMount">>
+<div class="play-button-container">
+  <<link [img[../assets/img/play.jpg]]>>
+
+      <</link>>
+      </div>
+ <</append>>
+<</timed>>
+
+ <<timed 6s>>
+  <<append "#msgMount">>
+<p>
+  You can enable or disable captions by clicking on this symbol.
+  <div class="inline-icon">
+    <<link [img[../assets/img/captions.png]]>>
+        <<set $captions to true>>
+        <<goto $pass>>
+      <</link>>
+      </div>
+</p>
+ <</append>>
+<</timed>>
+
+
+
+
+
+<<timed 8s>>
+    <<append "#btnContainer">>
+    <<button " It works and I’m ready to start">>
+            <<goto $nextpass>>
+        <</button>>
+        /* <<include "navbuttons">> */
+    <</append>>
+<</timed>>
+
+:: 1_story [nobr]
+<<set $prevpass to "landing">>
+<<set $pass to "1_story">>
+<<set $nextpass to "2_dir">>
+<<audio ":all" "stop">>
+
+<<include "_templateStory">>
+
+
+:: 1_story_content [nobr]
+
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+ <p>Welcome, dear traveller.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+    <<append "#msgMount">>
+      <p>This is the story of a journey.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 4s>>
+    <<append "#msgMount">>
+      <p>Your journey.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 6s>>
+    <<append "#msgMount">>
+      <p>And as bird stories go, it all starts with a nest.</p>
+ <</append>>
+<</timed>>
+ 
+
+<<timed 8s>>
+  <<replace "#playBtnContainer">>
+  <<set $showCaptionsButton to true>>
+    <<include "playbutton">>
+  <<replace "#captionMount">>
+    <<include "captionsbutton">>
+    <</replace>>
+ <</replace>>
+
+<</timed>>
+
+
+
+<<timed 90s>>
+    <<append "#btnContainer">>
+    <<button "Follow the light">>
+            <<goto $nextpass>>
+        <</button>>
+    <</append>>
+<</timed>>
+
+
+
+
+:: 2_dir [nobr]
+<<set $prevpass to "1_story">>
+<<set $pass to "2_dir">>
+<<set $nextpass to "2_story">>
+<<audio ":all" "stop">>
+
+<<include "_templateDir">>
+
+
+:: 2_dir_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+ <p>Freedom is calling you.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+    <<append "#msgMount">>
+      <p>Explore the library and find this symbol. Next to it you will find Our Summer Migrants.</p>
+ <</append>>
+<</timed>>
+
+​ <<timed 4s>>
+    <<append "#msgMount">>
+<div class="img-container-symbol">
+<img src="assets/img/2-GU.png"/>
+</div>
+ <</append>>
+<</timed>>
+ 
+
+
+<<timed 6s>>
+    <<append "#btnContainer">>
+    <<button "I have found the book">>
+            <<goto $nextpass>>
+        <</button>>
+    <</append>>
+<</timed>>
+
+:: 2_story [nobr]
+<<set $prevpass to "2_dir">>
+<<set $pass to "2_story">>
+<<set $nextpass to "">>
+<<audio ":all" "stop">>
+
+
+<<include "_templateStoryTrans">>
+
+
+:: 2_story_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+
+ <p>Young birds have so many dreams.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+    <<append "#msgMount">>
+      <p>Will they come true for you?</p>
+ <</append>>
+<</timed>>
+
+<<timed 4s>>
+  <<set $showCaptionsButton to true>>
+  <<replace "#playBtnContainer">>
+    <<include "playbutton">>
+ <</replace>>
+
+<</timed>>
+ 
+
+
+<<timed 200s>>
+    <<append "#btnContainer">>
+    <<button "I am ready to leave">>
+            <<goto $nextpass>>
+        <</button>>
+    <</append>>
+<</timed>>
+
+
+
+:: 2_transcript [nobr]
+
+<p>I’ve always known I was meant to go away. I grew up looking at the travellers. Every year in spring they were going, hundreds of them, taking over the sky. </p>
+<p>I remember asking my mom: “Can I go too?” </p>
+<p>“Your time will come, Mawusi”, she said. “Soon enough my darling. Now eat, so you’ll be stronger.” </p>
+<p>
+  I remember looking at them. So free. So proud. So strong. So I ate. I did grow stronger. But I couldn’t grow fast enough for my ambition.
+  “Why do you want to go?” Other birds asked. “Can’t you see this is the best place on earth? Nowhere else will you find a forest so lush, a sky so blue, a water so pure… 
+</p>
+<p>Their sky is grey, over there, their air is cold, their water is full of oil. Don’t you know? Or maybe you just think you are better than us?”</p>
+<p>I looked at them. They were parrots, birds of paradise, lovebirds. They were so big, so beautiful, the kings of this place. They belonged. They couldn’t understand us. They couldn’t understand that for us, leaving was surviving. </p>
+<p>
+  There was a lone traveller living close to our nest. His name was Nunyati. He had done the journey many times, but now he was too old. I loved listening to his stories. I kept finding excuses to get close to him. He used to chase the other birds away, but I think he liked me. 
+  “You are so young, Mawusi. I used to be like you, I wouldn’t listen to anyone, I just wanted to go. But if only you knew the risks. Oh sweet child, you don’t know what’s out there. You don’t know the cold, the fear in your bones. If birds knew what awaited them, they would never leave.” 
+</p>
+<p>“If you had known, would you have gone anyway?”</p>
+<p>He took a long pause, looked at the sky. He laughed. </p>
+<p>
+  “Probably. We travellers are a mad species. It’s in our blood, we can’t fight it. Just listen to your mother, Mawusi. Eat. Grow stronger. You’ll need all the strength you can get. Your time has almost come.”
+  
+</p>
