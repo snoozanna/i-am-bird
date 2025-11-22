@@ -73,35 +73,131 @@ $(document).on(':passagedisplay', function(ev) {
  });
 
 // CAPTIONS
+
 setup.addCaptions = (cuekey) =>  {
-    const audio = document.getElementById("audio");
-     const track = audio.addTextTrack('subtitles', 'English', 'en');
-    track.mode = 'showing';
-    const cues = {
+  const audio = document.getElementById("audio");
+  const track = audio.addTextTrack("subtitles", "English", "en");
+  track.mode = "hidden"; // since we're rendering manually
+
+const cues = {
       track_1: [[7.02,14.82,"I remember being born. They told me it's not possible, but I do."],
 [18.32,23.78,"I remember the darkness. It was hot, humid, quite claustrophobic. I remember feeling stuck. That place was too small for me. Even then, I could feel that. Even then, I knew greater things awaited."],
 [40.62,46.2,"I remember hearing voices outside, they were calling me, inviting me to break free."],
 [48.105,55.905,"There was an urge deep inside my bones to escape. To open my wings. To fly away towards the light, towards infinity."],
 [61.665,65.385,"The sky is the limit, they say."],
 [65.385,75.21,"So I pushed. I hit that wall as hard as I could, and then a little crack, and I saw it. Freedom."]], 
-       cap2: [[0.001,10.444,""],[10.469,13.229,"From the beginning, our citizens just"],[13.259,15.479,"changed and became full of strange and"],[15.479,19.859,"interesting artifacts. As you walk, look"],[19.859,25.169,"around Can you see underground bars to"],[25.169,30.089,"basements of buildings? In our cities,"],[30.329,31.919,"this were quickly adapted to become"],[31.919,35.279,"places to hide from rockets. posters"],[35.279,37.019,"from Music Nights are replaced with"],[37.019,40.469,"science for bumped shelters. As food and"],[40.469,42.779,"water restart for those taking refuge,"],[43.049,45.689,"sometimes for hours, weeks, or even"],[45.689,48.719,"months. On roads such as the one you're"],[48.719,51.089,"watching, people make outposts in"],[51.089,54.059,"preparation for invasion. And artists"],[54.149,56.189,"welded giant metal beams together"],[56.219,58.589,"creating hedge hooks to stop Russian"],[58.589,62.879,"tanks. Famous churches like the one"],[62.879,66.029,"behind and the one in front of you. Were"],[66.029,67.979,"boarded up to stop the stained glass"],[67.979,72.479,"from shattering explosions. Historic"],[72.479,74.57900000000001,"Buildings were protected in unique ways"],[74.729,76.559,"using metal sheets, plywood and"],[76.559,80.489,"scaffolding. Statues similar to the many"],[80.489,82.889,"will pass on your work today. You're"],[82.889,88.589,"covered in sandbags to protect them. The"],[88.589,90.749,"air raid alarm memory from high school"],[90.749,92.699,"drills appears as a present day"],[92.699,95.57900000000001,"nightmare. You're seeing the everyday"],[95.57900000000001,98.09899999999999,"sounds of the streets, it warrants the"],[98.09899999999999,100.34899999999999,"truck it's a camera and you have minutes"],[100.34899999999999,103.469,"to get on the ground. You catch eyes"],[103.469,105.65899999999999,"with strangers in anticipation of what's"],[105.65899999999999,111.364,"to come is an airborne or theory."],[111.38900000000001,113.369,"Millions of people flee the frontline"],[113.369,116.519,"cities. men of all ages are drafted in"],[116.519,119.699,"the military and teachers cancel lessons"],[119.699,120.239,"writing"],[120.264,127.415,""],[127.44,130.02,"there will be no classes today. Stay"],[130.02,133.59,"safe, minus sirens. Go down to the"],[133.59,138.06,"shelter, pack a backpack, bandages and"],[138.09,141.81,"ID in other medications you may need a"],[141.81,145.8,"bottle of water this gets a flashlight"],[146.31,150.75,"and needle with thread money documents a"],[150.75,154.95,"power bank mobile phone write your name"],[154.95,158.1,"surname on your hand. Your blood group,"],[158.55,161.7,"relatives phone number if the explosion"],[161.7,164.94,"is close, run to the bathroom. Keep in"],[164.94,169.8,"touch, breathe deeply. These are go down"],[169.82999999999998,171.21,"in the history books."],[171.235,192.46,""]]
+       
+       track_2: [[5.000,8.500,"I’ve always known I was meant to go away."],
+[9.000,18.000,"I grew up looking at the travellers. Every year in spring they were going, hundreds of them, taking over the sky."],
+[18.000,23.000,"I remember asking my mom: “Can I go too?”"],
+[25.000,35.000,"“Your time will come, Mawusi”, she said. “Soon enough my darling. Now eat, so you’ll be stronger.”"],
+[37.000,47.000,"I remember looking at them. So free. So proud. So strong."],
+[47.000,58.000,"So I ate. I did grow stronger. But I couldn’t grow fast enough for my ambition."],
+[58.000,64.000,"“Why do you want to go?” Other birds asked. “Can’t you see this is the best place on earth?"],
+[64.000,71.000,"Nowhere else will you find a forest so lush, a sky so blue, a water so pure..."],
+[71.500,82.500,"Their sky is grey, over there, their air is cold, their water is full of oil. Don’t you know? Or maybe you just think you are better than us?”"],
+[83.000,91.000,"I looked at them. They were parrots, birds of paradise, lovebirds."],
+[91.000,97.500,"They were so big, so beautiful, the kings of this place. They belonged."],
+[98.000,107.000,"They couldn’t understand us. They couldn’t understand that for us, leaving was surviving."],
+[109.000,116.000,"There was a lone traveller living close to our nest. His name was Nunyati."],
+[116.000,120.000,"He had done the journey many times, but now he was too old."],
+[122.000,132.000,"I loved listening to his stories. I kept finding excuses to get close to him. He used to chase the other birds away, but I think he liked me."],
+[132.000,143.000,"“You are so young, Mawusi. I used to be like you, I wouldn’t listen to anyone, I just wanted to go."],
+[143.000,151.000,"But if only you knew the risks. Oh sweet child, you don’t know what’s out there."],
+[151.000,162.000,"You don’t know the cold, the fear in your bones. If birds knew what awaited them, they would never leave.”"],
+[162.000,166.000,"“If you had known, would you have gone anyway?”"],
+[166.000,172.500,"He took a long pause, looked at the sky. He laughed."],
+[173.000,181.000,"“Probably. We travellers are a mad species. It’s in our blood, we can’t fight it."],
+[181.000,190.000,"Just listen to your mother, Mawusi. Eat. Grow stronger. You’ll need all the strength you can get."],
+[190.000,200.000,"Your time has almost come.”"]], 
+track_3: [[3.000,5.500,"And then, the day came."],
+[6.000,22.000,"It had been a bright, sunny day. The sun was setting, huge against the orange sky. The forest sounds were getting quieter, ready for the night."],
+[22.000,38.000,"I looked around me: I tried to memorise the colours, the smells of my homeland, I packed them all in my brain, I stored them safely to keep myself warm during my journey."],
+[38.000,44.000,"I looked at my mother’s eyes. She was proud. She was terrified."],
+[44.000,50.000,"She had done the journey herself, though she had always refused to talk about it. I hugged her."],
+[50.000,53.000,"“I’ll be fine, Ma. Don’t worry.”"],
+[53.000,63.000,"“Of course you’ll be fine”, she said, then she looked away. She didn’t want me to see her doubt."],
+[63.000,65.000,"I flew to the top of our tree to warm up."],
+[65.000,75.000,"I looked at the open sky. It was so huge, you couldn’t see the end of it. I felt dizzy."],
+[75.000,85.000,"Despite the heat, I started to shiver, my heart pounding in my chest. How could I possibly do this?"],
+[85.000,97.000,"Maybe it was a big mistake. Maybe I wasn’t ready. Maybe I could wait, just a little longer."],
+[97.000,106.000,"I heard a bird laugh behind me. It was a fat bird of paradise, munching on berries."],
+[106.000,111.000,"“What’s up with you willow warbler? Having second thoughts?”"],
+[111.000,115.000,"“I’m just stretching my wings, getting ready for the flight, that’s all.”"],
+[111.000,122.000,"“No kidding. A tiny bird like you, making it to Europe? How much do you weigh? 10g?”"],
+[122.000,128.000,"“8. Still, it’s not the weight that counts, it’s the spirit."],
+[128.000,138.000,"But how could you understand? Birds of paradise have it easy. Big guns like you take all the food. Come summer, there will be nothing left for us."],
+[138.000,147.000,"And predators are getting stronger too, they are just waiting for an opportunity to munch on the little ones too weak to escape."],
+[147.000,158.000,"So don’t talk to me like I have a choice. Live or die, that’s the only choice we have. And I choose to live.“"],
+[158.000,170.000,"And then, without another thought, I opened my little green wings and took off."]], 
+track_4a: [[4.000,8.000,"“Follow the stars.”"],
+[9.000,12.000,"I heard the voice of Nunyati in my head."],
+[12.000,19.000,"“They will guide you. They have guided migrants for generations."],
+[19.000,41.000,"Otherwise, don’t trust anyone. Just yourself. You are on your own now, Mawusi. We willow warblers are solo travellers. That’s the only way to be safe.”"],
+[41.000,55.000,"Back then, I remember listening to him in total disbelief. How could I ever know my way in total darkness, without a map, without someone to show me the way?"],
+[55.000,67.000,"I envied the sparrows, the geese, who travelled in flocks, following the older, more experienced migrants. I was alone."],
+[67.000,80.000,"And yet, he was right. I realised I knew the way. Without a doubt, I trusted my ancestors’ heritage, and I flew, as fast as the wind."],
+[80.000,94.000,"How could I ever describe that feeling? That sense of total freedom? That sensation that you are finally meeting your destiny? It was exhilarating. I felt invincible."],
+[94.000,103.000,"I was racing into the night, further and faster than I had ever gone. Me who had never flown more than a few miles!"],
+[103.000,117.000,"I saw the men’s lights beneath me, those little electric lines of roads and villages, like a spiderweb. They looked so small, so frail. You can’t catch me now, I laughed."],
+[117.000,128.000,"And then, suddenly, the spiderweb stopped. There was just total darkness. A world of shadows."],
+[128.000,142.000,"My heart started racing, so I decided to land on a tree at the limit of the men’s kingdom to rest. The sun was rising at the horizon. And then, I saw it."],
+[142.000,154.000,"Ahead of me lay an area of unimaginable emptiness. An immense stretch of land that humans had been too terrified to conquer."],
+[154.000,162.000,"And here I was, a little bird, knowing that my destiny was beneath it."],
+[162.000,173.000,"The world’s greatest desert. The Sahara."]], 
+track_4b: [[4.000,8.000,"“Follow your instincts.”"],
+[8.000,12.000,"I heard the voice of Nunyati in my head."],
+[12.000,17.000,"“When time will come, you’ll realise that you know where to go."],
+[17.000,41.000,"Your ancestors have followed that path before you, it’s all there, in your DNA. Just listen to their voice. They will guide you.”"],
+[41.000,47.000,"Back then, I remember listening to him in total disbelief."],
+[47.000,55.000,"How could I ever know my way in total darkness, without a map, without someone to show me the way?"],
+[55.000,67.000,"I envied the sparrows, the geese, who travelled in flocks, following the older, more experienced migrants. I was alone."],
+[67.000,80.000,"And yet, he was right. I realised I knew the way. Without a doubt, I trusted my ancestors’ heritage, and I flew, as fast as the wind."],
+[80.000,90.000,"How could I ever describe that feeling? That sense of total freedom? That sensation that you are finally meeting your destiny?"],
+[90.000,94.000,"It was exhilarating. I felt invincible."],
+[94.000,103.000,"I was racing into the night, further and faster than I had ever gone. Me who had never flown more than a few miles!"],
+[103.000,110.000,"I saw the men’s lights beneath me, those little electric lines of roads and villages, like a spiderweb."],
+[110.000,117.000,"They looked so small, so frail. You can’t catch me now, I laughed."],
+[117.000,128.000,"And then, suddenly, the spiderweb stopped. There was just total darkness. A world of shadows."],
+[128.000,135.000,"My heart started racing, so I decided to land on a tree at the limit of the men’s kingdom to rest."],
+[135.000,142.000,"The sun was rising at the horizon. And then, I saw it."],
+[142.000,154.000,"Ahead of me lay an area of unimaginable emptiness. An immense stretch of land that humans had been too terrified to conquer."],
+[154.000,162.000,"And here I was, a little bird, knowing that my destiny was beneath it."],
+[162.000,173.000,"The world’s greatest desert. The Sahara."]]
   }
-    for (let i=0; i<cues[cuekey].length; i++){
-    const cue = new VTTCue(cues[cuekey][i][0],cues[cuekey][i][1],cues[cuekey][i][2]);
-    track.addCue(cue); 
-}
-    track.addEventListener('cuechange', () => {
-    const activeCue = track.activeCues[0];
-    if (activeCue) {
-      document.getElementById('caption').textContent = activeCue.text;
-    }
+
+  // Remove previous cues to avoid duplicates when revisiting passages
+  while (track.cues.length > 0) {
+    track.removeCue(track.cues[0]);
+  }
+
+  // Add new cues
+  cues[cuekey].forEach(([start, end, text]) => {
+    track.addCue(new VTTCue(start, end, text));
   });
-  console.log(audio.track)
 
+  // Sync to UI caption element
+  const captionBox = document.getElementById("caption");
 
+ track.addEventListener("cuechange", () => {
+  const activeCue = track.activeCues[0];
+  const captionBox = document.getElementById("caption");
 
- 
-}
+  if (activeCue) {
+    // If new text is different, fade out first then fade in with updated text
+    if (captionBox.textContent !== activeCue.text) {
+      captionBox.style.opacity = "0";
+      setTimeout(() => {
+        captionBox.textContent = activeCue.text;
+        captionBox.style.opacity = "1";
+      }, 250); // matches half transition time
+    }
+  } else {
+    captionBox.style.opacity = "0"; // fade out on silence
+  }
+});
+};
+
 
 setup.playStoryAudio = () => {
   
@@ -165,12 +261,14 @@ setup.chooseStoryAudio = () => {
 
   let audioFiles = [];
 
-  // --- Passage-specific mode (expects format "01_intro") ---
-  const passageMatch = passageName.match(/^(\d+)_/);
+  // --- Accepts "3_intro", "4a_track", "12b_scene" ---
+  const passageMatch = passageName.match(/^(\d+[a-z]?)_/i);
   if (passageMatch) {
-    const num = passageMatch[1]; 
-    audioFiles = [`../assets/audio/track_${num}.mp3`];
-    setup.addCaptions(`track_${num}`)
+    const key = passageMatch[1]; // e.g., "4", "4a", "12b"
+    audioFiles = [`../assets/audio/track_${key}.mp3`];
+
+    // Attach matching captions (optional but logical pairing)
+    setup.addCaptions(`track_${key}`);
   }
 
   let currentTrack = 0;
@@ -178,19 +276,19 @@ setup.chooseStoryAudio = () => {
   function loadNext() {
     if (currentTrack < audioFiles.length) {
       freshAudio.src = audioFiles[currentTrack];
-      freshAudio.preload = "auto";  // Ensure browser loads it
-      freshAudio.load();            // Force buffering request
+      freshAudio.preload = "auto";
+      freshAudio.load();
       console.log("Loaded audio (not playing):", freshAudio.src);
       currentTrack++;
     }
   }
 
+  // prepare next audio if you ever add multiple per passage
   freshAudio.addEventListener("ended", loadNext);
 
-  // Load but do NOT play
+  // Load but DO NOT play automatically
   if (audioFiles.length > 0) {
     loadNext();
-  
   } else {
     console.warn("No audio files determined for this passage:", passageName);
   }
@@ -332,7 +430,8 @@ setup.hideCap = () => {
     <</link>>
     <<link [img[../assets/img/replay-sharp-b.png][$pass]]>>
     <</link>>
-
+ <<link [img[../assets/img/for-sharp-b.png][$nextpass]]>>
+    <</link>>
     <div id="captionMount">
    <<include "captionsbutton">>
 </div>
@@ -346,7 +445,8 @@ setup.hideCap = () => {
     <</link>>
     <<link [img[../assets/img/replay-sharp-b.png][$pass]]>>
     <</link>>
-
+<<link [img[../assets/img/for-sharp-b.png][$nextpass]]>>
+    <</link>>
     <div>
 
 </div>
@@ -466,6 +566,10 @@ setup.hideCap = () => {
 <<set $transcript to false>>
 <<set $playing to false>>
 <<set $showCaptionsButton to false>>
+<<set $userchoices to {
+    time: "day",
+    way: "stars",
+}>>
 
 <main class="landing flex-col-cen start">
 
@@ -542,6 +646,32 @@ setup.hideCap = () => {
 
 
 :: _templateDir [nobr]
+<<include "headerdir">>
+<main>
+
+    <div id="msgMount"> </div>
+    <div id="caption" class="hide"></div>
+    
+        <<if $pass>>
+             <<set $uniqueContent to $pass+"_content">>
+            <<silently>>
+            <<timed 0.1s>>
+            <<append "#msgMount">>
+              <<include $uniqueContent>>
+              <</append>>
+              <</timed>>
+            <</silently>>
+               <div class="btn-container" id="btnContainer">
+            </div>
+        <<else>>
+            No content provided.
+        <</if>>
+   
+</main>
+<<include "navbuttonsdir">>
+
+
+:: _templateChoice [nobr]
 <<include "headerdir">>
 <main>
 
@@ -814,11 +944,11 @@ setup.hideCap = () => {
 :: 2_story [nobr]
 <<set $prevpass to "2_dir">>
 <<set $pass to "2_story">>
-<<set $nextpass to "">>
+<<set $nextpass to "2_choice">>
 <<audio ":all" "stop">>
 
 
-<<include "_templateStoryTrans">>
+<<include "_templateStory">>
 
 
 :: 2_story_content [nobr]
@@ -835,14 +965,16 @@ setup.hideCap = () => {
  <</append>>
 <</timed>>
 
-<<timed 4s>>
-  <<set $showCaptionsButton to true>>
+ <<timed 4s>>
   <<replace "#playBtnContainer">>
+  <<set $showCaptionsButton to true>>
     <<include "playbutton">>
+  <<replace "#captionMount">>
+    <<include "captionsbutton">>
+    <</replace>>
  <</replace>>
 
 <</timed>>
- 
 
 
 <<timed 200s>>
@@ -855,24 +987,349 @@ setup.hideCap = () => {
 
 
 
-:: 2_transcript [nobr]
+:: 2_choice [nobr]
+<<set $prevpass to "2_story">>
+<<set $pass to "2_choice">>
+<<set $nextpass to "3_dir">>
+<<audio ":all" "stop">>
 
-<p>I’ve always known I was meant to go away. I grew up looking at the travellers. Every year in spring they were going, hundreds of them, taking over the sky. </p>
-<p>I remember asking my mom: “Can I go too?” </p>
-<p>“Your time will come, Mawusi”, she said. “Soon enough my darling. Now eat, so you’ll be stronger.” </p>
-<p>
-  I remember looking at them. So free. So proud. So strong. So I ate. I did grow stronger. But I couldn’t grow fast enough for my ambition.
-  “Why do you want to go?” Other birds asked. “Can’t you see this is the best place on earth? Nowhere else will you find a forest so lush, a sky so blue, a water so pure… 
-</p>
-<p>Their sky is grey, over there, their air is cold, their water is full of oil. Don’t you know? Or maybe you just think you are better than us?”</p>
-<p>I looked at them. They were parrots, birds of paradise, lovebirds. They were so big, so beautiful, the kings of this place. They belonged. They couldn’t understand us. They couldn’t understand that for us, leaving was surviving. </p>
-<p>
-  There was a lone traveller living close to our nest. His name was Nunyati. He had done the journey many times, but now he was too old. I loved listening to his stories. I kept finding excuses to get close to him. He used to chase the other birds away, but I think he liked me. 
-  “You are so young, Mawusi. I used to be like you, I wouldn’t listen to anyone, I just wanted to go. But if only you knew the risks. Oh sweet child, you don’t know what’s out there. You don’t know the cold, the fear in your bones. If birds knew what awaited them, they would never leave.” 
-</p>
-<p>“If you had known, would you have gone anyway?”</p>
-<p>He took a long pause, looked at the sky. He laughed. </p>
-<p>
-  “Probably. We travellers are a mad species. It’s in our blood, we can’t fight it. Just listen to your mother, Mawusi. Eat. Grow stronger. You’ll need all the strength you can get. Your time has almost come.”
-  
-</p>
+<<include "_templateDir">>
+
+
+:: 2_choice_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+ <p>You are about to start a perilous journey.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+    <<append "#msgMount">>
+      <p>What do you think would make it safer?</p>
+ <</append>>
+<</timed>>
+
+
+<<timed 4s>>
+    <<append "#btnContainer">>
+    <<button "Travel by day">>
+          <<set $userchoices.time to "day">>
+            <<goto "3_dir">>
+        <</button>>
+    <</append>>
+<</timed>>
+
+<<timed 5s>>
+    <<append "#btnContainer">>
+    <<button "Travel by night">>
+      <<set $userchoices.time to "night">>
+            <<goto "7_dir">>
+        <</button>>
+    <</append>>
+<</timed>>
+
+
+:: 3_dir [nobr]
+<<set $prevpass to "2_choice">>
+<<set $pass to "3_dir">>
+<<set $nextpass to "3_story">>
+<<audio ":all" "stop">>
+
+<<include "_templateDir">>
+
+
+:: 3_dir_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+ <p>You are a willow warbler, one of the smallest migrants.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+    <<append "#msgMount">>
+      <p>You are a solo traveller.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 4s>>
+    <<append "#msgMount">>
+      <p>To avoid attracting attention, you choose to fly under the cover of darkness.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 6s>>
+    <<append "#msgMount">>
+      <p>Look for the following symbol. It will show you the way Down the Long Wind. </p>
+ <</append>>
+<</timed>>
+
+​ <<timed 8s>>
+    <<append "#msgMount">>
+<div class="img-container-symbol">
+<img src="assets/img/3-WW.png"/>
+</div>
+ <</append>>
+<</timed>>
+ 
+
+
+<<timed 10s>>
+    <<append "#btnContainer">>
+    <<button "I have found the book">>
+            <<goto $nextpass>>
+        <</button>>
+    <</append>>
+<</timed>>
+
+
+:: 3_story [nobr]
+<<set $prevpass to "3_dir">>
+<<set $pass to "3_story">>
+<<set $nextpass to "3_choice">>
+<<audio ":all" "stop">>
+
+
+<<include "_templateStory">>
+
+
+:: 3_story_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+
+ <p>The day of departure has come...</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+  <<replace "#playBtnContainer">>
+  <<set $showCaptionsButton to true>>
+    <<include "playbutton">>
+  <<replace "#captionMount">>
+    <<include "captionsbutton">>
+    <</replace>>
+ <</replace>>
+
+<</timed>>
+
+
+<<timed 165s>>
+    <<append "#btnContainer">>
+    <<button "Find out more">>
+            <<goto $nextpass>>
+        <</button>>
+    <</append>>
+<</timed>>
+
+
+
+:: 3_choice [nobr]
+<<set $prevpass to "3_story">>
+<<set $pass to "3_choice">>
+<<set $nextpass to "3_dir">>
+<<audio ":all" "stop">>
+
+<<include "_templateDir">>
+
+
+:: 3_choice_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+ <p>This is your first trip and you are travelling on your own.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+    <<append "#msgMount">>
+      <p>How do you find your way?</p>
+ <</append>>
+<</timed>>
+
+
+<<timed 4s>>
+    <<append "#btnContainer">>
+    <<button "I follow the stars">>
+          <<set $userchoices.way to "stars">>
+            <<goto "4a_dir">>
+        <</button>>
+    <</append>>
+<</timed>>
+
+<<timed 5s>>
+    <<append "#btnContainer">>
+    <<button "I follow my instincts">>
+      <<set $userchoices.way to "instinct">>
+            <<goto "4b_dir">>
+        <</button>>
+    <</append>>
+<</timed>>
+
+:: 4a_dir [nobr]
+<<set $prevpass to "3_choice">>
+<<set $pass to "4a_dir">>
+<<set $nextpass to "4a_story">>
+<<audio ":all" "stop">>
+
+<<include "_templateDir">>
+
+
+:: 4a_dir_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+ <p>It’s time to explore space.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+    <<append "#msgMount">>
+      <p>Can you find a compass? It will help you find your way across Our Wonderful Universe.</p>
+ <</append>>
+<</timed>>
+
+​ <<timed 4s>>
+    <<append "#msgMount">>
+<div class="img-container-symbol">
+<img src="assets/img/4-stars.png"/>
+</div>
+ <</append>>
+<</timed>>
+ 
+
+
+<<timed 10s>>
+    <<append "#btnContainer">>
+    <<button "I have found the book">>
+            <<goto $nextpass>>
+        <</button>>
+    <</append>>
+<</timed>>
+
+:: 4a_story [nobr]
+<<set $prevpass to "4a_dir">>
+<<set $pass to "4a_story">>
+<<set $nextpass to "3_choice">>
+<<audio ":all" "stop">>
+
+
+<<include "_templateStory">>
+
+
+:: 4a_story_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+
+ <p>The sky is yours.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+    <<append "#msgMount">>
+
+ <p>Enjoy your first flight...</p>
+ <</append>>
+<</timed>>
+
+ <<timed 4s>>
+  <<replace "#playBtnContainer">>
+  <<set $showCaptionsButton to true>>
+    <<include "playbutton">>
+  <<replace "#captionMount">>
+    <<include "captionsbutton">>
+    <</replace>>
+ <</replace>>
+
+<</timed>>
+
+
+<<timed 170s>>
+    <<append "#btnContainer">>
+    <<button "Find out more">>
+            <<goto $nextpass>>
+        <</button>>
+    <</append>>
+<</timed>>
+
+
+:: 4b_dir [nobr]
+<<set $prevpass to "3_choice">>
+<<set $pass to "4b_dir">>
+<<set $nextpass to "4b_story">>
+<<audio ":all" "stop">>
+
+<<include "_templateDir">>
+
+
+:: 4b_dir_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+ <p>Who needs a map? Nature has given you an inner compass.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+    <<append "#msgMount">>
+      <p>Look for this symbol. It will show you the way to Our Wonderful Universe.</p>
+ <</append>>
+<</timed>>
+
+​ <<timed 4s>>
+    <<append "#msgMount">>
+<div class="img-container-symbol">
+<img src="assets/img/4-stars.png"/>
+</div>
+ <</append>>
+<</timed>>
+ 
+
+
+<<timed 10s>>
+    <<append "#btnContainer">>
+    <<button "I have found the book">>
+            <<goto $nextpass>>
+        <</button>>
+    <</append>>
+<</timed>>
+
+:: 4b_story [nobr]
+<<set $prevpass to "4b_dir">>
+<<set $pass to "4b_story">>
+<<set $nextpass to "3_choice">>
+<<audio ":all" "stop">>
+
+
+<<include "_templateStory">>
+
+
+:: 4b_story_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+
+ <p>The sky is yours.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+    <<append "#msgMount">>
+
+ <p>Enjoy your first flight...</p>
+ <</append>>
+<</timed>>
+
+ <<timed 4s>>
+  <<replace "#playBtnContainer">>
+  <<set $showCaptionsButton to true>>
+    <<include "playbutton">>
+  <<replace "#captionMount">>
+    <<include "captionsbutton">>
+    <</replace>>
+ <</replace>>
+
+<</timed>>
+
+
+<<timed 170s>>
+    <<append "#btnContainer">>
+    <<button "Find out more">>
+            <<goto $nextpass>>
+        <</button>>
+    <</append>>
+<</timed>>

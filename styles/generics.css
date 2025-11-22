@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; /* Mostly equivalates to 10px but allows users accessibility zoom settings to work*/
-  /* font-size: 10px; */
+  font-size: 10px;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
