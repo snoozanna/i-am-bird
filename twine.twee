@@ -80,14 +80,13 @@ setup.addCaptions = (cuekey) =>  {
   track.mode = "hidden"; // since we're rendering manually
 
 const cues = {
-      track_1: [[7.02,14.82,"I remember being born. They told me it's not possible, but I do."],
+track_1: [[7.02,14.82,"I remember being born. They told me it's not possible, but I do."],
 [18.32,23.78,"I remember the darkness. It was hot, humid, quite claustrophobic. I remember feeling stuck. That place was too small for me. Even then, I could feel that. Even then, I knew greater things awaited."],
 [40.62,46.2,"I remember hearing voices outside, they were calling me, inviting me to break free."],
 [48.105,55.905,"There was an urge deep inside my bones to escape. To open my wings. To fly away towards the light, towards infinity."],
 [61.665,65.385,"The sky is the limit, they say."],
 [65.385,75.21,"So I pushed. I hit that wall as hard as I could, and then a little crack, and I saw it. Freedom."]], 
-       
-       track_2: [[5.000,8.500,"I’ve always known I was meant to go away."],
+track_2: [[5.000,8.500,"I’ve always known I was meant to go away."],
 [9.000,18.000,"I grew up looking at the travellers. Every year in spring they were going, hundreds of them, taking over the sky."],
 [18.000,23.000,"I remember asking my mom: “Can I go too?”"],
 [25.000,35.000,"“Your time will come, Mawusi”, she said. “Soon enough my darling. Now eat, so you’ll be stronger.”"],
@@ -247,7 +246,7 @@ track_7: [[0.000,4.000,"And then, the day came."],
 [70.500,78.000,"Because we knew the odds, we knew them all too well. Three out of four of us would never see Europe."],
 [79.000,85.000,"We couldn’t help looking at each other, wondering who it would be."],
 [85.000,97.000,"So we made it last. We made provisions of sun, of sounds, of smells. We boosted our bodies and souls. We became stronger, as a team."],
-[97.000,104.000,"Because we knew that, as much as we would miss home, we simply had no choice. We had to go."]], 
+[97.000,109.000,"Because we knew that, as much as we would miss home, we simply had no choice. We had to go."]], 
 track_8: [[4.000,7.000,"I’ve been told that we sand martins talk too much."],
 [7.000,12.000,"That we have no sense of privacy and that our loud constant chatter is a nuisance to other creatures."],
 [13.000,21.000,"But what they don’t know is: our conversations are never pointless. Our voice can save our lives."],
@@ -281,12 +280,12 @@ track_9: [[3.000,9.000,"I’ve always wanted a family."],
 [90.000,97.000,"The power of love. We were young birds, we all wanted it."],
 [97.000,105.000,"No matter the risks, the cold, the exhaustion, the hunger, we knew nature was calling us."],
 [105.000,110.000,"It was a dream, they were sirens too powerful to escape."],
-[110.000,113.000,"The greater the dangers, the greater the rewards, we thought."],
-[113.000,119.000,"It was fate. It was destiny."],
+[110.000,114.000,"The greater the dangers, the greater the rewards, we thought."],
+[114.000,119.000,"It was fate. It was destiny."],
 [119.000,129.000,"At last, the day of departure came: there were eighty of us in our flock, eighty young lovers ready to take Europe by storm."],
 [129.000,132.000,"We gathered on the branches of a mahogany tree."],
 [132.000,139.000,"For once, none of us talked. We just watched the sun rise in silence, absorbing the smells, the colours, the sounds of our homeland."],
-[139.000,145.000,"And then, as one body, we all opened our wings and took over the blue open sky."]],
+[139.000,150.000,"And then, as one body, we all opened our wings and took over the blue open sky."]],
 track_10a: [[10.000,13.000,"How could I ever describe this feeling?"],
 [13.000,20.000,"That exhilarating sense of power? That sensation that we were finally meeting our destiny."],
 [20.000,26.000,"We were an army of travellers, nothing could stop us now."],
@@ -295,8 +294,8 @@ track_10a: [[10.000,13.000,"How could I ever describe this feeling?"],
 [45.000,54.000,"They took us along the Atlantic coast, a slightly longer route, but with more opportunities to rest and feed."],
 [54.000,63.000,"I never thought about questioning them. It was liberating to hand over control. They had been there before, we just had to follow."],
 [63.000,72.000,"I had a thought for the solo travellers, the scared little birds travelling alone under the cover of darkness. I pitied them."],
-[72.000,80.000,"We didn’t have to hide, our pride carried us forward. Together, we were invincible."],
-[80.000,89.000,"We watched human villages and roads beneath us. So small, so fragile."],
+[72.000,81.000,"We didn’t have to hide, our pride carried us forward. Together, we were invincible."],
+[82.000,89.000,"We watched human villages and roads beneath us. So small, so fragile."],
 [89.000,95.000,"We remembered the poachers with their rifles, the children trying to catch us with nets and slingshots."],
 [95.000,98.000,"Try to catch us now, we laughed."],
 [98.000,105.000,"We kept pointing excitedly at human constructions, strange things most of us had never seen before."],
@@ -332,7 +331,354 @@ track_10b:[[10.000,13.000,"How could I ever describe this feeling?"],
 [139.000,142.000,"And then, we saw it."],
 [142.000,146.000,"Ahead of us lay an area of unimaginable emptiness."],
 [146.000,152.000,"An immense stretch of land that humans had been too terrified to conquer."],
-[152.000,158.000,"The world’s greatest desert. The Sahara."]]
+[152.000,158.000,"The world’s greatest desert. The Sahara."]], 
+track_11:[
+  [6.000,11.000,"How did I do this? I can’t explain it."],
+[11.000,19.000,"How do billions of tiny birds cross the world’s largest desert, every year, without food or water?"],
+[19.000,26.000,"When humans look at our route on a map, they realise that that no sane creature would cross it."],
+[26.000,31.000,"It is insane, when you think about it."],
+[31.000,36.000,"So we do not think. There is no space in our bodies for thoughts."],
+[36.000,45.000,"All the energy goes to the flight. Because our bodies know that, no matter how dangerous that journey is, what we leave behind is worse."],
+[45.000,53.000,"And we want to live. So we fly."],
+[53.000,59.000,"I flew non-stop for fifty hours. Two full days and two full nights."],
+[59.000,64.000,"The night air was freezing cold, the daytime sun scorching hot."],
+[64.000,72.000,"There were thousands, millions of us in the air, all moving in the same direction, racing on the most dangerous highway."],
+[72.000,77.000,"Yet, during the crossing, we were alone."],
+[77.000,88.000,"I crossed like I was in a dream, the adrenaline pumping through my veins, making my wings move as if they were not my own, giving me a strength I didn’t know I had."],
+[88.000,94.000,"I couldn’t feel the pain, the hunger, the cold, the exhaustion."],
+[94.000,103.000,"“You’re almost there”, my ancestors whispered."],
+[103.000,109.000,"My mom told me it was like hatching eggs. You don’t know how you do it, nature shows you how."],
+[109.000,118.000,"You just do it, and then you forget. Nobody wants to remember the pain, otherwise you wouldn’t have the strength to do it again."],
+[118.000,124.000,"And then, I made it to the other side."],
+[124.000,130.000,"There may have been an oasis. Or a city. I don’t remember any of it."],
+[130.000,135.000,"I simply remember that I landed somewhere and I passed out."],
+[135.000,142.000,"But in my dreams, I knew I was safe."]
+], 
+track_12:[[8.000,10.000,"Arriving in Morocco felt like a dream at first."],
+[10.000,17.000,"An oasis of peace, rest and food. Oh, the food!"],
+[17.000,25.000,"Now I could finally understand my mother. Why would you choose not to eat food when you know that tomorrow there may be none?"],
+[25.000,33.000,"I blissfully ate and ate, greedily regrowing my strength, chatting happily with the other travellers."],
+[33.000,39.000,"I was so happy that it took me a while to realise how some native birds were looking at us."],
+[39.000,43.000,"The great ibises, the mighty cormorans, the graceful flamingos."],
+[43.000,53.000,"They didn’t talk to us, but I could see disapproval in their eyes. I couldn’t understand why."],
+[53.000,59.000,"And then one day, I was drinking by the lake when I saw a woodpecker looking at me."],
+[59.000,64.000,"“Don’t you think you have overstayed your welcome?” He sneered."],
+[64.000,66.000,"“What do you mean?” I asked."],
+[66.000,79.000,"“You know what I mean. You are coming here in flocks, eating our food, drinking our water, taking over our woods by millions, making them dirty and unsafe. Don’t you know you are not welcome here?”"],
+[79.000,84.000,"I was stunned, I didn’t know what to answer. Nobody had ever talked to me like that."],
+[84.000,86.000,"Then I heard another voice behind me."],
+[86.000,90.000,"“Don’t take this personally, it will happen again.”"],
+[90.000,94.000,"That bird was my age, I had seen him before, but we had never spoken."],
+[94.000,97.000,"“How do you know?” I asked."],
+[97.000,101.000,"“I’ve done the journey once. It was tough, but you’ll get used to it, bird.”"],
+[101.000,106.000,"“Don’t call me bird” I said. “My name is Mawusi.”"],
+[106.000,111.000,"“Sure. That’s a nice name, but you know that nobody will ever be able to be able to pronounce it, right?"],
+[111.000,115.000,"I’m Banjoko, but I got used to people calling me Bird."],
+[115.000,123.000,"You’ll see, when you get there, nobody will remember your name, nobody will care if you are a swallow, a sand martin, a willow warbler."],
+[123.000,125.000,"It’s all the same to them, to them you will be just another bird."],
+[125.000,132.000,"I don’t think it comes from a bad place. They just don’t know foreign birds very well.”"],
+[132.000,136.000,"I didn’t reply."],
+[136.000,144.000,"“So” he said “I think that woodpecker was pretty clear, it seems like we have overstayed our welcome. Are you ready for the next part of the trip, Bird?”"]], 
+track_13:[
+  [11.000,13.000,"Arriving in Morocco felt like a dream."],
+[13.000,17.000,"An oasis of peace, food and rest."],
+[17.000,26.000,"I remember being so happy. So proud. I’d crossed the Sahara, man! If I could do that, I could do anything."],
+[26.000,35.000,"It was wonderful to meet other travellers. There were all kinds of birds stopping in Morocco. Geese, cuckoos, swallows."],
+[35.000,42.000,"We came from all over Africa. We all had different reasons to be here; we would have never talked to each other before."],
+[42.000,49.000,"But the crossing had brought all us migrants together, suddenly making us feel like family."],
+[49.000,56.000,"And then, one day, in the middle of that menagerie, I met Banjoko."],
+[56.000,64.000,"The first time I saw him, I felt I was looking at myself in a pool of water. I was stunned."],
+[64.000,67.000,"Then I stepped closer, and so did he."],
+[67.000,70.000,"“Hi”, I said."],
+[70.000,74.000,"How could I explain this? I felt like I knew him."],
+[74.000,78.000,"When you meet birds from your own species far from home, you just click."],
+[78.000,87.000,"The world around is so unsettling, so unfamiliar, that you can feel an instant connection to total strangers."],
+[87.000,89.000,"“Hi Bird”, he replied."],
+[89.000,92.000,"“I’m Mawusi”, I said."],
+[92.000,99.000,"“Sweet. I’m Banjoko, but I got used to people calling me Bird. Nobody could pronounce my actual name.”"],
+[99.000,101.000,"“So you already went to Europe, then?”"],
+[101.000,111.000,"“I did, once, last spring. You’ll see, you’ll never be the same after that."],
+[111.000,118.000,"It’s hard to be in a place where nobody understands your name, where you are from or what you are."],
+[118.000,125.000,"Where nobody can tell whether you are a swallow, a sand martin or a willow warbler. To them it’s all the same, to them you are just another bird.”"],
+[125.000,132.000,"I didn’t reply. He smiled."],
+[132.000,139.000,"“Don’t worry, there are good things too. And it’s easier when you travel in good company. So... would you like to join me, Bird?”"]
+], 
+track_14: [
+  [0.000,13.000,"Travelling with Banjoko made it all feel different."],
+[13.000,19.000,"Of course he was not the first bird I met on my journey; migrants rarely get privacy."],
+[19.000,24.000,"But since I left home, that was the first time I felt someone truly understood me."],
+[24.000,33.000,"It was nice to have somebody to talk to, to laugh with, to discuss what we would do when we made it to Europe."],
+[33.000,41.000,"We had so many plans. We both really wanted to go to England, we even joked about sharing a nest one day."],
+[41.000,51.000,"It felt like we had always known each other. Hardship makes you bond faster, I guess."],
+[51.000,59.000,"Suddenly, I forgot why I had decided to leave home. After the Sahara, Europe was just so easy to enjoy."],
+[59.000,66.000,"We travelled short distances, taking the time to eat and rest. We crossed borders, always heading North."],
+[66.000,71.000,"It was a beautiful spring and there was plenty of food everywhere."],
+[71.000,74.000,"We felt happy. We felt safe."],
+[74.000,87.000,"Of course, we knew there were still dangers. We had heard the tales of other travellers, the stories of birds getting lost, starving to death, dying of diseases or being shot by hunters."],
+[87.000,90.000,"But somehow, we believed this could not happen to us."],
+[90.000,93.000,"Because together, we felt invincible."],
+[93.000,101.000,"And together we were."]
+], 
+track_15:[
+  [2.000,4.000,"We had made it to France."],
+[4.000,10.000,"We knew the end of our journey was near, and our excitement grew each day."],
+[10.000,17.000,"The last few weeks had changed us; we were now stronger, fitter, more adventurous in our flight."],
+[17.000,24.000,"We particularly enjoyed following coastlines where we could catch the best winds to glide over the long beaches of Brittany."],
+[24.000,29.000,"That’s why, at first, we didn’t worry when the wind started to rise that evening."],
+[29.000,38.000,"We had been flying for about an hour. The moon was full and the waves were reflecting her light like a distorted mirror."],
+[38.000,42.000,"The wind was getting stronger, but it was all a game to us."],
+[42.000,46.000,"“You’re losing your balance, Bird!” Shouted Banjoko."],
+[46.000,50.000,"“You wish”, I laughed, “I’ll race you to the end of that cape!”"],
+[50.000,61.000,"I spread my wings and accelerated. I could hear the wind whistling in my ears and my friend calling me, trying to catch up. I raced further."],
+[61.000,68.000,"Suddenly, a huge cloud covered the moon and darkness fell upon us."],
+[68.000,74.000,"It started to rain heavily. Thunder was rumbling, and I couldn’t hear Banjoko anymore."],
+[74.000,79.000,"I looked back, but he was nowhere to be seen."],
+[79.000,86.000,"Violent gusts of wind made it hard to keep my balance. It was so dark that I couldn’t see anything."],
+[86.000,89.000,"Then I heard my friend’s voice being carried by the storm."],
+[89.000,97.000,"“Mawusi!” He never called me by my name. That’s how I knew how scared he was."],
+[97.000,104.000,"Huge hailstones fell all around us, one hit my left wing, making me lose my balance."],
+[104.000,116.000,"And then, I saw a light. A huge light, brighter than the sun, right in the middle of the night."],
+[116.000,120.000,"“Am I dead?” I wondered."],
+[120.000,124.000,"As I flew towards it, Nunyati’s voice echoed in my head."],
+[124.000,140.000,"“Follow the stars, Mawusi. They are the only lights you can trust. Fly away from all the others, as fast as you can.”"],
+[140.000,143.000,"I closed my eyes and called my friend."],
+[143.000,147.000,"“Let’s land”, I screamed. I don’t think he heard me."],
+[147.000,155.000,"I tried to make it to the ground, battling against the storm. I missed my landing and crashed on the beach."],
+[155.000,161.000,"I dragged my battered body to a small cavity between rocks and decided to wait there."],
+[161.000,171.000,"I waited all night, the wind howling around me. I was terrified."],
+[171.000,178.000,"In the morning, the storm finally calmed down and I managed to go out."],
+[178.000,187.000,"In front of me stood a huge concrete tower, a red and white striped giant reaching for the sky."],
+[187.000,196.000,"I looked at it in awe, I had never seen anything like it before."],
+[196.000,204.000,"And that’s when I noticed the tiny green shape curled up at the bottom, lifeless."],
+[204.000,206.000,"My friend."],
+[206.000,210.000,"Banjoko."]
+], 
+track_16:[[5.000,7.000,"We had crossed the French border."],
+[7.000,11.000,"We knew the end of our journey was near, so we made it last."],
+[11.000,19.000,"We were only flying a few hours a night, then spent the rest of the time eating and resting in pine forests."],
+[19.000,30.000,"During the day, the woods were quiet: wild animals were hiding in their dens, away from the heat, while the sound of cicadas invited us to nap."],
+[30.000,37.000,"It had been a beautiful day. Banjoko and I had stopped by a river to drink, then dozed off in a large pine tree."],
+[37.000,42.000,"Human voices echoed in the distance, but they were too far away to worry us."],
+[42.000,50.000,"The heat enhanced the forest scents, the smell of thyme, wormwood and pine needles baked by the sun."],
+[50.000,65.000,"Then, I noticed another smell. Very faint at first, but unmistakable. Banjoko noticed it too. Smoke."],
+[65.000,67.000,"This instantly shook us out of our slumber."],
+[67.000,76.000,"Around us, I could hear the forest waking up in panic. Birds calling, crickets shrieking, foxes and wild boars stampeding across the woods."],
+[76.000,83.000,"And in the distance, the crackling, snapping, popping of burning branches."],
+[83.000,88.000,"Banjoko and I took off in a frenzy. But where to go?"],
+[88.000,93.000,"A blanket of smoke covered everything, clouds of black fumes billowed into the sky."],
+[93.000,101.000,"I was flying in a dense fog of panic, helplessly flapping my wings, unsure about what to do."],
+[101.000,107.000,"“The river!” I heard Banjoko’s voice behind me. “Bird, can you find it?”"],
+[107.000,110.000,"I looked for my friend, but I couldn’t see him."],
+[110.000,116.000,"“Follow me”, I shouted. And I plunged towards the ground."],
+[116.000,119.000,"Travelling at lower altitude was unbearable."],
+[119.000,126.000,"The heat was scorching, the acrid smell of charred wood filled the air. But there was no other way."],
+[126.000,136.000,"The flames raced along, twigs, branches and trunks turning into ash all around us. We could hear the pitiful cries of creatures trapped in their burrows."],
+[136.000,140.000,"And then, I saw it ahead of me. The river."],
+[140.000,146.000,"I raced towards it and crashed on the riverbed."],
+[146.000,152.000,"My heart was racing, my lungs were scorched, but I could finally breathe."],
+[152.000,158.000,"Above me, the sky was ablaze with colour. I watched in horror as the forest disintegrated before me."],
+[158.000,162.000,"And then I remembered my friend."],
+[162.000,164.000,"“Banjoko!” I cried."],
+[164.000,170.000,"But he didn’t answer me."],
+[170.000,174.000,"I was alone."]], 
+track_17: [
+  [4.000,6.000,"We had made it to France."],
+[6.000,17.000,"Our flock had been following the Atlantic coast for weeks. Spring was blooming around us, the air was balmy, the fields green and filled with food."],
+[17.000,22.000,"We knew the end of our journey was near, so we made it last."],
+[22.000,28.000,"We were only travelling for a few hours a day, spending the rest of the time eating and resting on the shore."],
+[28.000,35.000,"And then one day, we saw it. England."],
+[35.000,42.000,"We had been flying for about an hour, when something strange appeared in the distance."],
+[42.000,46.000,"It looked like a city, but there was something eerie about it."],
+[46.000,59.000,"A world of green and grey, with hundreds of tiny human constructions made out of wood, plastic and fabric flapping in the wind. Almost like a ghost town."],
+[59.000,64.000,"There were no trees, so we decided to land on power lines encircling the place."],
+[64.000,68.000,"“What is this?” I asked Banjoko."],
+[68.000,76.000,"“They call it the Jungle” replied my friend. “The last stop before England. Can you see?”"],
+[76.000,83.000,"He pointed at the horizon."],
+[83.000,92.000,"Behind the shadow of that strange city, beyond the ocean, I could spot it in the distance. The silhouette of a gigantic island, blurry in the morning mist, almost like a mirage. The end of our quest."],
+[92.000,109.000,"Then I heard some laughter coming from below. I felt a sharp, sudden pain on my back and all went black."],
+[109.000,115.000,"I woke up a few hours later to children’s voices."],
+[115.000,118.000,"“Do you think it’s alive?”"],
+[118.000,124.000,"Three pairs of giant, shiny black eyes stared at me from above."],
+[124.000,130.000,"I tried to fly away, but thick iron bars violently hit me in the chest."],
+[130.000,140.000,"I panicked. I flapped my wings, desperately trying to find a way out, but everywhere I went a metal barrier stood between me and the world."],
+[140.000,142.000,"Then I heard the voice of Banjoko."],
+[142.000,150.000,"“Mawusi!” He never called me by my name, that’s how I knew how scared he was."],
+[150.000,159.000,"We were in a dark, covered place. There were dozens of us, a few sand martins, but also swallows, cuckoos, even one magpie."],
+[159.000,165.000,"Humans had locked us all in tiny wire boxes. I was alone in mine."],
+[165.000,169.000,"Suddenly, I heard a clicking sound and a huge hand entered my prison."],
+[169.000,180.000,"I closed my eyes in terror, then felt five thick fingers wrapping tightly around my body."],
+[180.000,189.000,"I couldn’t breathe, my heart was pounding in my chest, I thought it was the end, then all of a sudden, I saw the light."],
+[189.000,200.000,"The afternoon sun blinded me completely, a fresh gust of wind ruffled my feathers and it took me a few seconds to realise I was free."],
+[200.000,207.000,"There was no time to think, so I spread my wings, took off and flew to the top of a utility pole to pull myself together."],
+[207.000,213.000,"On the ground, a little human girl was looking at me. She waved."],
+[213.000,216.000,"“Humans. Disgusting creatures.”"],
+[216.000,220.000,"I heard the disgruntled voice of one of our leaders perched on a power line next to me."],
+[220.000,223.000,"“We’d better hit the road”"],
+[223.000,228.000,"“But…” I muttered “My friend Banjoko is still in that tent. Surely we can…”"],
+[228.000,232.000,"“My daughter is in there too”, he interrupted me with a bitter voice."],
+[232.000,238.000,"“What do you want me to do about it? Risk the lives of the whole flock and lose more members? That’s the tough law of migration, kid. Just consider yourself lucky and move on.”"],
+[238.000,247.000,"I froze, my eyes filled with tears."],
+[247.000,257.000,"He added with a softer voice. “It is your first time. I remember how hard it felt. But believe me, time will toughen you up.”"],
+[257.000,262.000,"Then without another word, he took off, and the flock followed him."]
+], 
+track_18: [
+  [6.000,9.000,"We had made it to France."],
+[9.000,16.000,"The last few weeks had changed us, we were stronger, fitter, more adventurous in our flight."],
+[16.000,24.000,"Our flock was now moving in perfect synchrony, whirling in the sky and performing elaborate acrobatics."],
+[24.000,32.000,"We particularly enjoyed following coastlines where we could catch the best winds to glide over the long beaches of Brittany."],
+[32.000,39.000,"It had been a beautiful day. The sun was setting but our leaders decided to keep flying a little longer."],
+[39.000,52.000,"The evening air was clear and balmy. Darkness gradually fell upon us, and one by one, stars lit up the sky."],
+[52.000,62.000,"We were flying along majestic granite cliffs, illuminated by the moonlight. We could see our shadow cast on the white rocks."],
+[62.000,69.000,"I looked at the sky, and, suddenly Nunyati’s words came back to me."],
+[69.000,83.000,"“Never trust the moon, Mawusi. She’s a traitor. She’ll make you believe she’s your friend by lighting up your path, but a full moon will turn you into prey.”"],
+[83.000,93.000,"I looked back, searching for Banjoko, and that’s when I noticed three large shadows flying behind ours."],
+[93.000,103.000,"Our leaders noticed them too. Adrenaline awoke the flock and all eighty birds sped as one body."],
+[103.000,111.000,"“Mawusi!” I heard my friend calling me. He never called me by my name; that’s how I knew he was scared."],
+[111.000,114.000,"I heard the falcons shriek too. They were close."],
+[114.000,121.000,"I panicked. I knew too well we couldn’t outdistance them."],
+[121.000,127.000,"What chance did we have, a group of tiny sand martins against three trained hunters?"],
+[127.000,134.000,"Our only hope was to compete against each other. I saw my friends realised it too."],
+[134.000,144.000,"In a split second, the graceful flock was gone: all that was left was a crowd of shrieking creatures fleeing helplessly in all directions."],
+[144.000,153.000,"I decided to dive towards the ocean, hoping the falcons wouldn’t follow me."],
+[153.000,156.000,"They didn’t."],
+[156.000,162.000,"I found a small cavity at the base of the cliff, almost at sea level. I hid there."],
+[162.000,166.000,"My heart was racing, the wind was howling and the waves were crashing around me."],
+[166.000,171.000,"I could hear the helpless cries of my friends in the distance."],
+[171.000,178.000,"I stayed there until morning, shaking in the darkness, petrified."],
+[178.000,182.000,"At sunrise, I finally dared to emerge from my shelter."],
+[182.000,189.000,"I called for Banjoko, but all I could hear was my own voice echoed against the cliffs."],
+[189.000,193.000,"The falcon had gone, and I was alone."],
+[193.000,196.000,"I was completely alone."]
+], 
+track_19:[
+  [4.000,10.000,"There is something about grief. It distorts time and space."],
+[10.000,13.000,"I can’t tell you what happened after that day."],
+[13.000,22.000,"Memories come back to me in waves, broken, scattered, unreal."],
+[22.000,24.000,"I must have found a way to cross the channel."],
+[24.000,28.000,"I must have found a way to make it to Britain."],
+[28.000,32.000,"I probably followed other birds, though I don’t remember any of them."],
+[32.000,42.000,"All I remember is, in my heart, I was alone."],
+[42.000,46.000,"And then, one day, I found myself in London."],
+[46.000,52.000,"After weeks of mourning, the city hit me in the face like a bad dream."],
+[52.000,55.000,"I landed on a wide, crowded square."],
+[55.000,61.000,"There were humans everywhere, walking in all directions, too busy to look at us."],
+[61.000,67.000,"There were animals too, four giant lions, but they were made of stone."],
+[67.000,73.000,"Everything was grey, the ground, the buildings, the people, the sky."],
+[73.000,85.000,"Even the other birds: there were hundreds of them, fat, plump creatures perched on every monument. Clearly, they were the masters of this place."],
+[85.000,92.000,"I looked around but couldn’t see any trees. Just towers of stone and glass, as high as mountains."],
+[92.000,102.000,"I couldn’t breathe. The air just felt different. It had a cloudy, metallic smell. It was cold. Oh, so cold."],
+[102.000,112.000,"I couldn’t understand. Was this really the Eldorado the travellers had spoken about? Had it all been a joke?"],
+[112.000,121.000,"I felt dizzy. That can’t be it, I thought. I haven’t travelled across two continents for this."],
+[121.000,124.000,"There must be something good about this place."],
+[124.000,126.000,"There must be."]
+], 
+track_20:[[4.000,15.000,"“Eat, Mawusi. Food will always comfort you when everything else is lost.”"],
+[15.000,28.000,"I thought of my mother. I missed her. I don’t think I had ever missed her that badly before."],
+[28.000,34.000,"I felt so lonely. It is strange to feel so alone surrounded by a crowd,"],
+[34.000,45.000,"But big cities have that strange quality: the larger they are, the smaller you feel. They make you feel like you don’t matter."],
+[45.000,54.000,"“Eat, my sweet. Eat, and you’ll feel better.”"],
+[54.000,59.000,"I looked around. In the absence of trees, I was not really spoiled for choice,"],
+[59.000,63.000,"But now was not the time to be picky, I was hungry, so anything would do."],
+[63.000,69.000,"I saw a tiny white worm climbing on a statue and I gulped it."],
+[69.000,76.000,"“Ugh!” I heard voices behind me. “Dear me, those migrants are disgusting.”"],
+[76.000,77.000,"I turned around."],
+[77.000,81.000,"“What do you mean?” I asked, my mouth still full,"],
+[81.000,83.000,"“And they have no manners.”"],
+[83.000,88.000,"One plump grey pigeon was addressing two smaller ones, ignoring me completely."],
+[88.000,98.000,"“Don’t you miss the good old days where we could feel at home here, having a peaceful luncheon undisturbed? This scene just spoiled my appetite.”"],
+[98.000,101.000,"“Sorry”, I said, “I’m new here.”"],
+[101.000,104.000,"“Obviously”, he sneered."],
+[104.000,107.000,"“If you don’t eat worms, what do you eat, then?” I asked."],
+[107.000,112.000,"“Bread, of course”, he replied haughtily. “We are civilised creatures."],
+[112.000,121.000,"But I suppose there is no bread in your little jungle. No wonder you have to fall back on hunting smelly insects. How degrading.”"],
+[121.000,125.000,"“Don’t be rude, Archie”, said one of the smaller pigeons."],
+[125.000,132.000,"“She probably doesn’t understand us. Dooo yoouu haaave breaaad in aaa friii caaa?”"],
+[132.000,143.000,"“I’m not stupid”, I said, “and of course I know bread. But that’s what humans eat. We just prefer fresh food. Fresh food.”"],
+[143.000,146.000,"They all laughed, mimicking me."],
+[146.000,152.000,"“I don’t know why you dislike them, Rosie”, added the first pigeon. “I find those migrants amusing."],
+[152.000,158.000,"But let’s head back to the Ritz, shall we? They may have disposed of the afternoon tea’s scones by now.”"],
+[158.000,164.000,"And they left me there, alone in the crowd, feeling stupid with the leftovers of my first English meal."]], 
+track_21:[
+  [4.000,15.000,"“When you are lonely, Mawusi, look for a gang. We are stronger together.”"],
+[15.000,23.000,"Nunyati had told me London was a city of travellers. A place where you could always find one of your kind."],
+[23.000,38.000,"I looked around, then I noticed a large group of birds perched on the steps of the square. They seemed to know their way around and they were singing."],
+[38.000,48.000,"“Sing, Mawusi. Wherever you are, singing will bring you closer to home.”"],
+[48.000,55.000,"A grey dove was leading the choir, inviting passers-by to join in. I went closer."],
+[55.000,59.000,"“A migrant!” Shouted a blackbird, and they all turned towards me."],
+[59.000,64.000,"I smiled. It was good not to feel invisible anymore."],
+[64.000,66.000,"But then, I noticed the song,"],
+[66.000,72.000,"“Migrants go home. Migrants go home.”"],
+[72.000,79.000,"They were chanting, over and over, louder and louder. When they saw me, their excitement grew."],
+[79.000,84.000,"Next to the choir, one large pigeon was addressing the crowd from a pedestal."],
+[84.000,87.000,"“The Great Replacement is happening!"],
+[87.000,96.000,"While you are hard at work, cuckoos from Africa are coming to your nests, kicking out your eggs to replace them by their own."],
+[96.000,109.000,"And don’t think it’s only the cuckoos! Do the maths: we pigeons lay two eggs a year. A sand martin lays five eggs per season. Warblers up to nine eggs!"],
+[109.000,120.000,"I’m asking you, my friends. Do you really want to live in a city you don’t recognise anymore, that has been taken over by these parasites?"],
+[120.000,133.000,"Migrants take our nests, our food, our heritage. In ten years, if we don’t do anything, there will be no pigeons. Is this what you want?”"],
+[133.000,136.000,"Then he looked at me. They all looked at me."],
+[136.000,143.000,"I froze. They started marching in my direction, but I could not move."],
+[143.000,148.000,"Their voices surrounded me, muffled, distant like in a bad dream."],
+[148.000,155.000,"And then, I heard someone whispering in my ear: it was a very old crow, and she looked angry."],
+[155.000,162.000,"“What are you still doing there, you idiot? Fly, birdie, fly for your life.”"],
+[162.000,170.000,"So I did. I flew as fast as I could."],
+[170.000,175.000,"I could still hear them behind me, they were big birds, but fear makes you faster."],
+[175.000,186.000,"I flew until my wings ached, going in circles over the city, desperately trying to spot a place to hide, to find a way out in that ocean of concrete."],
+[186.000,192.000,"Finally, I landed in a dark little alleyway, exhausted."],
+[192.000,198.000,"It smelled like garbage, but at least it was quiet and I was alone."]
+], 
+track_22:[
+  [7.000,10.000,"How long I stood there for, I do not know."],
+[10.000,15.000,"This was so different from everything I had imagined."],
+[15.000,26.000,"I remembered other travellers telling tales about London. Bright colourful tales of a grand wealthy city full of possibilities, full of travellers like me."],
+[26.000,31.000,"They had made it sound so exciting, so dreamy, so welcoming."],
+[31.000,39.000,"Not this cold, loud, busy place where I clearly didn’t belong."],
+[39.000,48.000,"I looked at the birds around me. The crows, the blackbirds, the pigeons, the magpies… they were at home here, in a world of black and white."],
+[48.000,52.000,"My green feathers made me feel so alien, I could feel everyone looking at me."],
+[52.000,61.000,"The shame made my heart race: I felt so scruffy after the flight, if only I could find a place to wash?"],
+[61.000,68.000,"But that big wide river looked so wild, so grey, it was as terrifying as the rest."],
+[68.000,71.000,"For a moment, I thought of turning back."],
+[71.000,78.000,"I toyed with that idea. Wouldn’t it be nice to see the sun again, to see my mom, my friends?"],
+[78.000,82.000,"But I didn’t have the strength. Not yet."],
+[82.000,92.000,"And what would I tell them? I would have to make up a story, a good story, maybe that’s what the other travellers did too."],
+[92.000,104.000,"The grey pavement lay bare in front of me. Not a blade of grass. Not a leaf. Not a sign of life. Only waste left by the humans."],
+[104.000,114.000,"I picked up a plastic straw. It felt strange in my beak. Strange, but strangely familiar."],
+[114.000,116.000,"I examined it closely."],
+[116.000,120.000,"With a bit of imagination, it could look like a twig."],
+[120.000,129.000,"With a bit of imagination, maybe one could use it to build a nest."],
+[129.000,135.000,"Not the kind of nest I had imagined, of course, probably a bit smaller."],
+[135.000,140.000,"But with a bit of imagination, and with time, maybe one day that nest could look like home."]
+], 
+track_23:[[0.000,13.000,"Sand martins don’t do well alone. We are sociable creatures, it’s in our blood."],
+[13.000,22.000,"This was probably the first time in my entire life I had been truly alone, and it terrified me."],
+[22.000,31.000,"I looked at the grey sky, and that when I spotted another martin flying in the distance."],
+[31.000,40.000,"I called to him, but he didn’t hear me. So I took off and tried to catch up with him in the air."],
+[40.000,43.000,"“Excuse me”, I gasped."],
+[43.000,43.000,"He turned toward me."],
+[43.000,52.000,"“Hi”, he said. “You’re new here, aren’t you?”"],
+[52.000,59.000,"“How do you know?” I asked. He didn’t reply. He smiled. It was the first smile I’d got since I arrived."],
+[59.000,63.000,"“Where are you going?” I asked."],
+[63.000,69.000,"“Hounslow”, he said. “In the suburbs. Did you really expect to find a decent place to stay in central London?” He laughed."],
+[69.000,79.000,"“Come on. I’ll show you.”"],
+[79.000,82.000,"We flew for half an hour, following the river."],
+[82.000,89.000,"He asked me lots of questions, about my journey, about my family, about home."],
+[89.000,94.000,"You can always trust another sand martin to make you feel comfortable and have good chat."],
+[94.000,98.000,"Then suddenly, he pointed at something below on the riverbed and we landed."],
+[98.000,103.000,"Ahead of me was the most terrifying nest I had ever seen."],
+[103.000,110.000,"A gigantic construction of a dozen towers carved on the sandy faces of the bank, flanked by countless tiny windows."],
+[110.000,120.000,"And coming in and out of those holes: sand martins. There were hundreds of them, flying around and chittering in a terrible cacophony."],
+[120.000,124.000,"After the loneliness of the last few weeks, I was in shock."],
+[124.000,128.000,"“What is this?” I asked my companion."],
+[128.000,132.000,"“Our community”, he said. “Do you like it?”"],
+[132.000,138.000,"I didn’t know what to answer. I had never seen so many birds living so close together."],
+[138.000,144.000,"“Is it safe?” Was my first thought. “What if there is a fire or something?”"],
+[144.000,158.000,"He shrugged. “Look, this is a migrants’ nest. Of course it’s different from what you had back home. Less spacious. Colder. But it’s a good nest. You’ll get used to it. You just need to dive in.”"],
+[158.000,166.000,"And he did. He flew inside one of the openings and disappeared."],
+[166.000,175.000,"I stood there, unsure about what to do. This was so different from anything I had imagined. How could this ever be home?"],
+[175.000,182.000,"Then all of a sudden, I heard the voice of Nunyati in my head."],
+[182.000,193.000,"“Home is an elusive concept, Mawusi. You never know where you’ll find it.”"],
+[193.000,200.000,"I looked at the giant nest. I could hear the sound of dozens of sand martins coming from within, chatting, laughing."],
+[200.000,206.000,"It was cold outside, it looked so much warmer inside."],
+[206.000,212.000,"So I closed my eyes. I took a deep breath. And I dove in."]]
   }
 
   // Remove previous cues to avoid duplicates when revisiting passages
@@ -753,7 +1099,11 @@ setup.hideCap = () => {
     door: "eat",
     reason: "fear",
     route: "safe",
-    others: "friendly"
+    others: "friendly", 
+    peril: "light", 
+    threat: "humans", 
+    trust: "food",
+    
 }>>
 
 <main class="landing flex-col-cen start">
@@ -823,9 +1173,9 @@ setup.hideCap = () => {
         <<else>>
             No content provided.
         <</if>>
-   
+   <<include "wallet">>
 </main>
-<<include "wallet">>
+
 <<include "navbuttonsb">>
 
 <<done>><<set $a to setup.chooseStoryAudio()>><</done>>
@@ -852,9 +1202,9 @@ setup.hideCap = () => {
         <<else>>
             No content provided.
         <</if>>
-   
+   <<include "wallet">>
 </main>
-<<include "wallet">>
+
 <<include "navbuttonsdir">>
 
 
@@ -879,9 +1229,9 @@ setup.hideCap = () => {
         <<else>>
             No content provided.
         <</if>>
-   
+   <<include "wallet">>
 </main>
-<<include "wallet">>
+
 <<include "navbuttonsdir">>
 
 
@@ -1676,7 +2026,7 @@ setup.hideCap = () => {
 :: 5_story [nobr]
 <<set $prevpass to "5_dir">>
 <<set $pass to "5_story">>
-<<set $nextpass to "11w_dir">>
+<<set $nextpass to "11_w_dir">>
 <<audio ":all" "stop">>
 
 
@@ -1766,7 +2116,7 @@ setup.hideCap = () => {
 :: 6_story [nobr]
 <<set $prevpass to "6_dir">>
 <<set $pass to "6_story">>
-<<set $nextpass to "11w_dir">>
+<<set $nextpass to "11_w_dir">>
 <<audio ":all" "stop">>
 
 
@@ -1978,7 +2328,7 @@ setup.hideCap = () => {
  
 
 
-<<timed 10s>>
+<<timed 8s>>
     <<append "#btnContainer">>
     <<button "I have found the book">>
             <<goto $nextpass>>
@@ -2253,7 +2603,7 @@ setup.hideCap = () => {
 :: 10a_story [nobr]
 <<set $prevpass to "10a_dir">>
 <<set $pass to "10a_story">>
-<<set $nextpass to "11s_dir">>
+<<set $nextpass to "11_s_dir">>
 <<audio ":all" "stop">>
 
 
@@ -2351,7 +2701,7 @@ setup.hideCap = () => {
 :: 10b_story [nobr]
 <<set $prevpass to "10b_dir">>
 <<set $pass to "10b_story">>
-<<set $nextpass to "11s_dir">>
+<<set $nextpass to "11_s_dir">>
 <<audio ":all" "stop">>
 
 
@@ -2393,21 +2743,21 @@ setup.hideCap = () => {
 <</timed>>
 
 
-:: 11w_dir [nobr]
+:: 11_w_dir [nobr]
 <<if $userchoices.door is "beach">>
   <<set $prevpass to "6_story">>
 <<else>>
     <<set $prevpass to "5_story">>
  <</if>>
 
-<<set $pass to "11w_dir">>
-<<set $nextpass to "11w_story">>
+<<set $pass to "11_w_dir">>
+<<set $nextpass to "11_w_story">>
 <<audio ":all" "stop">>
 
 <<include "_templateDir">>
 
 
-:: 11w_dir_content [nobr]
+:: 11_w_dir_content [nobr]
  <<timed 0.1s>>
     <<append "#msgMount">>
  <p>You would like a choice now, wouldn’t you?</p>
@@ -2445,21 +2795,21 @@ setup.hideCap = () => {
 <</timed>>
 
 
-:: 11s_dir [nobr]
+:: 11_s_dir [nobr]
 <<if $userchoices.route is "fast">>
   <<set $prevpass to "10b_story">>
 <<else>>
     <<set $prevpass to "10a_story">>
  <</if>>
 
-<<set $pass to "11s_dir">>
-<<set $nextpass to "11s_story">>
+<<set $pass to "11_s_dir">>
+<<set $nextpass to "11_s_story">>
 <<audio ":all" "stop">>
 
 <<include "_templateDir">>
 
 
-:: 11s_dir_content [nobr]
+:: 11_s_dir_content [nobr]
  <<timed 0.1s>>
     <<append "#msgMount">>
  <p>You would like a choice now, wouldn’t you?</p>
@@ -2497,17 +2847,17 @@ setup.hideCap = () => {
 <</timed>>
 
 
-:: 11w_story [nobr]
-<<set $prevpass to "11w_dir">>
-<<set $pass to "11w_story">>
-<<set $nextpass to "11w_choice">>
+:: 11_w_story [nobr]
+<<set $prevpass to "11_w_dir">>
+<<set $pass to "11_w_story">>
+<<set $nextpass to "11_w_choice">>
 <<audio ":all" "stop">>
 
 
 <<include "_templateStory">>
 
 
-:: 11w_story_content [nobr]
+:: 11_w_story_content [nobr]
  <<timed 0.1s>>
     <<append "#msgMount">>
  <p>Come on, little warbler.</p>
@@ -2541,17 +2891,17 @@ setup.hideCap = () => {
 <</timed>>
 
 
-:: 11s_story [nobr]
-<<set $prevpass to "11s_dir">>
-<<set $pass to "11s_story">>
-<<set $nextpass to "11s_choice">>
+:: 11_s_story [nobr]
+<<set $prevpass to "11_s_dir">>
+<<set $pass to "11_s_story">>
+<<set $nextpass to "11_s_choice">>
 <<audio ":all" "stop">>
 
 
 <<include "_templateStory">>
 
 
-:: 11s_story_content [nobr]
+:: 11_s_story_content [nobr]
  <<timed 0.1s>>
     <<append "#msgMount">>
  <p>CHow can a little sand martin fly across 1800km?</p>
@@ -2579,16 +2929,16 @@ setup.hideCap = () => {
 <</timed>>
 
 
-:: 11w_choice [nobr]
-<<set $prevpass to "11w_story">>
-<<set $pass to "11w_choice">>
-<<set $nextpass to "12w_dir">>
+:: 11_w_choice [nobr]
+<<set $prevpass to "11_w_story">>
+<<set $pass to "11_w_choice">>
+<<set $nextpass to "12_w_dir">>
 <<audio ":all" "stop">>
 
 <<include "_templateDir">>
 
 
-:: 11w_choice_content [nobr]
+:: 11_w_choice_content [nobr]
  <<timed 0.1s>>
     <<append "#msgMount">>
  <p>You have made it to Morocco, a stopover for many migrants.</p>
@@ -2606,7 +2956,7 @@ setup.hideCap = () => {
     <<append "#btnContainer">>
     <<button "Other birds are friendly">>
           <<set $userchoices.others to "friendly">>
-            <<goto "12w_dir">>
+            <<goto "12_w_dir">>
         <</button>>
     <</append>>
 <</timed>>
@@ -2615,22 +2965,22 @@ setup.hideCap = () => {
     <<append "#btnContainer">>
     <<button "Other birds are hostile">>
       <<set $userchoices.others to "hostile">>
-            <<goto "13w_dir">>
+            <<goto "13_w_dir">>
         <</button>>
     <</append>>
 <</timed>>
 
 
-:: 11s_choice [nobr]
-<<set $prevpass to "11s_story">>
-<<set $pass to "11s_choice">>
-<<set $nextpass to "12s_dir">>
+:: 11_s_choice [nobr]
+<<set $prevpass to "11_s_story">>
+<<set $pass to "11_s_choice">>
+<<set $nextpass to "12_s_dir">>
 <<audio ":all" "stop">>
 
 <<include "_templateDir">>
 
 
-:: 11s_choice_content [nobr]
+:: 11_s_choice_content [nobr]
  <<timed 0.1s>>
     <<append "#msgMount">>
  <p>Your flock has now reached Morocco, a stopover for many migrants.</p>
@@ -2648,7 +2998,7 @@ setup.hideCap = () => {
     <<append "#btnContainer">>
     <<button "Other birds are friendly">>
           <<set $userchoices.others to "friendly">>
-            <<goto "12s_dir">>
+            <<goto "12_s_dir">>
         <</button>>
     <</append>>
 <</timed>>
@@ -2657,22 +3007,22 @@ setup.hideCap = () => {
     <<append "#btnContainer">>
     <<button "Other birds are hostile">>
       <<set $userchoices.others to "hostile">>
-            <<goto "13s_dir">>
+            <<goto "13_s_dir">>
         <</button>>
     <</append>>
 <</timed>>
 
 
-:: 12w_dir [nobr]
-<<set $prevpass to "11w_choice">>
-<<set $pass to "12w_dir">>
-<<set $nextpass to "12w_story">>
+:: 12_w_dir [nobr]
+<<set $prevpass to "11_w_choice">>
+<<set $pass to "12_w_dir">>
+<<set $nextpass to "12_w_story">>
 <<audio ":all" "stop">>
 
 <<include "_templateDir">>
 
 
-:: 12w_dir_content [nobr]
+:: 12_w_dir_content [nobr]
  <<timed 0.1s>>
     <<append "#msgMount">>
  <p>Let’s find out, shall we?</p>
@@ -2709,17 +3059,17 @@ setup.hideCap = () => {
     <</append>>
 <</timed>>
 
-:: 12w_story [nobr]
-<<set $prevpass to "12w_dir">>
-<<set $pass to "12w_story">>
-<<set $nextpass to "14w_dir">>
+:: 12_w_story [nobr]
+<<set $prevpass to "12_w_dir">>
+<<set $pass to "12_w_story">>
+<<set $nextpass to "14_w_dir">>
 <<audio ":all" "stop">>
 
 
 <<include "_templateStory">>
 
 
-:: 12w_story_content [nobr]
+:: 12_w_story_content [nobr]
  <<timed 0.1s>>
     <<append "#msgMount">>
  <p>Morocco is a blessed oasis for travellers.</p>
@@ -2753,16 +3103,16 @@ setup.hideCap = () => {
     <</append>>
 <</timed>>
 
-:: 12s_dir [nobr]
-<<set $prevpass to "11s_choice">>
-<<set $pass to "12s_dir">>
-<<set $nextpass to "12s_story">>
+:: 12_s_dir [nobr]
+<<set $prevpass to "11_s_choice">>
+<<set $pass to "12_s_dir">>
+<<set $nextpass to "12_s_story">>
 <<audio ":all" "stop">>
 
 <<include "_templateDir">>
 
 
-:: 12s_dir_content [nobr]
+:: 12_s_dir_content [nobr]
  <<timed 0.1s>>
     <<append "#msgMount">>
  <p>Let’s find out, shall we?</p>
@@ -2796,17 +3146,17 @@ setup.hideCap = () => {
 <</timed>>
 
 
-:: 12s_story [nobr]
-<<set $prevpass to "12s_dir">>
-<<set $pass to "12s_story">>
-<<set $nextpass to "14s_dir">>
+:: 12_s_story [nobr]
+<<set $prevpass to "12_s_dir">>
+<<set $pass to "12_s_story">>
+<<set $nextpass to "14_s_dir">>
 <<audio ":all" "stop">>
 
 
 <<include "_templateStory">>
 
 
-:: 12s_story_content [nobr]
+:: 12_s_story_content [nobr]
  <<timed 0.1s>>
     <<append "#msgMount">>
  <p>Morocco is a blessed oasis for travellers.</p>
@@ -2842,16 +3192,16 @@ setup.hideCap = () => {
 
 
 
-:: 13w_dir [nobr]
-<<set $prevpass to "11w_choice">>
-<<set $pass to "13w_dir">>
-<<set $nextpass to "13w_story">>
+:: 13_w_dir [nobr]
+<<set $prevpass to "11_w_choice">>
+<<set $pass to "13_w_dir">>
+<<set $nextpass to "13_w_story">>
 <<audio ":all" "stop">>
 
 <<include "_templateDir">>
 
 
-:: 13w_dir_content [nobr]
+:: 13_w_dir_content [nobr]
  <<timed 0.1s>>
     <<append "#msgMount">>
  <p>Let’s see if we can find you some friends.</p>
@@ -2883,17 +3233,17 @@ setup.hideCap = () => {
     <</append>>
 <</timed>>
 
-:: 13w_story [nobr]
-<<set $prevpass to "13w_dir">>
-<<set $pass to "13w_story">>
-<<set $nextpass to "14w_dir">>
+:: 13_w_story [nobr]
+<<set $prevpass to "13_w_dir">>
+<<set $pass to "13_w_story">>
+<<set $nextpass to "14_w_dir">>
 <<audio ":all" "stop">>
 
 
 <<include "_templateStory">>
 
 
-:: 13w_story_content [nobr]
+:: 13_w_story_content [nobr]
  <<timed 0.1s>>
     <<append "#msgMount">>
  <p>Morocco is a blessed oasis for travellers.</p>
@@ -2928,16 +3278,16 @@ setup.hideCap = () => {
 <</timed>>
 
 
-:: 13s_dir [nobr]
-<<set $prevpass to "11s_choice">>
-<<set $pass to "13s_dir">>
-<<set $nextpass to "13s_story">>
+:: 13_s_dir [nobr]
+<<set $prevpass to "11_s_choice">>
+<<set $pass to "13_s_dir">>
+<<set $nextpass to "13_s_story">>
 <<audio ":all" "stop">>
 
 <<include "_templateDir">>
 
 
-:: 13s_dir_content [nobr]
+:: 13_s_dir_content [nobr]
  <<timed 0.1s>>
     <<append "#msgMount">>
  <p>Let’s see if we can find you some friends.</p>
@@ -2971,17 +3321,17 @@ setup.hideCap = () => {
 <</timed>>
 
 
-:: 13s_story [nobr]
-<<set $prevpass to "13s_dir">>
-<<set $pass to "13s_story">>
-<<set $nextpass to "14s_dir">>
+:: 13_s_story [nobr]
+<<set $prevpass to "13_s_dir">>
+<<set $pass to "13_s_story">>
+<<set $nextpass to "14_s_dir">>
 <<audio ":all" "stop">>
 
 
 <<include "_templateStory">>
 
 
-:: 13s_story_content [nobr]
+:: 13_s_story_content [nobr]
  <<timed 0.1s>>
     <<append "#msgMount">>
  <p>Morocco is a blessed oasis for travellers.</p>
@@ -3014,3 +3364,1583 @@ setup.hideCap = () => {
         <</button>>
     <</append>>
 <</timed>>
+
+
+:: 14_w_dir [nobr]
+<<if $userchoices.others is "hostile">>
+  <<set $prevpass to "12_w_story">>
+<<else>>
+    <<set $prevpass to "13_w_story">>
+ <</if>>
+
+<<set $pass to "14_w_dir">>
+<<set $nextpass to "14_w_story">>
+<<audio ":all" "stop">>
+
+<<include "_templateDir">>
+
+
+:: 14_w_dir_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+ <p>Migration is a lonely business.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+    <<append "#msgMount">>
+      <p>But sometimes, one chance encounter can change everything.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 4s>>
+    <<append "#msgMount">>
+      <p>Look for the following sign and you will find Our Bird Friends.</p>
+ <</append>>
+<</timed>>
+
+​ <<timed 6s>>
+    <<append "#msgMount">>
+<div class="img-container-symbol">
+<img src="assets/img/14-banjoko.png"/>
+</div>
+ <</append>>
+<</timed>>
+ 
+
+
+<<timed 7s>>
+    <<append "#btnContainer">>
+    <<button "I have found the book">>
+            <<goto $nextpass>>
+        <</button>>
+    <</append>>
+<</timed>>
+
+:: 14_w_story [nobr]
+<<set $prevpass to "14_w_dir">>
+<<set $pass to "14_w_story">>
+<<set $nextpass to "14_w_choice">>
+<<audio ":all" "stop">>
+
+
+<<include "_templateStory">>
+
+
+:: 14_w_story_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+ <p>Spring is calling...</p>
+ <</append>>
+<</timed>>
+
+<<timed 2s>>
+    <<append "#msgMount">>
+ <p>Let’s explore Europe.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 4s>>
+  <<replace "#playBtnContainer">>
+
+    <<include "playbutton">>
+  <<replace "#captionMount">>
+    <<include "captionsbutton">>
+    <</replace>>
+ <</replace>>
+
+<</timed>>
+
+
+<<timed 135s>>
+    <<append "#btnContainer">>
+    <<button "Let's move on">>
+            <<goto $nextpass>>
+        <</button>>
+    <</append>>
+<</timed>>
+
+
+:: 14_w_choice [nobr]
+<<set $prevpass to "14_w_story">>
+<<set $pass to "14_w_choice">>
+<<set $nextpass to "">>
+<<audio ":all" "stop">>
+
+<<include "_templateDir">>
+
+
+:: 14_w_choice_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+ <p>Feeling invincible is dangerous.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+    <<append "#msgMount">>
+      <p>Your journey is still full of perils.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 4s>>
+    <<append "#msgMount">>
+      <p>What could be the biggest threat for you?</p>
+ <</append>>
+<</timed>>
+
+
+<<timed 6s>>
+    <<append "#btnContainer">>
+    <<button "Light">>
+          <<set $userchoices.peril to "friendly">>
+            <<goto "15_dir">>
+        <</button>>
+    <</append>>
+<</timed>>
+
+<<timed 7s>>
+    <<append "#btnContainer">>
+    <<button "Fire">>
+      <<set $userchoices.peril to "fire">>
+            <<goto "16_dir">>
+        <</button>>
+    <</append>>
+<</timed>>
+
+
+:: 14_s_dir [nobr]
+<<if $userchoices.others is "hostile">>
+  <<set $prevpass to "12_s_story">>
+<<else>>
+    <<set $prevpass to "13_s_story">>
+ <</if>>
+
+<<set $pass to "14_s_dir">>
+<<set $nextpass to "14_s_story">>
+<<audio ":all" "stop">>
+
+<<include "_templateDir">>
+
+
+:: 14_s_dir_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+ <p>Migration is a lonely business.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+    <<append "#msgMount">>
+      <p>But sometimes, one chance encounter can change everything.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 4s>>
+    <<append "#msgMount">>
+      <p>Look for the following sign and you will find Our Bird Friends</p>
+ <</append>>
+<</timed>>
+
+​ <<timed 6s>>
+    <<append "#msgMount">>
+<div class="img-container-symbol">
+<img src="assets/img/14-banjoko.png"/>
+</div>
+ <</append>>
+<</timed>>
+ 
+
+
+<<timed 7s>>
+    <<append "#btnContainer">>
+    <<button "I have found the book">>
+            <<goto $nextpass>>
+        <</button>>
+    <</append>>
+<</timed>>
+
+:: 14_s_story [nobr]
+<<set $prevpass to "14_s_dir">>
+<<set $pass to "14_s_story">>
+<<set $nextpass to "14_s_choice">>
+<<audio ":all" "stop">>
+
+
+<<include "_templateStory">>
+
+
+:: 14_s_story_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+ <p>Spring is calling...</p>
+ <</append>>
+<</timed>>
+
+<<timed 2s>>
+    <<append "#msgMount">>
+ <p>Let’s explore Europe.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 4s>>
+  <<replace "#playBtnContainer">>
+
+    <<include "playbutton">>
+  <<replace "#captionMount">>
+    <<include "captionsbutton">>
+    <</replace>>
+ <</replace>>
+
+<</timed>>
+
+
+<<timed 135s>>
+    <<append "#btnContainer">>
+    <<button "Let's move on">>
+            <<goto $nextpass>>
+        <</button>>
+    <</append>>
+<</timed>>
+
+
+:: 14_s_choice [nobr]
+<<set $prevpass to "14_s_story">>
+<<set $pass to "14_s_choice">>
+<<set $nextpass to "17_dir">>
+<<audio ":all" "stop">>
+
+<<include "_templateDir">>
+
+
+:: 14_s_choice_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+ <p>Feeling invincible is dangerous.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+    <<append "#msgMount">>
+      <p>Your journey is still full of perils.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 4s>>
+    <<append "#msgMount">>
+      <p>What could be the biggest threat for you?</p>
+ <</append>>
+<</timed>>
+
+
+<<timed 6s>>
+    <<append "#btnContainer">>
+    <<button "Humans">>
+          <<set $userchoices.peril to "humans">>
+            <<goto "17_dir">>
+        <</button>>
+    <</append>>
+<</timed>>
+
+<<timed 7s>>
+    <<append "#btnContainer">>
+    <<button "Amimals">>
+      <<set $userchoices.peril to "animals">>
+            <<goto "18_dir">>
+        <</button>>
+    <</append>>
+<</timed>>
+
+
+:: 15_dir [nobr]
+<<set $prevpass to "14_w_choice">>
+<<set $pass to "15_dir">>
+<<set $nextpass to "15_story">>
+<<audio ":all" "stop">>
+
+<<include "_templateDir">>
+
+
+:: 15_dir_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+ <p>Could it be true?</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+    <<append "#msgMount">>
+      <p>There is only one way to find out.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 4s>>
+    <<append "#msgMount">>
+      <p>Follow the light. A book by Rebecca West will tell you more.</p>
+ <</append>>
+<</timed>>
+
+​ <<timed 6s>>
+    <<append "#msgMount">>
+<div class="img-container-symbol">
+<img src="assets/img/15-bulb.png"/>
+</div>
+ <</append>>
+<</timed>>
+ 
+
+
+<<timed 7s>>
+    <<append "#btnContainer">>
+    <<button "I have found the book">>
+            <<goto $nextpass>>
+        <</button>>
+    <</append>>
+<</timed>>
+
+
+:: 16_dir [nobr]
+<<set $prevpass to "14_w_choice">>
+<<set $pass to "16_dir">>
+<<set $nextpass to "16_story">>
+<<audio ":all" "stop">>
+
+<<include "_templateDir">>
+
+
+:: 16_dir_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+ <p>Could it be true?</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+    <<append "#msgMount">>
+      <p>There is only one way to find out.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 4s>>
+    <<append "#msgMount">>
+      <p>Follow the flames. The answer is in a red book with a faded spine and silhouettes of a black forest.</p>
+ <</append>>
+<</timed>>
+
+​ <<timed 6s>>
+    <<append "#msgMount">>
+<div class="img-container-symbol">
+<img src="assets/img/16-fire.png"/>
+</div>
+ <</append>>
+<</timed>>
+ 
+
+
+<<timed 7s>>
+    <<append "#btnContainer">>
+    <<button "I have found the book">>
+            <<goto $nextpass>>
+        <</button>>
+    <</append>>
+<</timed>>
+
+
+:: 17_dir [nobr]
+<<set $prevpass to "14_s_choice">>
+<<set $pass to "17_dir">>
+<<set $nextpass to "17_story">>
+<<audio ":all" "stop">>
+
+<<include "_templateDir">>
+
+
+:: 17_dir_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+ <p>Humans. The greatest threat of all.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+    <<append "#msgMount">>
+      <p>Can you find their shadows in the library?</p>
+ <</append>>
+<</timed>>
+
+ <<timed 4s>>
+    <<append "#msgMount">>
+      <p>The key to your survival is in The Story of Bird Life.</p>
+ <</append>>
+<</timed>>
+
+​ <<timed 6s>>
+    <<append "#msgMount">>
+<div class="img-container-symbol">
+<img src="assets/img/17-calais.png"/>
+</div>
+ <</append>>
+<</timed>>
+ 
+
+
+<<timed 7s>>
+    <<append "#btnContainer">>
+    <<button "I have found the book">>
+            <<goto $nextpass>>
+        <</button>>
+    <</append>>
+<</timed>>
+
+
+:: 18_dir [nobr]
+<<set $prevpass to "14_s_choice">>
+<<set $pass to "18_dir">>
+<<set $nextpass to "18_story">>
+<<audio ":all" "stop">>
+
+<<include "_templateDir">>
+
+
+:: 18_dir_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+ <p>Europe might feel safe, but predators don’t rest.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+    <<append "#msgMount">>
+      <p>An old enemy is waiting for you.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 4s>>
+    <<append "#msgMount">>
+      <p>Stanley’s History of Birds might show you how to survive.</p>
+ <</append>>
+<</timed>>
+
+​ <<timed 6s>>
+    <<append "#msgMount">>
+<div class="img-container-symbol">
+<img src="assets/img/18-falcon.png"/>
+</div>
+ <</append>>
+<</timed>>
+ 
+
+
+<<timed 7s>>
+    <<append "#btnContainer">>
+    <<button "I have found the book">>
+            <<goto $nextpass>>
+        <</button>>
+    <</append>>
+<</timed>>
+
+
+:: 15_story [nobr]
+<<set $prevpass to "15_dir">>
+<<set $pass to "15_story">>
+<<set $nextpass to "15_choice">>
+<<audio ":all" "stop">>
+
+
+<<include "_templateStory">>
+
+
+:: 15_story_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+
+ <p>Follow the stars.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+    <<append "#msgMount">>
+
+ <p>They are the only lights you can trust...</p>
+ <</append>>
+<</timed>>
+
+ <<timed 4s>>
+  <<replace "#playBtnContainer">>
+
+    <<include "playbutton">>
+  <<replace "#captionMount">>
+    <<include "captionsbutton">>
+    <</replace>>
+ <</replace>>
+
+<</timed>>
+
+
+<<timed 165s>>
+    <<append "#btnContainer">>
+    <<button "Try to go on">>
+            <<goto $nextpass>>
+        <</button>>
+    <</append>>
+<</timed>>
+
+
+:: 16_story [nobr]
+<<set $prevpass to "16_dir">>
+<<set $pass to "16_story">>
+<<set $nextpass to "16_choice">>
+<<audio ":all" "stop">>
+
+
+<<include "_templateStory">>
+
+
+:: 16_story_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+
+ <p>These days, wildfires are everywhere.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+    <<append "#msgMount">>
+
+ <p>The key is to find a way to survive...</p>
+ <</append>>
+<</timed>>
+
+ <<timed 4s>>
+  <<replace "#playBtnContainer">>
+
+    <<include "playbutton">>
+  <<replace "#captionMount">>
+    <<include "captionsbutton">>
+    <</replace>>
+ <</replace>>
+
+<</timed>>
+
+
+<<timed 165s>>
+    <<append "#btnContainer">>
+    <<button "Try to go on">>
+            <<goto $nextpass>>
+        <</button>>
+    <</append>>
+<</timed>>
+
+:: 17_story [nobr]
+<<set $prevpass to "17_dir">>
+<<set $pass to "17_story">>
+<<set $nextpass to "17_choice">>
+<<audio ":all" "stop">>
+
+
+<<include "_templateStory">>
+
+
+:: 17_story_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+
+ <p>You are getting close to the end of your quest.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+    <<append "#msgMount">>
+
+ <p>But don’t lower your guard...</p>
+ <</append>>
+<</timed>>
+
+ <<timed 4s>>
+  <<replace "#playBtnContainer">>
+
+    <<include "playbutton">>
+  <<replace "#captionMount">>
+    <<include "captionsbutton">>
+    <</replace>>
+ <</replace>>
+
+<</timed>>
+
+
+<<timed 165s>>
+    <<append "#btnContainer">>
+    <<button "Try to go on">>
+            <<goto $nextpass>>
+        <</button>>
+    <</append>>
+<</timed>>
+
+
+:: 18_story [nobr]
+<<set $prevpass to "18_dir">>
+<<set $pass to "18_story">>
+<<set $nextpass to "18_choice">>
+<<audio ":all" "stop">>
+
+
+<<include "_templateStory">>
+
+
+:: 18_story_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+
+ <p>Be careful.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+    <<append "#msgMount">>
+
+ <p>A full moon can turn you into prey...</p>
+ <</append>>
+<</timed>>
+
+ <<timed 4s>>
+  <<replace "#playBtnContainer">>
+
+    <<include "playbutton">>
+  <<replace "#captionMount">>
+    <<include "captionsbutton">>
+    <</replace>>
+ <</replace>>
+
+<</timed>>
+
+
+<<timed 165s>>
+    <<append "#btnContainer">>
+    <<button "Try to go on">>
+            <<goto $nextpass>>
+        <</button>>
+    <</append>>
+<</timed>>
+
+
+
+:: 19_w_dir [nobr]
+<<if $userchoices.peril is "fire">>
+  <<set $prevpass to "16_story">>
+<<else>>
+    <<set $prevpass to "15_story">>
+ <</if>>
+
+<<set $pass to "19_w_dir">>
+<<set $nextpass to "19_w_story">>
+<<audio ":all" "stop">>
+
+<<include "_templateDir">>
+
+
+:: 19_w_dir_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+ <p>Can you find the strength to make it to the UK?</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+    <<append "#msgMount">>
+      <p>Explore the library and see if you can find London’s Birds.</p>
+ <</append>>
+<</timed>>
+
+​ <<timed 4s>>
+    <<append "#msgMount">>
+<div class="img-container-symbol">
+<img src="assets/img/19-london.png"/>
+</div>
+ <</append>>
+<</timed>>
+ 
+
+
+<<timed 6s>>
+    <<append "#btnContainer">>
+    <<button "I have found the book">>
+            <<goto $nextpass>>
+        <</button>>
+    <</append>>
+<</timed>>
+
+:: 19_w_story [nobr]
+<<set $prevpass to "19_w_dir">>
+<<set $pass to "19_w_story">>
+<<set $nextpass to "19_w_choice">>
+<<audio ":all" "stop">>
+
+
+<<include "_templateStory">>
+
+
+:: 19_w_story_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+ <p>London is calling, little willow warbler.</p>
+ <</append>>
+<</timed>>
+
+<<timed 2s>>
+    <<append "#msgMount">>
+ <p>But will it meet your expectations?</p>
+ <</append>>
+<</timed>>
+
+ <<timed 4s>>
+  <<replace "#playBtnContainer">>
+
+    <<include "playbutton">>
+  <<replace "#captionMount">>
+    <<include "captionsbutton">>
+    <</replace>>
+ <</replace>>
+
+<</timed>>
+
+
+<<timed 135s>>
+    <<append "#btnContainer">>
+    <<button "Let's find it">>
+            <<goto $nextpass>>
+        <</button>>
+    <</append>>
+<</timed>>
+
+
+:: 19_w_choice [nobr]
+<<set $prevpass to "19_w_story">>
+<<set $pass to "19_w_choice">>
+<<set $nextpass to "">>
+<<audio ":all" "stop">>
+
+<<include "_templateDir">>
+
+
+:: 19_w_choice_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+ <p>Willow warblers are solo travellers.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+    <<append "#msgMount">>
+      <p>But sometimes, it’s good to listen to your elders.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 4s>>
+    <<append "#msgMount">>
+      <p>They have come here before, they know the best way to survive.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 6s>>
+    <<append "#msgMount">>
+      <p>Whose advice will you trust this time?</p>
+ <</append>>
+<</timed>>
+
+
+<<timed 8s>>
+    <<append "#btnContainer">>
+    <<button "Your mother">>
+          <<set $userchoices.trust to "food">>
+            <<goto "20_w_dir">>
+        <</button>>
+    <</append>>
+<</timed>>
+
+<<timed 7s>>
+    <<append "#btnContainer">>
+    <<button "Nunyati">>
+      <<set $userchoices.trust to "friends">>
+            <<goto "21_w_dir">>
+        <</button>>
+    <</append>>
+<</timed>>
+
+
+:: 19_s_dir [nobr]
+<<if $userchoices.threat is "animals">>
+  <<set $prevpass to "18_story">>
+<<else>>
+    <<set $prevpass to "17_story">>
+ <</if>>
+
+<<set $pass to "19_s_dir">>
+<<set $nextpass to "19_s_story">>
+<<audio ":all" "stop">>
+
+<<include "_templateDir">>
+
+
+:: 19_s_dir_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+ <p>Can you find the strength to make it to the UK?</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+    <<append "#msgMount">>
+      <p>Explore the library and see if you can find London’s Birds.</p>
+ <</append>>
+<</timed>>
+
+​ <<timed 4s>>
+    <<append "#msgMount">>
+<div class="img-container-symbol">
+<img src="assets/img/19-london2.png"/>
+</div>
+ <</append>>
+<</timed>>
+ 
+
+
+<<timed 6s>>
+    <<append "#btnContainer">>
+    <<button "I have found the book">>
+            <<goto $nextpass>>
+        <</button>>
+    <</append>>
+<</timed>>
+
+:: 19_s_story [nobr]
+<<set $prevpass to "19_s_dir">>
+<<set $pass to "19_s_story">>
+<<set $nextpass to "19_s_choice">>
+<<audio ":all" "stop">>
+
+
+<<include "_templateStory">>
+
+
+:: 19_s_story_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+ <p>London is calling, little sand martin.</p>
+ <</append>>
+<</timed>>
+
+<<timed 2s>>
+    <<append "#msgMount">>
+ <p>But will it meet your expectations?</p>
+ <</append>>
+<</timed>>
+
+ <<timed 4s>>
+  <<replace "#playBtnContainer">>
+
+    <<include "playbutton">>
+  <<replace "#captionMount">>
+    <<include "captionsbutton">>
+    <</replace>>
+ <</replace>>
+
+<</timed>>
+
+
+<<timed 135s>>
+    <<append "#btnContainer">>
+    <<button "Let's find it">>
+            <<goto $nextpass>>
+        <</button>>
+    <</append>>
+<</timed>>
+
+
+:: 19_s_choice [nobr]
+<<set $prevpass to "19_s_story">>
+<<set $pass to "19_s_choice">>
+<<set $nextpass to "">>
+<<audio ":all" "stop">>
+
+<<include "_templateDir">>
+
+
+:: 19_s_choice_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+ <p>Sand martins would not survive on their own.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+    <<append "#msgMount">>
+      <p>They follow the lead of older migrants.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 4s>>
+    <<append "#msgMount">>
+      <p>Whose advice will you trust this time?</p>
+ <</append>>
+<</timed>>
+
+
+
+<<timed 8s>>
+    <<append "#btnContainer">>
+    <<button "Your mother">>
+          <<set $userchoices.trust to "food">>
+            <<goto "20_s_dir">>
+        <</button>>
+    <</append>>
+<</timed>>
+
+<<timed 7s>>
+    <<append "#btnContainer">>
+    <<button "Nunyati">>
+      <<set $userchoices.trust to "friends">>
+            <<goto "21_s_dir">>
+        <</button>>
+    <</append>>
+<</timed>>
+
+
+:: 20_w_dir [nobr]
+<<set $prevpass to "19_w_choice">>
+<<set $pass to "20_w_dir">>
+<<set $nextpass to "20_w_story">>
+<<audio ":all" "stop">>
+
+<<include "_templateDir">>
+
+
+:: 20_w_dir_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+ <p>Eat, my darling.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+    <<append "#msgMount">>
+      <p>That’s the best way to get you back to shape.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 4s>>
+    <<append "#msgMount">>
+      <p>Look for this symbol. Birds of Great Britain will tell you all about local food and how to enjoy it.</p>
+ <</append>>
+<</timed>>
+
+​ <<timed 6s>>
+    <<append "#msgMount">>
+<div class="img-container-symbol">
+<img src="assets/img/20-birdeat.png"/>
+</div>
+ <</append>>
+<</timed>>
+ 
+
+
+<<timed 8s>>
+    <<append "#btnContainer">>
+    <<button "I have found the book">>
+            <<goto $nextpass>>
+        <</button>>
+    <</append>>
+<</timed>>
+
+:: 20_w_story [nobr]
+<<set $prevpass to "20_w_dir">>
+<<set $pass to "20_w_story">>
+<<set $nextpass to "22_food_dir">>
+<<audio ":all" "stop">>
+
+
+<<include "_templateStory">>
+
+
+:: 20_w_story_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+
+ <p>London has plenty of local delicacies.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+    <<append "#msgMount">>
+ <p>But how to enjoy them is key.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 4s>>
+  <<replace "#playBtnContainer">>
+
+    <<include "playbutton">>
+  <<replace "#captionMount">>
+    <<include "captionsbutton">>
+    <</replace>>
+ <</replace>>
+
+<</timed>>
+
+
+<<timed 140s>>
+    <<append "#btnContainer">>
+    <<button "Can this be home?">>
+            <<goto $nextpass>>
+        <</button>>
+    <</append>>
+<</timed>>
+
+
+
+
+
+:: 21_w_dir [nobr]
+<<set $prevpass to "19_w_choice">>
+<<set $pass to "21_w_dir">>
+<<set $nextpass to "21_w_story">>
+<<audio ":all" "stop">>
+
+<<include "_templateDir">>
+
+
+:: 21_w_dir_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+ <p>Nunyati always said we are stronger together.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+    <<append "#msgMount">>
+      <p>A new gang is waiting for you. </p>
+ <</append>>
+<</timed>>
+
+ <<timed 4s>>
+    <<append "#msgMount">>
+      <p>But Linda Gardiner can tell you, true friends are a rare thing.</p>
+ <</append>>
+<</timed>>
+
+​ <<timed 6s>>
+    <<append "#msgMount">>
+<div class="img-container-symbol">
+<img src="assets/img/21-pigeondemo.png"/>
+</div>
+ <</append>>
+<</timed>>
+ 
+
+
+<<timed 8s>>
+    <<append "#btnContainer">>
+    <<button "I have found the book">>
+            <<goto $nextpass>>
+        <</button>>
+    <</append>>
+<</timed>>
+
+:: 21_w_story [nobr]
+<<set $prevpass to "21_w_dir">>
+<<set $pass to "21_w_story">>
+<<set $nextpass to "22_fri_dir">>
+<<audio ":all" "stop">>
+
+
+<<include "_templateStory">>
+
+
+:: 21_w_story_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+
+ <p>It’s time to make friends...</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+  <<replace "#playBtnContainer">>
+
+    <<include "playbutton">>
+  <<replace "#captionMount">>
+    <<include "captionsbutton">>
+    <</replace>>
+ <</replace>>
+
+<</timed>>
+
+
+<<timed 140s>>
+    <<append "#btnContainer">>
+    <<button "Can this be home?">>
+            <<goto $nextpass>>
+        <</button>>
+    <</append>>
+<</timed>>
+
+
+:: 20_s_dir [nobr]
+<<set $prevpass to "19_s_choice">>
+<<set $pass to "20_s_dir">>
+<<set $nextpass to "20_s_story">>
+<<audio ":all" "stop">>
+
+<<include "_templateDir">>
+
+
+:: 20_s_dir_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+ <p>Eat, my darling.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+    <<append "#msgMount">>
+      <p>That’s the best way to get you back to shape.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 4s>>
+    <<append "#msgMount">>
+      <p>Look for this symbol. Birds of Great Britain will tell you all about local food and how to enjoy it.</p>
+ <</append>>
+<</timed>>
+
+​ <<timed 6s>>
+    <<append "#msgMount">>
+<div class="img-container-symbol">
+<img src="assets/img/20-birdeat.png"/>
+</div>
+ <</append>>
+<</timed>>
+ 
+
+
+<<timed 8s>>
+    <<append "#btnContainer">>
+    <<button "I have found the book">>
+            <<goto $nextpass>>
+        <</button>>
+    <</append>>
+<</timed>>
+
+:: 20_s_story [nobr]
+<<set $prevpass to "20_s_dir">>
+<<set $pass to "20_s_story">>
+<<set $nextpass to "23_food_dir">>
+<<audio ":all" "stop">>
+
+
+<<include "_templateStory">>
+
+
+:: 20_s_story_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+
+ <p>London has plenty of local delicacies.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+    <<append "#msgMount">>
+ <p>But how to enjoy them is key.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 4s>>
+  <<replace "#playBtnContainer">>
+
+    <<include "playbutton">>
+  <<replace "#captionMount">>
+    <<include "captionsbutton">>
+    <</replace>>
+ <</replace>>
+
+<</timed>>
+
+
+<<timed 140s>>
+    <<append "#btnContainer">>
+    <<button "Can this be home?">>
+            <<goto $nextpass>>
+        <</button>>
+    <</append>>
+<</timed>>
+
+
+:: 21_s_dir [nobr]
+<<set $prevpass to "19_s_choice">>
+<<set $pass to "21_s_dir">>
+<<set $nextpass to "21_s_story">>
+<<audio ":all" "stop">>
+
+<<include "_templateDir">>
+
+
+:: 21_s_dir_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+ <p>Nunyati always said we are stronger together.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+    <<append "#msgMount">>
+      <p>A new gang is waiting for you. </p>
+ <</append>>
+<</timed>>
+
+ <<timed 4s>>
+    <<append "#msgMount">>
+      <p>But Linda Gardiner can tell you, true friends are a rare thing.</p>
+ <</append>>
+<</timed>>
+
+​ <<timed 6s>>
+    <<append "#msgMount">>
+<div class="img-container-symbol">
+<img src="assets/img/21-pigeondemo.png"/>
+</div>
+ <</append>>
+<</timed>>
+ 
+
+
+<<timed 8s>>
+    <<append "#btnContainer">>
+    <<button "I have found the book">>
+            <<goto $nextpass>>
+        <</button>>
+    <</append>>
+<</timed>>
+
+:: 21_s_story [nobr]
+<<set $prevpass to "21_s_dir">>
+<<set $pass to "21_s_story">>
+<<set $nextpass to "">>
+<<audio ":all" "stop">>
+
+
+<<include "_templateStory">>
+
+
+:: 21_s_story_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+
+ <p>It’s time to make friends...</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+  <<replace "#playBtnContainer">>
+
+    <<include "playbutton">>
+  <<replace "#captionMount">>
+    <<include "captionsbutton">>
+    <</replace>>
+ <</replace>>
+
+<</timed>>
+
+
+<<timed 140s>>
+    <<append "#btnContainer">>
+    <<button "Can this be home?">>
+            <<goto $nextpass>>
+        <</button>>
+    <</append>>
+<</timed>>
+
+
+:: 22_food_dir [nobr]
+<<set $prevpass to "20_w_story">>
+<<set $pass to "22_food_dir">>
+<<set $nextpass to "22_story">>
+<<audio ":all" "stop">>
+
+<<include "_templateDir">>
+
+:: 22_food_dir_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+ <p>So food did not comfort you this time.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+    <<append "#msgMount">>
+      <p>But there are many ways to make a place feel like home.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 4s>>
+    <<append "#msgMount">>
+      <p>Could you find a good place to build a nest? The Romance of Bird Life may just be a few twigs away...</p>
+ <</append>>
+<</timed>>
+
+​ <<timed 6s>>
+    <<append "#msgMount">>
+<div class="img-container-symbol">
+<img src="assets/img/22-WWnest.png"/>
+</div>
+ <</append>>
+<</timed>>
+ 
+
+
+<<timed 8s>>
+    <<append "#btnContainer">>
+    <<button "I have found the book">>
+            <<goto $nextpass>>
+        <</button>>
+    <</append>>
+<</timed>>
+
+:: 22_fri_dir [nobr]
+<<set $prevpass to "21_w_story">>
+<<set $pass to "22_fri_dir">>
+<<set $nextpass to "22_story">>
+<<audio ":all" "stop">>
+
+<<include "_templateDir">>
+
+:: 22_fri_dir_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+ <p>So you didn’t make friends this time.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+    <<append "#msgMount">>
+      <p>But there are many ways to make a place feel like home.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 4s>>
+    <<append "#msgMount">>
+      <p>Could you find a good place to build a nest? The Romance of Bird Life may just be a few twigs away...</p>
+ <</append>>
+<</timed>>
+
+​ <<timed 6s>>
+    <<append "#msgMount">>
+<div class="img-container-symbol">
+<img src="assets/img/22-WWnest.png"/>
+</div>
+ <</append>>
+<</timed>>
+ 
+
+
+<<timed 8s>>
+    <<append "#btnContainer">>
+    <<button "I have found the book">>
+            <<goto $nextpass>>
+        <</button>>
+    <</append>>
+<</timed>>
+
+
+:: 22_story [nobr]
+<<if $userchoices.trust is "friends">>
+  <<set $prevpass to "22_fri_dir">>
+<<else>>
+    <<set $prevpass to "22_food_dir">>
+ <</if>>
+<<set $prevpass to "">>
+<<set $pass to "22_story">>
+<<set $nextpass to "credits">>
+<<audio ":all" "stop">>
+
+
+<<include "_templateStory">>
+
+
+:: 22_story_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+
+ <p>Creating a new home is hard.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+    <<append "#msgMount">>
+ <p>Sometimes, you need to start small...</p>
+ <</append>>
+<</timed>>
+
+ <<timed 4s>>
+  <<replace "#playBtnContainer">>
+
+    <<include "playbutton">>
+  <<replace "#captionMount">>
+    <<include "captionsbutton">>
+    <</replace>>
+ <</replace>>
+
+<</timed>>
+
+
+<<timed 140s>>
+    <<append "#btnContainer">>
+    <<button "The end. Unless...">>
+            <<goto $nextpass>>
+        <</button>>
+    <</append>>
+<</timed>>
+
+:: 23_food_dir [nobr]
+<<set $prevpass to "20_s_story">>
+<<set $pass to "23_food_dir">>
+<<set $nextpass to "23_story">>
+<<audio ":all" "stop">>
+
+<<include "_templateDir">>
+
+:: 23_food_dir_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+ <p>So food did not comfort you this time.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+    <<append "#msgMount">>
+      <p>But there are many ways to make a place feel like home.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 4s>>
+    <<append "#msgMount">>
+      <p>Should we find somewhere relaxing to take a break? The ring will show you the Sanctuaries for Birds.</p>
+ <</append>>
+<</timed>>
+
+​ <<timed 6s>>
+    <<append "#msgMount">>
+<div class="img-container-symbol">
+<img src="assets/img/23-SMhome.png"/>
+</div>
+ <</append>>
+<</timed>>
+ 
+
+
+<<timed 8s>>
+    <<append "#btnContainer">>
+    <<button "I have found the book">>
+            <<goto $nextpass>>
+        <</button>>
+    <</append>>
+<</timed>>
+
+:: 23_fri_dir [nobr]
+<<set $prevpass to "21_s_story">>
+<<set $pass to "23_fri_dir">>
+<<set $nextpass to "23_story">>
+<<audio ":all" "stop">>
+
+<<include "_templateDir">>
+
+:: 23_fri_dir_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+ <p>You’ve had a long day, I think it’s time to rest.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+    <<append "#msgMount">>
+      <p>Should we find somewhere relaxing to take a break? The ring will show you the Sanctuaries for Birds.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 4s>>
+    <<append "#msgMount">>
+      <p>Could you find a good place to build a nest? The Romance of Bird Life may just be a few twigs away...</p>
+ <</append>>
+<</timed>>
+
+​ <<timed 6s>>
+    <<append "#msgMount">>
+<div class="img-container-symbol">
+<img src="assets/img/23-SMhome.png"/>
+</div>
+ <</append>>
+<</timed>>
+ 
+
+
+<<timed 8s>>
+    <<append "#btnContainer">>
+    <<button "I have found the book">>
+            <<goto $nextpass>>
+        <</button>>
+    <</append>>
+<</timed>>
+
+:: 23_story [nobr]
+<<if $userchoices.trust is "friends">>
+  <<set $prevpass to "23_fri_dir">>
+<<else>>
+    <<set $prevpass to "23_food_dir">>
+ <</if>>
+<<set $pass to "23_story">>
+<<set $nextpass to "credits">>
+<<audio ":all" "stop">>
+
+
+<<include "_templateStory">>
+
+
+:: 23_story_content [nobr]
+ <<timed 0.1s>>
+    <<append "#msgMount">>
+
+ <p>Home is an elusive concept.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 2s>>
+    <<append "#msgMount">>
+ <p>You never know where you’ll find it.</p>
+ <</append>>
+<</timed>>
+
+ <<timed 4s>>
+  <<replace "#playBtnContainer">>
+
+    <<include "playbutton">>
+  <<replace "#captionMount">>
+    <<include "captionsbutton">>
+    <</replace>>
+ <</replace>>
+
+<</timed>>
+
+
+<<timed 140s>>
+    <<append "#btnContainer">>
+    <<button "The end. Unless...">>
+            <<goto $nextpass>>
+        <</button>>
+    <</append>>
+<</timed>>
+
+:: credits [nobr]
+
+CREDITS
+
+<<include "wallet">>
+<<include "navbuttonsb">>
