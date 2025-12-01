@@ -5,14 +5,13 @@
 :root {  
 --grey: #dcd7d8;
 --greeny: #5abf91;
---purple: #9b80b4;
 --indigo: #321068;
 --white: #ffffff;
 --offblack: #000000;
---yellow: #d8b966;
+--purple: #7d75a3;
 --color1: var(--indigo);
 --color2: var(--purple);
---color2: var(--yellow);
+--color3: var(--purple);
 --color4: var(--greeny);
 --color5: var(--offblack);
 --color6: var(--grey);
@@ -150,7 +149,7 @@ button,
  {
   font-family: var(--font-headings);
   padding: 0.5rem 0.8rem;
-  font-size: 1.6rem;
+  font-size: 2rem;
   background: var(--color5);
   color: var(--color6);
   font-weight: 600;
@@ -174,7 +173,7 @@ button,
 
 button:hover, button:focus, button:active {
   background-color: var(--color3);
-  color: var(--white);
+  color: var(--offblack)
 }
 
 .btn-container{
@@ -203,19 +202,20 @@ button:focus,
 display:flex;
 justify-content: center;
 align-items: center;
-margin-bottom: 2rem;
+margin-top: 1rem;
+margin-bottom: 1rem;
 }
 
 .play-button-container > a {
-  max-width: 10rem;
+  max-width: 15rem;
 }
 
 /* icon buttons in footer  */
 
 .footer-icons {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
   position: fixed;
   width: 100%;
   bottom: 0;
@@ -225,42 +225,53 @@ margin-bottom: 2rem;
 }
 
 .footer-icons > div > a,
-.footer-icons > a {
+.footer-icons > a, 
+.footer-icons > div {
   background-color: transparent;
   display: flex;
-  justify-content: center
+  justify-content: center;
+  width: fit-content
 }
 
 
 .footer-icons > div > a:first-child,
 .footer-icons > a:first-child {
-  width: 100%;
-  justify-self: center;
-  justify-content: flex-start;
+
+  /* justify-self: center;
+  justify-content: flex-start; */
   
 }
 
 .footer-icons > div > a:last-child,
-.footer-icons > a:last-child, .footer-icons > #captionsMount{
-  width: 100%;
+.footer-icons > a:last-child, .footer-icons > #captionBtnMount{
+
   display: flex;
 }
 
 .footer-icons > div > a:last-child,
-.footer-icons > a:last-child, .footer-icons > #captionsMount > a {
-  width: 100%;
-  display: flex;
+.footer-icons > a:last-child, .footer-icons > #captionBtnMount > a {
+  /* width: 100%; */
+  /* display: flex;
   justify-self: center;
-  justify-content: flex-end;
+  justify-content: flex-end; */
   
 }
 
 .footer-icons > div> a > img,
 .footer-icons > a > img ,  
-.footer-icons > #captionsMount > a > img{
+.footer-icons > #captionBtnMount > a > img{
   width: 2rem;
 }
 
+#captionBtnMount.captionActive{
+  background-color: #c1f1b8;
+
+}
+
+#captionBtnMount.captionActive > a > img{
+  
+
+}
 
 
 
@@ -329,7 +340,6 @@ header.standard {
   color: var(--offblack);
   text-align: right;
   z-index: 999;
-  margin-block-end: 2rem;
   padding: 2rem 0;
   /* Add smooth transitions for all properties */
   transition: all 0.6s ease-in-out;
@@ -414,7 +424,7 @@ font-size: 2.2rem;
 p{
   font-size: 2rem;
   margin-block-end: 1.5rem;
-  line-height: 2.4rem;
+  line-height: 2.6rem;
   font-weight: 400;
   letter-spacing: -0.03rem;
 }
@@ -517,13 +527,21 @@ font-size: 35px;
   font-size: 1rem;
   border: solid 2px white;
   width: fit-content;
-  background: cadetblue;
+  background: rgb(200, 201, 201);
   color: black;
   font-weight: 900;
+  margin-block-start: 10rem;
+  margin-block-end: 10rem;
 }
 
 .wallet> h2{
   font-size: 1.8rem;
+}
+
+.wallet> p{
+  font-size: 0.8rem;
+  margin-bottom: 0;
+  line-height: inherit;
 }
 
 /* LOGO TRANSITION  */
@@ -743,7 +761,16 @@ input[type="text"]::placeholder{
 /* BIRD BRAND  */
 
 .img-container-symbol{
-  max-width: 70%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container-symbol > img{
+  max-width: 20rem
 }
 
 /* CAPTIONS */
@@ -755,4 +782,7 @@ input[type="text"]::placeholder{
 #caption{
     opacity: 0;
     transition: opacity 0.6s ease;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
 }

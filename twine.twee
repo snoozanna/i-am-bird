@@ -938,6 +938,17 @@ setup.hideCap = () => {
 
 </div>
 
+
+:: navbuttonsend[nobr]
+
+<div class="footer-icons">
+<<link [img[../assets/img/back-sharp-b.png][$prevpass]]>>
+    <</link>>
+ <div><div/>
+<div><div/>
+
+</div>
+
 :: navbuttonsb [nobr]
 
 <div class="footer-icons">
@@ -945,11 +956,12 @@ setup.hideCap = () => {
     <</link>>
     <<link [img[../assets/img/replay-sharp-b.png][$pass]]>>
     <</link>>
- <<link [img[../assets/img/for-sharp-b.png][$nextpass]]>>
-    <</link>>
-    <div id="captionMount">
+      <div id="captionBtnMount">
    <<include "captionsbutton">>
 </div>
+ <<link [img[../assets/img/for-sharp-b.png][$nextpass]]>>
+    <</link>>
+  
 
 </div>
 
@@ -960,11 +972,12 @@ setup.hideCap = () => {
     <</link>>
     <<link [img[../assets/img/replay-sharp-b.png][$pass]]>>
     <</link>>
-<<link [img[../assets/img/for-sharp-b.png][$nextpass]]>>
-    <</link>>
-    <div>
-
+      <div id="captionBtnMount">
+  
 </div>
+ <<link [img[../assets/img/for-sharp-b.png][$nextpass]]>>
+    <</link>>
+  
 
 </div>
 
@@ -984,14 +997,15 @@ setup.hideCap = () => {
 :: playbutton [nobr]
 
   <<link [img[../assets/img/play-black.png]]>>
+    <<addclass "#msgMount" "hide">>
        <<set $showCaptionsButton to true>>
-         <<replace "#captionMount">>
+         <<replace "#captionBtnMount">>
     <<include "captionsbutton">>
     <</replace>>
     <<set $a to setup.play()>>
     <<set $playing to true>>
        <<replace "#playBtnContainer">><</replace>>
-    <<timed 0.4s>>
+    <<timed 0.2s>>
     <<replace "#playBtnContainer">>
       <<include "pausebutton">>
       <</replace>>
@@ -1011,23 +1025,29 @@ setup.hideCap = () => {
 :: playpauseContainer [nobr]
  
     <<include "playbutton">>
-  <<replace "#captionMount">>
+  <<replace "#captionBtnMount">>
     <<include "captionsbutton">>
     <</replace>>
 
 :: captionsbutton [nobr]
-
-<<if $showCaptionsButton is true>>
-
- <<link [img[../assets/img/captions.png]]>>
-      <<if $captions is true>>
-           <<set $fn to setup.hideCap()>>
-            <<set $captions to false>>
-            <<removeclass "#msgMount" "hide">>
-          <<else>>
+<<timed 0.1s>>
+  <<if $userchoices.captions is true>>
+     <<addclass "#captionBtnMount" "captionActive">>
         <<set $fn to setup.showCap()>>
-         <<set $captions to true>>
-          <<addclass "#msgMount" "hide">>
+    <</if>>
+<</timed>>
+<<if $showCaptionsButton is true>>
+ <<link [img[../assets/img/captions.png]]>>
+      <<if $userchoices.captions is true>>
+         <<set $userchoices.captions to false>>
+        <<removeclass "#captionBtnMount" "captionActive">>
+           <<set $fn to setup.hideCap()>>
+            /* <<removeclass "#msgMount" "hide">> */
+      <<else>>
+        <<set $userchoices.captions to true>>
+        <<addclass "#captionBtnMount" "captionActive">>
+        <<set $fn to setup.showCap()>>
+          /* <<addclass "#msgMount" "hide">> */
         <</if>>
     <</link>>
 <</if>>
@@ -1082,6 +1102,11 @@ setup.hideCap = () => {
 <p>  userchoices.way: $userchoices.way</p>
 <p>  userchoices.door: $userchoices.door</p>
 <p>  userchoices.reason: $userchoices.reason</p>
+<p>  userchoices.route: $userchoices.route</p>
+<p>  userchoices.others: $userchoices.others</p>
+<p>  userchoices.peril: $userchoices.peril</p>
+<p>  userchoices.threat: $userchoices.threat</p>
+<p>  userchoices.trust: $userchoices.trust</p>
 <p>  pass: $pass</p>
 </div>
 
@@ -1094,6 +1119,7 @@ setup.hideCap = () => {
 <<set $playing to false>>
 <<set $showCaptionsButton to false>>
 <<set $userchoices to {
+  captions: false,
     time: "day",
     way: "stars",
     door: "eat",
@@ -1113,8 +1139,8 @@ setup.hideCap = () => {
      </div>
 
    <h1>I AM BIRD</h1>
-   <span class="phrase">An interactive storytelling experience
-</span>
+   <p class="phrase">An interactive storytelling experience
+</p>
 <<button "Start now">>
     <<goto $nextpass>>
 <</button>>
@@ -1147,7 +1173,7 @@ setup.hideCap = () => {
 /* <<done>><<set $a to setup.chooseStoryAudio()>><</done>> */
 
 :: _templateStory [nobr]
-<<include "headerdir">>
+<<include "headertrack">>
 <main>
 <div id="audioMount">
 <audio id="audio" >
@@ -1173,9 +1199,9 @@ setup.hideCap = () => {
         <<else>>
             No content provided.
         <</if>>
-   <<include "wallet">>
+   /* <<include "wallet">> */
 </main>
-
+   <<include "wallet">>
 <<include "navbuttonsb">>
 
 <<done>><<set $a to setup.chooseStoryAudio()>><</done>>
@@ -1202,14 +1228,14 @@ setup.hideCap = () => {
         <<else>>
             No content provided.
         <</if>>
-   <<include "wallet">>
+   /* <<include "wallet">> */
 </main>
-
+ <<include "wallet">>
 <<include "navbuttonsdir">>
 
 
 :: _templateChoice [nobr]
-<<include "headerdir">>
+<<include "headerchoice">>
 <main>
 
     <div id="msgMount"> </div>
@@ -1229,9 +1255,9 @@ setup.hideCap = () => {
         <<else>>
             No content provided.
         <</if>>
-   <<include "wallet">>
+   /* <<include "wallet">> */
 </main>
-
+ <<include "wallet">>
 <<include "navbuttonsdir">>
 
 
@@ -1345,7 +1371,7 @@ setup.hideCap = () => {
  <<timed 4s>>
   <<append "#msgMount">>
 <div class="play-button-container">
-  <<link [img[../assets/img/play.jpg]]>>
+  <<link [img[../assets/img/play-black.png]]>>
 
       <</link>>
       </div>
@@ -1419,7 +1445,7 @@ setup.hideCap = () => {
   <<replace "#playBtnContainer">>
 
     <<include "playbutton">>
-  <<replace "#captionMount">>
+  <<replace "#captionBtnMount">>
     <<include "captionsbutton">>
     <</replace>>
  <</replace>>
@@ -1507,7 +1533,7 @@ setup.hideCap = () => {
   <<replace "#playBtnContainer">>
 
     <<include "playbutton">>
-  <<replace "#captionMount">>
+  <<replace "#captionBtnMount">>
     <<include "captionsbutton">>
     <</replace>>
  <</replace>>
@@ -1642,7 +1668,7 @@ setup.hideCap = () => {
   <<replace "#playBtnContainer">>
 
     <<include "playbutton">>
-  <<replace "#captionMount">>
+  <<replace "#captionBtnMount">>
     <<include "captionsbutton">>
     <</replace>>
  <</replace>>
@@ -1770,7 +1796,7 @@ setup.hideCap = () => {
   <<replace "#playBtnContainer">>
 
     <<include "playbutton">>
-  <<replace "#captionMount">>
+  <<replace "#captionBtnMount">>
     <<include "captionsbutton">>
     <</replace>>
  <</replace>>
@@ -1904,7 +1930,7 @@ setup.hideCap = () => {
   <<replace "#playBtnContainer">>
 
     <<include "playbutton">>
-  <<replace "#captionMount">>
+  <<replace "#captionBtnMount">>
     <<include "captionsbutton">>
     <</replace>>
  <</replace>>
@@ -2045,7 +2071,7 @@ setup.hideCap = () => {
   <<replace "#playBtnContainer">>
 
     <<include "playbutton">>
-  <<replace "#captionMount">>
+  <<replace "#captionBtnMount">>
     <<include "captionsbutton">>
     <</replace>>
  <</replace>>
@@ -2140,7 +2166,7 @@ setup.hideCap = () => {
   <<replace "#playBtnContainer">>
 
     <<include "playbutton">>
-  <<replace "#captionMount">>
+  <<replace "#captionBtnMount">>
     <<include "captionsbutton">>
     <</replace>>
  <</replace>>
@@ -2230,7 +2256,7 @@ setup.hideCap = () => {
   <<replace "#playBtnContainer">>
 
     <<include "playbutton">>
-  <<replace "#captionMount">>
+  <<replace "#captionBtnMount">>
     <<include "captionsbutton">>
     <</replace>>
  <</replace>>
@@ -2358,7 +2384,7 @@ setup.hideCap = () => {
   <<replace "#playBtnContainer">>
 
     <<include "playbutton">>
-  <<replace "#captionMount">>
+  <<replace "#captionBtnMount">>
     <<include "captionsbutton">>
     <</replace>>
  <</replace>>
@@ -2485,7 +2511,7 @@ setup.hideCap = () => {
   <<replace "#playBtnContainer">>
 
     <<include "playbutton">>
-  <<replace "#captionMount">>
+  <<replace "#captionBtnMount">>
     <<include "captionsbutton">>
     <</replace>>
  <</replace>>
@@ -2628,7 +2654,7 @@ setup.hideCap = () => {
   <<replace "#playBtnContainer">>
 
     <<include "playbutton">>
-  <<replace "#captionMount">>
+  <<replace "#captionBtnMount">>
     <<include "captionsbutton">>
     <</replace>>
  <</replace>>
@@ -2726,7 +2752,7 @@ setup.hideCap = () => {
   <<replace "#playBtnContainer">>
 
     <<include "playbutton">>
-  <<replace "#captionMount">>
+  <<replace "#captionBtnMount">>
     <<include "captionsbutton">>
     <</replace>>
  <</replace>>
@@ -2874,7 +2900,7 @@ setup.hideCap = () => {
   <<replace "#playBtnContainer">>
 
     <<include "playbutton">>
-  <<replace "#captionMount">>
+  <<replace "#captionBtnMount">>
     <<include "captionsbutton">>
     <</replace>>
  <</replace>>
@@ -2912,7 +2938,7 @@ setup.hideCap = () => {
   <<replace "#playBtnContainer">>
 
     <<include "playbutton">>
-  <<replace "#captionMount">>
+  <<replace "#captionBtnMount">>
     <<include "captionsbutton">>
     <</replace>>
  <</replace>>
@@ -3087,7 +3113,7 @@ setup.hideCap = () => {
   <<replace "#playBtnContainer">>
 
     <<include "playbutton">>
-  <<replace "#captionMount">>
+  <<replace "#captionBtnMount">>
     <<include "captionsbutton">>
     <</replace>>
  <</replace>>
@@ -3174,7 +3200,7 @@ setup.hideCap = () => {
   <<replace "#playBtnContainer">>
 
     <<include "playbutton">>
-  <<replace "#captionMount">>
+  <<replace "#captionBtnMount">>
     <<include "captionsbutton">>
     <</replace>>
  <</replace>>
@@ -3261,7 +3287,7 @@ setup.hideCap = () => {
   <<replace "#playBtnContainer">>
 
     <<include "playbutton">>
-  <<replace "#captionMount">>
+  <<replace "#captionBtnMount">>
     <<include "captionsbutton">>
     <</replace>>
  <</replace>>
@@ -3349,7 +3375,7 @@ setup.hideCap = () => {
   <<replace "#playBtnContainer">>
 
     <<include "playbutton">>
-  <<replace "#captionMount">>
+  <<replace "#captionBtnMount">>
     <<include "captionsbutton">>
     <</replace>>
  <</replace>>
@@ -3444,7 +3470,7 @@ setup.hideCap = () => {
   <<replace "#playBtnContainer">>
 
     <<include "playbutton">>
-  <<replace "#captionMount">>
+  <<replace "#captionBtnMount">>
     <<include "captionsbutton">>
     <</replace>>
  <</replace>>
@@ -3464,7 +3490,7 @@ setup.hideCap = () => {
 :: 14_w_choice [nobr]
 <<set $prevpass to "14_w_story">>
 <<set $pass to "14_w_choice">>
-<<set $nextpass to "">>
+<<set $nextpass to "15_dir">>
 <<audio ":all" "stop">>
 
 <<include "_templateDir">>
@@ -3493,7 +3519,7 @@ setup.hideCap = () => {
 <<timed 6s>>
     <<append "#btnContainer">>
     <<button "Light">>
-          <<set $userchoices.peril to "friendly">>
+          <<set $userchoices.peril to "light">>
             <<goto "15_dir">>
         <</button>>
     <</append>>
@@ -3587,7 +3613,7 @@ setup.hideCap = () => {
   <<replace "#playBtnContainer">>
 
     <<include "playbutton">>
-  <<replace "#captionMount">>
+  <<replace "#captionBtnMount">>
     <<include "captionsbutton">>
     <</replace>>
  <</replace>>
@@ -3636,7 +3662,7 @@ setup.hideCap = () => {
 <<timed 6s>>
     <<append "#btnContainer">>
     <<button "Humans">>
-          <<set $userchoices.peril to "humans">>
+          <<set $userchoices.threat to "humans">>
             <<goto "17_dir">>
         <</button>>
     <</append>>
@@ -3645,7 +3671,7 @@ setup.hideCap = () => {
 <<timed 7s>>
     <<append "#btnContainer">>
     <<button "Amimals">>
-      <<set $userchoices.peril to "animals">>
+      <<set $userchoices.threat to "animals">>
             <<goto "18_dir">>
         <</button>>
     <</append>>
@@ -3843,7 +3869,7 @@ setup.hideCap = () => {
 :: 15_story [nobr]
 <<set $prevpass to "15_dir">>
 <<set $pass to "15_story">>
-<<set $nextpass to "15_choice">>
+<<set $nextpass to "19_w_dir">>
 <<audio ":all" "stop">>
 
 
@@ -3869,7 +3895,7 @@ setup.hideCap = () => {
   <<replace "#playBtnContainer">>
 
     <<include "playbutton">>
-  <<replace "#captionMount">>
+  <<replace "#captionBtnMount">>
     <<include "captionsbutton">>
     <</replace>>
  <</replace>>
@@ -3889,7 +3915,7 @@ setup.hideCap = () => {
 :: 16_story [nobr]
 <<set $prevpass to "16_dir">>
 <<set $pass to "16_story">>
-<<set $nextpass to "16_choice">>
+<<set $nextpass to "19_w_dir">>
 <<audio ":all" "stop">>
 
 
@@ -3915,7 +3941,7 @@ setup.hideCap = () => {
   <<replace "#playBtnContainer">>
 
     <<include "playbutton">>
-  <<replace "#captionMount">>
+  <<replace "#captionBtnMount">>
     <<include "captionsbutton">>
     <</replace>>
  <</replace>>
@@ -3934,7 +3960,7 @@ setup.hideCap = () => {
 :: 17_story [nobr]
 <<set $prevpass to "17_dir">>
 <<set $pass to "17_story">>
-<<set $nextpass to "17_choice">>
+<<set $nextpass to "19_s_dir">>
 <<audio ":all" "stop">>
 
 
@@ -3960,7 +3986,7 @@ setup.hideCap = () => {
   <<replace "#playBtnContainer">>
 
     <<include "playbutton">>
-  <<replace "#captionMount">>
+  <<replace "#captionBtnMount">>
     <<include "captionsbutton">>
     <</replace>>
  <</replace>>
@@ -3980,7 +4006,7 @@ setup.hideCap = () => {
 :: 18_story [nobr]
 <<set $prevpass to "18_dir">>
 <<set $pass to "18_story">>
-<<set $nextpass to "18_choice">>
+<<set $nextpass to "19_s_dir">>
 <<audio ":all" "stop">>
 
 
@@ -4006,7 +4032,7 @@ setup.hideCap = () => {
   <<replace "#playBtnContainer">>
 
     <<include "playbutton">>
-  <<replace "#captionMount">>
+  <<replace "#captionBtnMount">>
     <<include "captionsbutton">>
     <</replace>>
  <</replace>>
@@ -4096,7 +4122,7 @@ setup.hideCap = () => {
   <<replace "#playBtnContainer">>
 
     <<include "playbutton">>
-  <<replace "#captionMount">>
+  <<replace "#captionBtnMount">>
     <<include "captionsbutton">>
     <</replace>>
  <</replace>>
@@ -4116,7 +4142,7 @@ setup.hideCap = () => {
 :: 19_w_choice [nobr]
 <<set $prevpass to "19_w_story">>
 <<set $pass to "19_w_choice">>
-<<set $nextpass to "">>
+<<set $nextpass to "20_w_dir">>
 <<audio ":all" "stop">>
 
 <<include "_templateDir">>
@@ -4239,7 +4265,7 @@ setup.hideCap = () => {
   <<replace "#playBtnContainer">>
 
     <<include "playbutton">>
-  <<replace "#captionMount">>
+  <<replace "#captionBtnMount">>
     <<include "captionsbutton">>
     <</replace>>
  <</replace>>
@@ -4259,7 +4285,7 @@ setup.hideCap = () => {
 :: 19_s_choice [nobr]
 <<set $prevpass to "19_s_story">>
 <<set $pass to "19_s_choice">>
-<<set $nextpass to "">>
+<<set $nextpass to "20_s_dir">>
 <<audio ":all" "stop">>
 
 <<include "_templateDir">>
@@ -4379,7 +4405,7 @@ setup.hideCap = () => {
   <<replace "#playBtnContainer">>
 
     <<include "playbutton">>
-  <<replace "#captionMount">>
+  <<replace "#captionBtnMount">>
     <<include "captionsbutton">>
     <</replace>>
  <</replace>>
@@ -4467,7 +4493,7 @@ setup.hideCap = () => {
   <<replace "#playBtnContainer">>
 
     <<include "playbutton">>
-  <<replace "#captionMount">>
+  <<replace "#captionBtnMount">>
     <<include "captionsbutton">>
     <</replace>>
  <</replace>>
@@ -4558,7 +4584,7 @@ setup.hideCap = () => {
   <<replace "#playBtnContainer">>
 
     <<include "playbutton">>
-  <<replace "#captionMount">>
+  <<replace "#captionBtnMount">>
     <<include "captionsbutton">>
     <</replace>>
  <</replace>>
@@ -4624,7 +4650,7 @@ setup.hideCap = () => {
 :: 21_s_story [nobr]
 <<set $prevpass to "21_s_dir">>
 <<set $pass to "21_s_story">>
-<<set $nextpass to "">>
+<<set $nextpass to "23_fri_dir">>
 <<audio ":all" "stop">>
 
 
@@ -4643,7 +4669,7 @@ setup.hideCap = () => {
   <<replace "#playBtnContainer">>
 
     <<include "playbutton">>
-  <<replace "#captionMount">>
+  <<replace "#captionBtnMount">>
     <<include "captionsbutton">>
     <</replace>>
  <</replace>>
@@ -4757,7 +4783,6 @@ setup.hideCap = () => {
 <<else>>
     <<set $prevpass to "22_food_dir">>
  <</if>>
-<<set $prevpass to "">>
 <<set $pass to "22_story">>
 <<set $nextpass to "credits">>
 <<audio ":all" "stop">>
@@ -4784,7 +4809,7 @@ setup.hideCap = () => {
   <<replace "#playBtnContainer">>
 
     <<include "playbutton">>
-  <<replace "#captionMount">>
+  <<replace "#captionBtnMount">>
     <<include "captionsbutton">>
     <</replace>>
  <</replace>>
@@ -4922,7 +4947,7 @@ setup.hideCap = () => {
   <<replace "#playBtnContainer">>
 
     <<include "playbutton">>
-  <<replace "#captionMount">>
+  <<replace "#captionBtnMount">>
     <<include "captionsbutton">>
     <</replace>>
  <</replace>>
@@ -4939,8 +4964,11 @@ setup.hideCap = () => {
 <</timed>>
 
 :: credits [nobr]
+<<set $prevpass to "23_story">>
+<<set $pass to "credits">>
+<<include "headertrack">>
+<main>
+<span>CREDITS</span>
+</main>
 
-CREDITS
-
-<<include "wallet">>
-<<include "navbuttonsb">>
+<<include "navbuttonsend">>
