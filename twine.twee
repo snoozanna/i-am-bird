@@ -112,9 +112,9 @@ track_2: [[5.000,8.500,"I’ve always known I was meant to go away."],
 [190.000,200.000,"Your time has almost come.”"]], 
 track_3: [[3.000,5.500,"And then, the day came."],
 [6.000,22.000,"It had been a bright, sunny day. The sun was setting, huge against the orange sky. The forest sounds were getting quieter, ready for the night."],
-[22.000,38.000,"I looked around me: I tried to memorise the colours, the smells of my homeland, I packed them all in my brain, I stored them safely to keep myself warm during my journey."],
+[22.000,38.000,"I looked around me: I tried to memorise the colours, the smells of my homeland, I packed them all inside my brain, I stored them safely to keep myself warm during the journey."],
 [38.000,44.000,"I looked at my mother’s eyes. She was proud. She was terrified."],
-[44.000,50.000,"She had done the journey herself, though she had always refused to talk about it. I hugged her."],
+[44.000,50.000,"She had done the journey herself, though she had always refused to talk about it."],
 [50.000,53.000,"“I’ll be fine, Ma. Don’t worry.”"],
 [53.000,63.000,"“Of course you’ll be fine”, she said, then she looked away. She didn’t want me to see her doubt."],
 [63.000,65.000,"I flew to the top of our tree to warm up."],
@@ -124,7 +124,7 @@ track_3: [[3.000,5.500,"And then, the day came."],
 [97.000,106.000,"I heard a bird laugh behind me. It was a fat bird of paradise, munching on berries."],
 [106.000,111.000,"“What’s up with you willow warbler? Having second thoughts?”"],
 [111.000,115.000,"“I’m just stretching my wings, getting ready for the flight, that’s all.”"],
-[111.000,122.000,"“No kidding. A tiny bird like you, making it to Europe? How much do you weigh? 10g?”"],
+[115.000,122.000,"“No kidding. A tiny bird like you, making it to Europe? How much do you weigh? 10g?”"],
 [122.000,128.000,"“8. Still, it’s not the weight that counts, it’s the spirit."],
 [128.000,138.000,"But how could you understand? Birds of paradise have it easy. Big guns like you take all the food. Come summer, there will be nothing left for us."],
 [138.000,147.000,"And predators are getting stronger too, they are just waiting for an opportunity to munch on the little ones too weak to escape."],
@@ -252,7 +252,7 @@ track_8: [[4.000,7.000,"I’ve been told that we sand martins talk too much."],
 [7.000,12.000,"That we have no sense of privacy and that our loud constant chatter is a nuisance to other creatures."],
 [13.000,21.000,"But what they don’t know is: our conversations are never pointless. Our voice can save our lives."],
 [21.000,32.000,"My friends Atsu and Etse were usually chosen as vigils. They were brothers, quite small for their age, who had been selected for their powerful, piercing call."],
-[32.000,48.000,"They used to perch on top of a large baobab, which offered a 360° view over the forest. From there they were on the look-out, as we had many predators, and none of them scared us so much as the hawks."],
+[32.000,48.000,"They used to perch on top of a mango tree, which offered a 360° view over the forest. From there they were on the look-out, as we had many predators, and none of them scared us so much as the hawks."],
 [48.000,50.000,"We lived in a constant state of emergency."],
 [52.000,56.000,"My mom had forbidden my brothers and I to venture too far from the colony."],
 [56.000,64.000,"So we stayed there, apparently lazing and chatting on the riverbanks, while really, we were just waiting for the call."],
@@ -285,7 +285,7 @@ track_9: [[3.000,9.000,"I’ve always wanted a family."],
 [114.000,119.000,"It was fate. It was destiny."],
 [119.000,129.000,"At last, the day of departure came: there were eighty of us in our flock, eighty young lovers ready to take Europe by storm."],
 [129.000,132.000,"We gathered on the branches of a mahogany tree."],
-[132.000,139.000,"For once, none of us talked. We just watched the sun rise in silence, absorbing the smells, the colours, the sounds of our homeland."],
+[132.000,139.000,"For once, none of us talked. We just watched the sun rise in silence."],
 [139.000,150.000,"And then, as one body, we all opened our wings and took over the blue open sky."]],
 track_10a: [[10.000,13.000,"How could I ever describe this feeling?"],
 [13.000,20.000,"That exhilarating sense of power? That sensation that we were finally meeting our destiny."],
@@ -481,8 +481,8 @@ track_16:[[5.000,7.000,"We had crossed the French border."],
 [164.000,170.000,"But he didn’t answer me."],
 [170.000,174.000,"I was alone."]], 
 track_17: [
-  [4.000,6.000,"We had made it to France."],
-[6.000,17.000,"Our flock had been following the Atlantic coast for weeks. Spring was blooming around us, the air was balmy, the fields green and filled with food."],
+  [4.000,7.000,"We had made it to France."],
+[7.000,17.000,"Our flock had been following the Atlantic coast for weeks. Spring was blooming around us, the air was balmy, the fields green and filled with food."],
 [17.000,22.000,"We knew the end of our journey was near, so we made it last."],
 [22.000,28.000,"We were only travelling for a few hours a day, spending the rest of the time eating and resting on the shore."],
 [28.000,35.000,"And then one day, we saw it. England."],
@@ -491,10 +491,10 @@ track_17: [
 [46.000,59.000,"A world of green and grey, with hundreds of tiny human constructions made out of wood, plastic and fabric flapping in the wind. Almost like a ghost town."],
 [59.000,64.000,"There were no trees, so we decided to land on power lines encircling the place."],
 [64.000,68.000,"“What is this?” I asked Banjoko."],
-[68.000,76.000,"“They call it the Jungle” replied my friend. “The last stop before England. Can you see?”"],
-[76.000,83.000,"He pointed at the horizon."],
-[83.000,92.000,"Behind the shadow of that strange city, beyond the ocean, I could spot it in the distance. The silhouette of a gigantic island, blurry in the morning mist, almost like a mirage. The end of our quest."],
-[92.000,109.000,"Then I heard some laughter coming from below. I felt a sharp, sudden pain on my back and all went black."],
+[68.000,73.000,"“They call it the Jungle” replied my friend. “The last stop before England. Can you see?”"],
+[74.000,76.000,"He pointed at the horizon."],
+[76.000,92.000,"Behind the shadow of that strange city, beyond the ocean, I could spot it in the distance. The silhouette of a gigantic island, blurry in the morning mist, almost like a mirage. The end of our quest."],
+[92.000,99.000,"Then I heard some laughter coming from below. I felt a sharp, sudden pain on my back and all went black."],
 [109.000,115.000,"I woke up a few hours later to children’s voices."],
 [115.000,118.000,"“Do you think it’s alive?”"],
 [118.000,124.000,"Three pairs of giant, shiny black eyes stared at me from above."],
@@ -504,8 +504,8 @@ track_17: [
 [142.000,150.000,"“Mawusi!” He never called me by my name, that’s how I knew how scared he was."],
 [150.000,159.000,"We were in a dark, covered place. There were dozens of us, a few sand martins, but also swallows, cuckoos, even one magpie."],
 [159.000,165.000,"Humans had locked us all in tiny wire boxes. I was alone in mine."],
-[165.000,169.000,"Suddenly, I heard a clicking sound and a huge hand entered my prison."],
-[169.000,180.000,"I closed my eyes in terror, then felt five thick fingers wrapping tightly around my body."],
+[165.000,172.000,"Suddenly, I heard a clicking sound and a huge hand entered my prison."],
+[173.000,180.000,"I closed my eyes in terror, then felt five thick fingers wrapping tightly around my body."],
 [180.000,189.000,"I couldn’t breathe, my heart was pounding in my chest, I thought it was the end, then all of a sudden, I saw the light."],
 [189.000,200.000,"The afternoon sun blinded me completely, a fresh gust of wind ruffled my feathers and it took me a few seconds to realise I was free."],
 [200.000,207.000,"There was no time to think, so I spread my wings, took off and flew to the top of a utility pole to pull myself together."],
@@ -515,8 +515,8 @@ track_17: [
 [220.000,223.000,"“We’d better hit the road”"],
 [223.000,228.000,"“But…” I muttered “My friend Banjoko is still in that tent. Surely we can…”"],
 [228.000,232.000,"“My daughter is in there too”, he interrupted me with a bitter voice."],
-[232.000,238.000,"“What do you want me to do about it? Risk the lives of the whole flock and lose more members? That’s the tough law of migration, kid. Just consider yourself lucky and move on.”"],
-[238.000,247.000,"I froze, my eyes filled with tears."],
+[232.000,242.000,"“What do you want me to do about it? Risk the lives of the whole flock and lose more members? That’s the tough law of migration, kid. Just consider yourself lucky and move on.”"],
+[242.500,247.000,"I froze, my eyes filled with tears."],
 [247.000,257.000,"He added with a softer voice. “It is your first time. I remember how hard it felt. But believe me, time will toughen you up.”"],
 [257.000,262.000,"Then without another word, he took off, and the flock followed him."]
 ], 
@@ -604,7 +604,7 @@ track_21:[
 [38.000,48.000,"“Sing, Mawusi. Wherever you are, singing will bring you closer to home.”"],
 [48.000,55.000,"A grey dove was leading the choir, inviting passers-by to join in. I went closer."],
 [55.000,59.000,"“A migrant!” Shouted a blackbird, and they all turned towards me."],
-[59.000,64.000,"I smiled. It was good not to feel invisible anymore."],
+[59.000,64.000,"It was good not to feel invisible anymore."],
 [64.000,66.000,"But then, I noticed the song,"],
 [66.000,72.000,"“Migrants go home. Migrants go home.”"],
 [72.000,79.000,"They were chanting, over and over, louder and louder. When they saw me, their excitement grew."],
@@ -647,20 +647,20 @@ track_22:[
 [129.000,135.000,"Not the kind of nest I had imagined, of course, probably a bit smaller."],
 [135.000,150.000,"But with a bit of imagination, and with time, maybe one day that nest could look like home."]
 ], 
-track_23:[[0.000,13.000,"Sand martins don’t do well alone. We are sociable creatures, it’s in our blood."],
+track_23:[[7.000,13.000,"Sand martins don’t do well alone. We are sociable creatures, it’s in our blood."],
 [13.000,22.000,"This was probably the first time in my entire life I had been truly alone, and it terrified me."],
-[22.000,31.000,"I looked at the grey sky, and that when I spotted another martin flying in the distance."],
+[22.000,31.000,"I looked at the grey sky, and that's when I spotted another martin flying in the distance."],
 [31.000,40.000,"I called to him, but he didn’t hear me. So I took off and tried to catch up with him in the air."],
-[40.000,43.000,"“Excuse me”, I gasped."],
-[43.000,43.000,"He turned toward me."],
-[43.000,52.000,"“Hi”, he said. “You’re new here, aren’t you?”"],
-[52.000,59.000,"“How do you know?” I asked. He didn’t reply. He smiled. It was the first smile I’d got since I arrived."],
+[40.000,42.000,"“Excuse me”, I gasped."],
+[42.000,46.000,"He turned toward me."],
+[48.000,52.000,"“Hi”, he said. “You’re new here, aren’t you?”"],
+[52.000,59.000,"“How do you know?” I asked. He smiled. It was the first smile I’d got since I arrived."],
 [59.000,63.000,"“Where are you going?” I asked."],
-[63.000,69.000,"“Hounslow”, he said. “In the suburbs. Did you really expect to find a decent place to stay in central London?” He laughed."],
-[69.000,79.000,"“Come on. I’ll show you.”"],
+[63.000,69.000,"“The suburbs. Did you really expect to find a decent place to stay in central London?” He laughed."],
+[69.000,77.000,"“Come on. I’ll show you.”"],
 [79.000,82.000,"We flew for half an hour, following the river."],
 [82.000,89.000,"He asked me lots of questions, about my journey, about my family, about home."],
-[89.000,94.000,"You can always trust another sand martin to make you feel comfortable and have good chat."],
+[89.000,94.000,"You can always trust another sand martin to make you feel comfortable and have a good chat."],
 [94.000,98.000,"Then suddenly, he pointed at something below on the riverbed and we landed."],
 [98.000,103.000,"Ahead of me was the most terrifying nest I had ever seen."],
 [103.000,110.000,"A gigantic construction of a dozen towers carved on the sandy faces of the bank, flanked by countless tiny windows."],
@@ -676,7 +676,7 @@ track_23:[[0.000,13.000,"Sand martins don’t do well alone. We are sociable cre
 [175.000,182.000,"Then all of a sudden, I heard the voice of Nunyati in my head."],
 [182.000,193.000,"“Home is an elusive concept, Mawusi. You never know where you’ll find it.”"],
 [193.000,200.000,"I looked at the giant nest. I could hear the sound of dozens of sand martins coming from within, chatting, laughing."],
-[200.000,206.000,"It was cold outside, it looked so much warmer inside."],
+[201.000,206.000,"It was cold outside, it looked so much warmer inside."],
 [206.000,212.000,"So I closed my eyes. I took a deep breath. And I dove in."]]
   }
 
@@ -1213,9 +1213,8 @@ setup.hideCap = () => {
         <<else>>
             No content provided.
         <</if>>
-   /* <<include "wallet">> */
 </main>
-   <<include "wallet">>
+
 <<include "navbuttonsb">>
 
 <<done>><<set $a to setup.chooseStoryAudio()>><</done>>
@@ -1242,9 +1241,8 @@ setup.hideCap = () => {
         <<else>>
             No content provided.
         <</if>>
-   /* <<include "wallet">> */
+
 </main>
- <<include "wallet">>
 <<include "navbuttonsdir">>
 
 
@@ -1271,7 +1269,7 @@ setup.hideCap = () => {
         <</if>>
    /* <<include "wallet">> */
 </main>
- <<include "wallet">>
+
 <<include "navbuttonsdir">>
 
 
@@ -1602,8 +1600,8 @@ setup.hideCap = () => {
 
 <<timed 4s>>
     <<append "#btnContainer">>
-    <<button "Travel by day">>
-          <<set $userchoices.time to "day">>
+    <<button "Travel by night">>
+          <<set $userchoices.time to "night">>
             <<goto "3_dir">>
         <</button>>
     <</append>>
@@ -1611,8 +1609,8 @@ setup.hideCap = () => {
 
 <<timed 5s>>
     <<append "#btnContainer">>
-    <<button "Travel by night">>
-      <<set $userchoices.time to "night">>
+    <<button "Travel by day">>
+      <<set $userchoices.time to "day">>
             <<goto "7_dir">>
         <</button>>
     <</append>>
@@ -2956,7 +2954,7 @@ setup.hideCap = () => {
 :: 11_s_story_content [nobr]
  <<timed 0.1s>>
     <<append "#msgMount">>
- <p>CHow can a little sand martin fly across 1800km?</p>
+ <p>How can a little sand martin fly across 1800km?</p>
  <</append>>
 <</timed>>
 
@@ -3008,7 +3006,7 @@ setup.hideCap = () => {
     <<append "#btnContainer">>
     <<button "Other birds are friendly">>
           <<set $userchoices.others to "friendly">>
-            <<goto "12_w_dir">>
+            <<goto "13_w_dir">>
         <</button>>
     <</append>>
 <</timed>>
@@ -3017,7 +3015,7 @@ setup.hideCap = () => {
     <<append "#btnContainer">>
     <<button "Other birds are hostile">>
       <<set $userchoices.others to "hostile">>
-            <<goto "13_w_dir">>
+            <<goto "12_w_dir">>
         <</button>>
     <</append>>
 <</timed>>
@@ -3050,7 +3048,7 @@ setup.hideCap = () => {
     <<append "#btnContainer">>
     <<button "Other birds are friendly">>
           <<set $userchoices.others to "friendly">>
-            <<goto "12_s_dir">>
+            <<goto "13_s_dir">>
         <</button>>
     <</append>>
 <</timed>>
@@ -3059,7 +3057,7 @@ setup.hideCap = () => {
     <<append "#btnContainer">>
     <<button "Other birds are hostile">>
       <<set $userchoices.others to "hostile">>
-            <<goto "13_s_dir">>
+            <<goto "12_s_dir">>
         <</button>>
     <</append>>
 <</timed>>
@@ -3087,13 +3085,7 @@ setup.hideCap = () => {
  <</append>>
 <</timed>>
 
- <<timed 4s>>
-    <<append "#msgMount">>
-      <p>To avoid attracting attention, you choose to fly under the cover of darkness.</p>
- <</append>>
-<</timed>>
-
-​ <<timed 8s>>
+​ <<timed 4s>>
     <<append "#msgMount">>
 <div class="img-container-symbol">
 <img src="assets/img/12-Morocco.png"/>
@@ -3103,7 +3095,7 @@ setup.hideCap = () => {
  
 
 
-<<timed 10s>>
+<<timed 6s>>
     <<append "#btnContainer">>
     <<button "I have found the book">>
             <<goto $nextpass>>
@@ -3696,7 +3688,7 @@ setup.hideCap = () => {
 
 <<timed 7s>>
     <<append "#btnContainer">>
-    <<button "Amimals">>
+    <<button "Animals">>
       <<set $userchoices.threat to "animals">>
             <<goto "18_dir">>
         <</button>>
@@ -4020,7 +4012,7 @@ setup.hideCap = () => {
 <</timed>>
 
 
-<<timed 260s>>
+<<timed 263s>>
     <<append "#btnContainer">>
     <<button "Try to go on">>
             <<goto $nextpass>>
@@ -4106,7 +4098,7 @@ setup.hideCap = () => {
 ​ <<timed 4s>>
     <<append "#msgMount">>
 <div class="img-container-symbol">
-<img src="assets/img/19-london.png"/>
+<img src="assets/img/19-london2.png"/>
 </div>
  <</append>>
 <</timed>>
@@ -4981,13 +4973,15 @@ setup.hideCap = () => {
 <</timed>>
 
 
-<<timed 210s>>
+<<timed 213s>>
     <<append "#btnContainer">>
     <<button "The end. Unless...">>
             <<goto $nextpass>>
         <</button>>
     <</append>>
 <</timed>>
+
+
 
 :: credits [nobr]
 <<set $prevpass to "23_story">>
