@@ -1164,7 +1164,7 @@ setup.hideCap = () => {
 :: _templateWelcome [nobr]
 <<include "headerdir">>
 <main>
-/* <div id="audioMount"><audio id="audioPlayer" src="" autoplay>Audio is not supported on your device</audio></div> */
+<div id="audioMount"><audio id="audioPlayer" src="" autoplay>Audio is not supported on your device</audio></div>
     <div id="msgMount"> </div>
         <<if $pass>>
              <<set $uniqueContent to $pass+"_content">>
@@ -1384,11 +1384,15 @@ setup.hideCap = () => {
 
  <<timed 4s>>
   <<append "#msgMount">>
-<div class="play-button-container">
+<div class="play-button-container" id="playContainer">
   <<link [img[assets/img/play-black.png]]>>
-
+<<replace "#audioMount">>
+  <audio id="audioPlayer" src="assets/audio/soundcheck.mp3" autoplay>Audio is not supported on your device</audio>
+  <</replace>>
       <</link>>
       </div>
+      <div id="testCapContainer"></div>
+      <br/>
  <</append>>
 <</timed>>
 
@@ -1398,8 +1402,16 @@ setup.hideCap = () => {
   You can enable or disable captions by clicking on this symbol.
   <div class="inline-icon">
     <<link [img[assets/img/captions.png]]>>
-        <<set $captions to true>>
-        <<goto $pass>>
+      <<set $captions to true>>
+      <<replace "#audioMount">>
+        <audio id="audioPlayer" src="assets/audio/soundcheck.mp3" autoplay>Audio is not supported on your device</audio>
+        <</replace>>
+        <<timed 0.2s>>
+        <<replace "#testCapContainer">>
+          <div id="testCaption">You can hear me.</div>
+          <</replace>>
+          <</timed>>
+
       <</link>>
       </div>
 </p>
@@ -4981,6 +4993,7 @@ setup.hideCap = () => {
 <<set $prevpass to "23_story">>
 <<set $pass to "credits">>
 <<include "headertrack">>
+
 <main class="credits">
 <section>
   <p class="bold"><i>I am Bird</i> is a project by Marie Klimis and produced by <a href="https://www.koro.org.uk/" class="linky" target="_blank" rel="noreferrer">Koro</a></p>

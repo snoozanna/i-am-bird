@@ -1173,7 +1173,7 @@ setup.hideCap = () => {
    
 &lt;/main&gt;</tw-passagedata><tw-passagedata pid="21" name="_templateWelcome" tags="nobr" position="100,350" size="100,100">&lt;&lt;include &quot;headerdir&quot;&gt;&gt;
 &lt;main&gt;
-/* &lt;div id=&quot;audioMount&quot;&gt;&lt;audio id=&quot;audioPlayer&quot; src=&quot;&quot; autoplay&gt;Audio is not supported on your device&lt;/audio&gt;&lt;/div&gt; */
+&lt;div id=&quot;audioMount&quot;&gt;&lt;audio id=&quot;audioPlayer&quot; src=&quot;&quot; autoplay&gt;Audio is not supported on your device&lt;/audio&gt;&lt;/div&gt;
     &lt;div id=&quot;msgMount&quot;&gt; &lt;/div&gt;
         &lt;&lt;if $pass&gt;&gt;
              &lt;&lt;set $uniqueContent to $pass+&quot;_content&quot;&gt;&gt;
@@ -1364,11 +1364,15 @@ setup.hideCap = () => {
 
  &lt;&lt;timed 4s&gt;&gt;
   &lt;&lt;append &quot;#msgMount&quot;&gt;&gt;
-&lt;div class=&quot;play-button-container&quot;&gt;
+&lt;div class=&quot;play-button-container&quot; id=&quot;playContainer&quot;&gt;
   &lt;&lt;link [img[assets/img/play-black.png]]&gt;&gt;
-
+&lt;&lt;replace &quot;#audioMount&quot;&gt;&gt;
+  &lt;audio id=&quot;audioPlayer&quot; src=&quot;assets/audio/soundcheck.mp3&quot; autoplay&gt;Audio is not supported on your device&lt;/audio&gt;
+  &lt;&lt;/replace&gt;&gt;
       &lt;&lt;/link&gt;&gt;
       &lt;/div&gt;
+      &lt;div id=&quot;testCapContainer&quot;&gt;&lt;/div&gt;
+      &lt;br/&gt;
  &lt;&lt;/append&gt;&gt;
 &lt;&lt;/timed&gt;&gt;
 
@@ -1378,8 +1382,16 @@ setup.hideCap = () => {
   You can enable or disable captions by clicking on this symbol.
   &lt;div class=&quot;inline-icon&quot;&gt;
     &lt;&lt;link [img[assets/img/captions.png]]&gt;&gt;
-        &lt;&lt;set $captions to true&gt;&gt;
-        &lt;&lt;goto $pass&gt;&gt;
+      &lt;&lt;set $captions to true&gt;&gt;
+      &lt;&lt;replace &quot;#audioMount&quot;&gt;&gt;
+        &lt;audio id=&quot;audioPlayer&quot; src=&quot;assets/audio/soundcheck.mp3&quot; autoplay&gt;Audio is not supported on your device&lt;/audio&gt;
+        &lt;&lt;/replace&gt;&gt;
+        &lt;&lt;timed 0.2s&gt;&gt;
+        &lt;&lt;replace &quot;#testCapContainer&quot;&gt;&gt;
+          &lt;div id=&quot;testCaption&quot;&gt;You can hear me.&lt;/div&gt;
+          &lt;&lt;/replace&gt;&gt;
+          &lt;&lt;/timed&gt;&gt;
+
       &lt;&lt;/link&gt;&gt;
       &lt;/div&gt;
 &lt;/p&gt;
@@ -4347,6 +4359,7 @@ setup.hideCap = () => {
 &lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="186" name="credits" tags="nobr" position="725,2350" size="100,100">&lt;&lt;set $prevpass to &quot;23_story&quot;&gt;&gt;
 &lt;&lt;set $pass to &quot;credits&quot;&gt;&gt;
 &lt;&lt;include &quot;headertrack&quot;&gt;&gt;
+
 &lt;main class=&quot;credits&quot;&gt;
 &lt;section&gt;
   &lt;p class=&quot;bold&quot;&gt;&lt;i&gt;I am Bird&lt;/i&gt; is a project by Marie Klimis and produced by &lt;a href=&quot;https://www.koro.org.uk/&quot; class=&quot;linky&quot; target=&quot;_blank&quot; rel=&quot;noreferrer&quot;&gt;Koro&lt;/a&gt;&lt;/p&gt;
