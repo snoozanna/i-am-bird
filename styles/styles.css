@@ -83,6 +83,7 @@ height: 100%;
 #story {
 height: 100%;
 width: 100%;
+
 }
 
 #passage-prestart{
@@ -236,28 +237,14 @@ margin-bottom: 1rem;
 }
 
 
-.footer-icons > div > a:first-child,
-.footer-icons > a:first-child {
 
-  /* justify-self: center;
-  justify-content: flex-start; */
-  
-}
 
-.footer-icons > div > a:last-child,
-.footer-icons > a:last-child, .footer-icons > #captionBtnMount{
-
+.footer-icons > #captionBtnMount{
   display: flex;
+  width: 2rem;
 }
 
-.footer-icons > div > a:last-child,
-.footer-icons > a:last-child, .footer-icons > #captionBtnMount > a {
-  /* width: 100%; */
-  /* display: flex;
-  justify-self: center;
-  justify-content: flex-end; */
-  
-}
+
 
 .footer-icons > div> a > img,
 .footer-icons > a > img ,  
@@ -334,7 +321,6 @@ gap:2rem;
 
 header.standard {
   background-color: var(--grey);
-  /* clip-path: polygon(0 -5%, 100% -5%, 100% 70%, 0 100%); */
   position: sticky;
   top: 0;
   display: flex;
@@ -368,21 +354,7 @@ header.standard.scrollable{
   position: initial
 }
 
-@media screen and (orientation: landscape) and (max-height: 800px) {
-  header.standard{
-  position: fixed; /* Change to fixed positioning */
-  top: -100%; /* Move up */
-  left: 0;
-  right: 0;
-  margin-block-end: 0;
-}
-main.gallery > .inline-accented-vid {
 
-  width: 80%;
-  margin: auto;
-
-}
-}
 
 
 
@@ -694,6 +666,9 @@ font-size: 35px;
 /* TABLET / DESKTOP */
 
 @media screen and (min-width: 700px) {
+  #story{
+    max-width: 800px;
+  }
   .passage{
     display: flex;
     flex-direction: column;
@@ -706,8 +681,6 @@ font-size: 35px;
   }
 
   main{
-    max-width: 1000px;
-    margin-block-start: 4rem;
     padding: 1rem 6rem;
   }
 
@@ -727,7 +700,7 @@ font-size: 35px;
 }
 
   main.landing > .inline-img-wrapper{
-max-width: 70%;
+max-width: 50%;
   }
 
   header.standard> .logo-wrapper {
@@ -742,7 +715,11 @@ header.standard> .title-wrapper > h2 {
  
 }
 .footer-icons {
-padding: 2rem
+padding: 2rem 2rem 4rem 2rem;
+ max-width: 800px;
+ margin: auto;
+ left:inherit;
+ 
 }
 .footer-icons > a > img ,  .footer-icons > #processingMount > a > img{
   width: 2.5rem;
@@ -763,6 +740,10 @@ font-size: 2rem;
 input[type="text"]::placeholder{
 
   /* font-size: 3rem; */
+}
+
+main.credits > section > .btn-container > button{
+  width: initial;
 }
 }
 
