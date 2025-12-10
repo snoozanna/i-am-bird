@@ -17,8 +17,8 @@ I am Bird | Koro
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-@import url("../styles/generics.css");
-@import url("../styles/styles.css");
+@import url("styles/generics.css");
+@import url("styles/styles.css");
 
 
 :: Story JavaScript [script]
@@ -80,12 +80,13 @@ setup.addCaptions = (cuekey) =>  {
   track.mode = "hidden"; // since we're rendering manually
 
 const cues = {
-track_1: [[7.02,14.82,"I remember being born. They told me it's not possible, but I do."],
-[18.32,23.78,"I remember the darkness. It was hot, humid, quite claustrophobic. I remember feeling stuck. That place was too small for me. Even then, I could feel that. Even then, I knew greater things awaited."],
-[40.62,46.2,"I remember hearing voices outside, they were calling me, inviting me to break free."],
-[48.105,55.905,"There was an urge deep inside my bones to escape. To open my wings. To fly away towards the light, towards infinity."],
-[61.665,65.385,"The sky is the limit, they say."],
-[65.385,75.21,"So I pushed. I hit that wall as hard as I could, and then a little crack, and I saw it. Freedom."]], 
+track_1: [[7.000,18.000,"I remember being born. They told me it’s not possible, but I do."],
+[18.000,26.000,"I remember the darkness. It was hot, humid, quite claustrophobic."],
+[26.000,40.000,"I remember feeling stuck. That place was too small for me. Even then, I could feel that. Even then, I knew greater things awaited."],
+[40.000,50.000,"I remember hearing voices outside, they were calling me, inviting me to break free."],
+[50.000,63.000,"There was an urge, deep inside my bones, to escape. To open my wings, to fly away, towards the light, towards infinity."],
+[63.000,67.000,"The sky is the limit they say."],
+[67.000,78.000,"So I pushed. I hit that wall as hard as I could. And then, a little crack, and I saw it. Freedom."]], 
 track_2: [[5.000,8.500,"I’ve always known I was meant to go away."],
 [9.000,18.000,"I grew up looking at the travellers. Every year in spring they were going, hundreds of them, taking over the sky."],
 [18.000,23.000,"I remember asking my mom: “Can I go too?”"],
@@ -381,14 +382,13 @@ track_12:[[8.000,10.000,"Arriving in Morocco felt like a dream at first."],
 [136.000,144.000,"“So” he said “I think that woodpecker was pretty clear, it seems like we have overstayed our welcome. Are you ready for the next part of the trip, Bird?”"]], 
 track_13:[
   [11.000,13.000,"Arriving in Morocco felt like a dream."],
-[13.000,17.000,"An oasis of peace, food and rest."],
-[17.000,26.000,"I remember being so happy. So proud. I’d crossed the Sahara, man! If I could do that, I could do anything."],
+[13.000,26.000,"An oasis of peace, food and rest. I remember being so happy. So proud. I’d crossed the Sahara, man! If I could do that, I could do anything."],
 [26.000,35.000,"It was wonderful to meet other travellers. There were all kinds of birds stopping in Morocco. Geese, cuckoos, swallows."],
 [35.000,42.000,"We came from all over Africa. We all had different reasons to be here; we would have never talked to each other before."],
 [42.000,49.000,"But the crossing had brought all us migrants together, suddenly making us feel like family."],
 [49.000,56.000,"And then, one day, in the middle of that menagerie, I met Banjoko."],
-[56.000,64.000,"The first time I saw him, I felt I was looking at myself in a pool of water. I was stunned."],
-[64.000,67.000,"Then I stepped closer, and so did he."],
+[56.000,62.000,"The first time I saw him, I felt I was looking at myself in a pool of water. I was stunned."],
+[62.000,67.000,"Then I stepped closer, and so did he."],
 [67.000,70.000,"“Hi”, I said."],
 [70.000,74.000,"How could I explain this? I felt like I knew him."],
 [74.000,78.000,"When you meet birds from your own species far from home, you just click."],
@@ -396,15 +396,14 @@ track_13:[
 [87.000,89.000,"“Hi Bird”, he replied."],
 [89.000,92.000,"“I’m Mawusi”, I said."],
 [92.000,99.000,"“Sweet. I’m Banjoko, but I got used to people calling me Bird. Nobody could pronounce my actual name.”"],
-[99.000,101.000,"“So you already went to Europe, then?”"],
-[101.000,111.000,"“I did, once, last spring. You’ll see, you’ll never be the same after that."],
-[111.000,118.000,"It’s hard to be in a place where nobody understands your name, where you are from or what you are."],
-[118.000,125.000,"Where nobody can tell whether you are a swallow, a sand martin or a willow warbler. To them it’s all the same, to them you are just another bird.”"],
-[125.000,132.000,"I didn’t reply. He smiled."],
-[132.000,139.000,"“Don’t worry, there are good things too. And it’s easier when you travel in good company. So... would you like to join me, Bird?”"]
+[99.000,106.000,"“So you already went to Europe, then?” “I did, once, last spring. You’ll see, you’ll never be the same after that."],
+[106.000,111.000,"It’s hard to be in a place where nobody understands your name, where you are from or what you are."],
+[111.000,118.000,"Where nobody can tell whether you are a swallow, a sand martin or a willow warbler. To them it’s all the same, to them you are just another bird.”"],
+[118.000,125.000,"I didn’t reply. He smiled."],
+[125.000,137.000,"“Don’t worry, there are good things too. And it’s easier when you travel in good company. So... would you like to join me, Bird?”"]
 ], 
 track_14: [
-  [0.000,13.000,"Travelling with Banjoko made it all feel different."],
+  [9.000,13.000,"Travelling with Banjoko made it all feel different."],
 [13.000,19.000,"Of course he was not the first bird I met on my journey; migrants rarely get privacy."],
 [19.000,24.000,"But since I left home, that was the first time I felt someone truly understood me."],
 [24.000,33.000,"It was nice to have somebody to talk to, to laugh with, to discuss what we would do when we made it to Europe."],
@@ -570,7 +569,7 @@ track_19:[
 [102.000,112.000,"I couldn’t understand. Was this really the Eldorado the travellers had spoken about? Had it all been a joke?"],
 [112.000,121.000,"I felt dizzy. That can’t be it, I thought. I haven’t travelled across two continents for this."],
 [121.000,124.000,"There must be something good about this place."],
-[124.000,126.000,"There must be."]
+[124.000,129.000,"There must be."]
 ], 
 track_20:[[4.000,15.000,"“Eat, Mawusi. Food will always comfort you when everything else is lost.”"],
 [15.000,28.000,"I thought of my mother. I missed her. I don’t think I had ever missed her that badly before."],
@@ -593,11 +592,11 @@ track_20:[[4.000,15.000,"“Eat, Mawusi. Food will always comfort you when every
 [112.000,121.000,"But I suppose there is no bread in your little jungle. No wonder you have to fall back on hunting smelly insects. How degrading.”"],
 [121.000,125.000,"“Don’t be rude, Archie”, said one of the smaller pigeons."],
 [125.000,132.000,"“She probably doesn’t understand us. Dooo yoouu haaave breaaad in aaa friii caaa?”"],
-[132.000,143.000,"“I’m not stupid”, I said, “and of course I know bread. But that’s what humans eat. We just prefer fresh food. Fresh food.”"],
+[132.000,143.000,"“I’m not stupid”, I said, “and of course I know bread. But that’s what humans eat. We just prefer fresh food.“ “Fresh food!”"],
 [143.000,146.000,"They all laughed, mimicking me."],
 [146.000,152.000,"“I don’t know why you dislike them, Rosie”, added the first pigeon. “I find those migrants amusing."],
 [152.000,158.000,"But let’s head back to the Ritz, shall we? They may have disposed of the afternoon tea’s scones by now.”"],
-[158.000,164.000,"And they left me there, alone in the crowd, feeling stupid with the leftovers of my first English meal."]], 
+[158.000,166.000,"And they left me there, alone in the crowd, feeling stupid with the leftovers of my first English meal."]], 
 track_21:[
   [4.000,15.000,"“When you are lonely, Mawusi, look for a gang. We are stronger together.”"],
 [15.000,23.000,"Nunyati had told me London was a city of travellers. A place where you could always find one of your kind."],
@@ -644,9 +643,9 @@ track_22:[
 [104.000,114.000,"I picked up a plastic straw. It felt strange in my beak. Strange, but strangely familiar."],
 [114.000,116.000,"I examined it closely."],
 [116.000,120.000,"With a bit of imagination, it could look like a twig."],
-[120.000,129.000,"With a bit of imagination, maybe one could use it to build a nest."],
+[122.000,129.000,"With a bit of imagination, maybe one could use it to build a nest."],
 [129.000,135.000,"Not the kind of nest I had imagined, of course, probably a bit smaller."],
-[135.000,140.000,"But with a bit of imagination, and with time, maybe one day that nest could look like home."]
+[135.000,150.000,"But with a bit of imagination, and with time, maybe one day that nest could look like home."]
 ], 
 track_23:[[0.000,13.000,"Sand martins don’t do well alone. We are sociable creatures, it’s in our blood."],
 [13.000,22.000,"This was probably the first time in my entire life I had been truly alone, and it terrified me."],
@@ -734,7 +733,7 @@ setup.playStoryAudio = () => {
   const passageMatch = passageName.match(/^(\d+)_/);
   if (passageMatch) {
     const num = passageMatch[1]; // extract number before underscore
-    audioFiles = [`../assets/audio/track_${num}.mp3`];
+    audioFiles = [`assets/audio/track_${num}.mp3`];
   }
 
   let currentTrack = 0;
@@ -780,7 +779,7 @@ setup.chooseStoryAudio = () => {
   const passageMatch = passageName.match(/^(\d+[a-z]?)_/i);
   if (passageMatch) {
     const key = passageMatch[1]; // e.g., "4", "4a", "12b"
-    audioFiles = [`../assets/audio/track_${key}.mp3`];
+    audioFiles = [`assets/audio/track_${key}.mp3`];
 
     // Attach matching captions (optional but logical pairing)
     setup.addCaptions(`track_${key}`);
@@ -829,7 +828,7 @@ setup.chooseStoryAudioNoCaps = () => {
   const passageMatch = passageName.match(/^(\d+)_/);
   if (passageMatch) {
     const num = passageMatch[1]; 
-    audioFiles = [`../assets/audio/track_${num}.mp3`];
+    audioFiles = [`assets/audio/track_${num}.mp3`];
   }
 
   let currentTrack = 0;
@@ -887,7 +886,7 @@ setup.hideCap = () => {
 :: header[nobr]
 <header class="standard">
  <div class="logo-wrapper">
-   <img src="../assets/img/replay-sharp-b.png"/>
+   <img src="assets/img/replay-sharp-b.png"/>
    </div>
    <div class="title-wrapper">
    <h1>Main title</h1>
@@ -898,28 +897,28 @@ setup.hideCap = () => {
 :: headerdir [nobr]
 <header class="standard">
  <div class="footsteps-wrapper">
-   <img src="../assets/img/1-trans.png"/>
+   <img src="assets/img/1-trans.png"/>
    </div>
 </header>
 
 :: headerchoice [nobr]
 <header class="standard">
  <div class="footsteps-wrapper">
-   <img src="../assets/img/2-trans.png"/>
+   <img src="assets/img/2-trans.png"/>
    </div>
 </header>
 
 :: headertrack [nobr]
 <header class="standard">
  <div class="footsteps-wrapper">
-   <img src="../assets/img/3-trans.png"/>
+   <img src="assets/img/3-trans.png"/>
    </div>
 </header>
 
 :: footer[nobr]
 
 <footer>
-    <<link [img[../assets/img/back-black.png]]>>
+    <<link [img[assets/img/back-black.png]]>>
         <<goto $prevpass>>
     <</link>>
 
@@ -929,9 +928,9 @@ setup.hideCap = () => {
 :: navbuttons[nobr]
 
 <div class="footer-icons">
-<<link [img[../assets/img/back-sharp.png][$prevpass]]>>
+<<link [img[assets/img/back-sharp.png][$prevpass]]>>
     <</link>>
-    <<link [img[../assets/img/replay-sharp.png][$pass]]>>
+    <<link [img[assets/img/replay-sharp.png][$pass]]>>
     <</link>>
    
 <div><div/>
@@ -942,7 +941,7 @@ setup.hideCap = () => {
 :: navbuttonsend[nobr]
 
 <div class="footer-icons">
-<<link [img[../assets/img/back-sharp-b.png][$prevpass]]>>
+<<link [img[assets/img/back-sharp-b.png][$prevpass]]>>
     <</link>>
  <div><div/>
 <div><div/>
@@ -952,14 +951,14 @@ setup.hideCap = () => {
 :: navbuttonsb [nobr]
 
 <div class="footer-icons">
-<<link [img[../assets/img/back-sharp-b.png][$prevpass]]>>
+<<link [img[assets/img/back-sharp-b.png][$prevpass]]>>
     <</link>>
-    <<link [img[../assets/img/replay-sharp-b.png][$pass]]>>
+    <<link [img[assets/img/replay-sharp-b.png][$pass]]>>
     <</link>>
       <div id="captionBtnMount">
    <<include "captionsbutton">>
 </div>
- <<link [img[../assets/img/for-sharp-b.png][$nextpass]]>>
+ <<link [img[assets/img/for-sharp-b.png][$nextpass]]>>
     <</link>>
   
 
@@ -968,14 +967,14 @@ setup.hideCap = () => {
 :: navbuttonsdir [nobr]
 
 <div class="footer-icons">
-<<link [img[../assets/img/back-sharp-b.png][$prevpass]]>>
+<<link [img[assets/img/back-sharp-b.png][$prevpass]]>>
     <</link>>
-    <<link [img[../assets/img/replay-sharp-b.png][$pass]]>>
+    <<link [img[assets/img/replay-sharp-b.png][$pass]]>>
     <</link>>
       <div id="captionBtnMount">
   
 </div>
- <<link [img[../assets/img/for-sharp-b.png][$nextpass]]>>
+ <<link [img[assets/img/for-sharp-b.png][$nextpass]]>>
     <</link>>
   
 
@@ -984,9 +983,9 @@ setup.hideCap = () => {
 :: navbuttonstrans [nobr]
 
 <div class="footer-icons">
-<<link [img[../assets/img/back-sharp-b.png][$prevpass]]>>
+<<link [img[assets/img/back-sharp-b.png][$prevpass]]>>
     <</link>>
-    <<link [img[../assets/img/replay-sharp-b.png][$pass]]>>
+    <<link [img[assets/img/replay-sharp-b.png][$pass]]>>
     <</link>>
     <div>
    <<include "transcriptbutton">>
@@ -996,7 +995,7 @@ setup.hideCap = () => {
 
 :: playbutton [nobr]
 
-  <<link [img[../assets/img/play-black.png]]>>
+  <<link [img[assets/img/play-black.png]]>>
     <<addclass "#msgMount" "hide">>
        <<set $showCaptionsButton to true>>
          <<replace "#captionBtnMount">>
@@ -1014,7 +1013,7 @@ setup.hideCap = () => {
 
 :: pausebutton [nobr]
 
-  <<link [img[../assets/img/pause-black.png]]>>
+  <<link [img[assets/img/pause-black.png]]>>
     <<set $a to setup.pause()>>
      <<set $playing to false>>
       <<replace "#playBtnContainer">>
@@ -1030,32 +1029,45 @@ setup.hideCap = () => {
     <</replace>>
 
 :: captionsbutton [nobr]
+
 <<timed 0.1s>>
   <<if $userchoices.captions is true>>
-     <<addclass "#captionBtnMount" "captionActive">>
         <<set $fn to setup.showCap()>>
     <</if>>
-<</timed>>
+
 <<if $showCaptionsButton is true>>
- <<link [img[../assets/img/captions.png]]>>
       <<if $userchoices.captions is true>>
-         <<set $userchoices.captions to false>>
-        <<removeclass "#captionBtnMount" "captionActive">>
-           <<set $fn to setup.hideCap()>>
-            /* <<removeclass "#msgMount" "hide">> */
+        /* show a button which turns them off */
+        <<replace "#captionBtnMount">>
+          <<link [img[assets/img/no_sub.png]]>>
+          <<set $userchoices.captions to false>>
+          <<set $fn to setup.hideCap()>>
+          <<replace "#captionBtnMount">>
+             <<include "captionsbutton">>
+           <</replace>>
+           <</link>>
+         <</replace>>
       <<else>>
+          /* show a button which turns them on*/
+        <<replace "#captionBtnMount">>
+          <<link [img[assets/img/sub.png]]>>
         <<set $userchoices.captions to true>>
-        <<addclass "#captionBtnMount" "captionActive">>
         <<set $fn to setup.showCap()>>
-          /* <<addclass "#msgMount" "hide">> */
+         <<replace "#captionBtnMount">>
+             <<include "captionsbutton">>
+           <</replace>>
+        <</link>>
+   <</replace>>
         <</if>>
-    <</link>>
+
 <</if>>
+<</timed>>
+
 
 
 :: transcriptbutton [nobr]
 <<if $showCaptionsButton>>
- <<link [img[../assets/img/transcript.png]]>>
+ <<link [img[assets/img/transcript.png]]>>
       <<if $transcript is true>>
         <<addclass "#transcriptMount" "hide">>
             <<removeclass "#msgMount" "hide">>
@@ -1075,14 +1087,14 @@ setup.hideCap = () => {
 :: footeroptionappears[nobr]
 <<set $showWallet to false>>
 <footer class="grid-item footer">
-  <<link [img[../assets/img/back-black.png]]>>
+  <<link [img[assets/img/back-black.png]]>>
         <<goto $prevpass>>
     <</link>>
   /* <<link "W">>
         <<set $showWallet to true>>
         <<goto "wallet">>
         <</link>> */
-           /* <<link [img[../assets/img/for-black.png]]>>
+           /* <<link [img[assets/img/for-black.png]]>>
         <<goto $nextpass>>
     <</link>> */
     <div id="nextButtonContainer">
@@ -1092,12 +1104,14 @@ setup.hideCap = () => {
 :: headerlanding[nobr]
 <header class="standard scrollable">
  <div class="logo-wrapper">
-   <img src="../assets/img/replay-sharp-b.png"/>
+   <img src="assets/img/replay-sharp-b.png"/>
    </div>
 </header>
 
 :: wallet [nobr]
 <div class="wallet">
+<p>  current passage: $pass</p>
+<p>  userchoices.captions: $userchoices.captions</p>
 <p>  userchoices.time: $userchoices.time</p>
 <p>  userchoices.way: $userchoices.way</p>
 <p>  userchoices.door: $userchoices.door</p>
@@ -1107,7 +1121,7 @@ setup.hideCap = () => {
 <p>  userchoices.peril: $userchoices.peril</p>
 <p>  userchoices.threat: $userchoices.threat</p>
 <p>  userchoices.trust: $userchoices.trust</p>
-<p>  pass: $pass</p>
+
 </div>
 
 :: landing [nobr] 
@@ -1135,7 +1149,7 @@ setup.hideCap = () => {
 <main class="landing flex-col-cen start">
 
  <div class="inline-img-wrapper"> 
-     <img src="../assets/img/landing.png"/>
+     <img src="assets/img/landing.png"/>
      </div>
 
    <h1>I AM BIRD</h1>
@@ -1371,7 +1385,7 @@ setup.hideCap = () => {
  <<timed 4s>>
   <<append "#msgMount">>
 <div class="play-button-container">
-  <<link [img[../assets/img/play-black.png]]>>
+  <<link [img[assets/img/play-black.png]]>>
 
       <</link>>
       </div>
@@ -1383,7 +1397,7 @@ setup.hideCap = () => {
 <p>
   You can enable or disable captions by clicking on this symbol.
   <div class="inline-icon">
-    <<link [img[../assets/img/captions.png]]>>
+    <<link [img[assets/img/captions.png]]>>
         <<set $captions to true>>
         <<goto $pass>>
       <</link>>
@@ -1454,7 +1468,7 @@ setup.hideCap = () => {
 
 
 
-<<timed 90s>>
+<<timed 80s>>
     <<append "#btnContainer">>
     <<button "Follow the light">>
             <<goto $nextpass>>
@@ -1541,7 +1555,7 @@ setup.hideCap = () => {
 <</timed>>
 
 
-<<timed 200s>>
+<<timed 190s>>
     <<append "#btnContainer">>
     <<button "I am ready to leave">>
             <<goto $nextpass>>
@@ -1676,7 +1690,7 @@ setup.hideCap = () => {
 <</timed>>
 
 
-<<timed 165s>>
+<<timed 160s>>
     <<append "#btnContainer">>
     <<button "Find out more">>
             <<goto $nextpass>>
@@ -1804,7 +1818,7 @@ setup.hideCap = () => {
 <</timed>>
 
 
-<<timed 170s>>
+<<timed 160s>>
     <<append "#btnContainer">>
     <<button "Find out more">>
             <<goto $nextpass>>
@@ -1938,7 +1952,7 @@ setup.hideCap = () => {
 <</timed>>
 
 
-<<timed 170s>>
+<<timed 160s>>
     <<append "#btnContainer">>
     <<button "Find out more">>
             <<goto $nextpass>>
@@ -2079,7 +2093,7 @@ setup.hideCap = () => {
 <</timed>>
 
 
-<<timed 175s>>
+<<timed 170s>>
     <<append "#btnContainer">>
     <<button "Do I have a choice?">>
             <<goto $nextpass>>
@@ -2264,7 +2278,7 @@ setup.hideCap = () => {
 <</timed>>
 
 
-<<timed 165s>>
+<<timed 105s>>
     <<append "#btnContainer">>
     <<button "Find out more">>
             <<goto $nextpass>>
@@ -2392,7 +2406,7 @@ setup.hideCap = () => {
 <</timed>>
 
 
-<<timed 140s>>
+<<timed 138s>>
     <<append "#btnContainer">>
     <<button "Let's fly">>
             <<goto $nextpass>>
@@ -2519,7 +2533,7 @@ setup.hideCap = () => {
 <</timed>>
 
 
-<<timed 150s>>
+<<timed 145s>>
     <<append "#btnContainer">>
     <<button "Let's fly">>
             <<goto $nextpass>>
@@ -2662,7 +2676,7 @@ setup.hideCap = () => {
 <</timed>>
 
 
-<<timed 175s>>
+<<timed 155s>>
     <<append "#btnContainer">>
     <<button "So what now?">>
             <<goto $nextpass>>
@@ -2760,7 +2774,7 @@ setup.hideCap = () => {
 <</timed>>
 
 
-<<timed 175s>>
+<<timed 155s>>
     <<append "#btnContainer">>
     <<button "So what now?">>
             <<goto $nextpass>>
@@ -3121,7 +3135,7 @@ setup.hideCap = () => {
 <</timed>>
 
 
-<<timed 135s>>
+<<timed 145s>>
     <<append "#btnContainer">>
     <<button "Let's follow that bird">>
             <<goto $nextpass>>
@@ -3208,7 +3222,7 @@ setup.hideCap = () => {
 <</timed>>
 
 
-<<timed 135s>>
+<<timed 145s>>
     <<append "#btnContainer">>
     <<button "Let's follow that bird">>
             <<goto $nextpass>>
@@ -3295,7 +3309,7 @@ setup.hideCap = () => {
 <</timed>>
 
 
-<<timed 135s>>
+<<timed 132s>>
     <<append "#btnContainer">>
     <<button "Let's follow that bird">>
             <<goto $nextpass>>
@@ -3383,7 +3397,7 @@ setup.hideCap = () => {
 <</timed>>
 
 
-<<timed 135s>>
+<<timed 132s>>
     <<append "#btnContainer">>
     <<button "Let's follow that bird">>
             <<goto $nextpass>>
@@ -3478,7 +3492,7 @@ setup.hideCap = () => {
 <</timed>>
 
 
-<<timed 135s>>
+<<timed 92s>>
     <<append "#btnContainer">>
     <<button "Let's move on">>
             <<goto $nextpass>>
@@ -3621,7 +3635,7 @@ setup.hideCap = () => {
 <</timed>>
 
 
-<<timed 135s>>
+<<timed 92s>>
     <<append "#btnContainer">>
     <<button "Let's move on">>
             <<goto $nextpass>>
@@ -3903,7 +3917,7 @@ setup.hideCap = () => {
 <</timed>>
 
 
-<<timed 165s>>
+<<timed 210s>>
     <<append "#btnContainer">>
     <<button "Try to go on">>
             <<goto $nextpass>>
@@ -3949,7 +3963,7 @@ setup.hideCap = () => {
 <</timed>>
 
 
-<<timed 165s>>
+<<timed 170s>>
     <<append "#btnContainer">>
     <<button "Try to go on">>
             <<goto $nextpass>>
@@ -3994,7 +4008,7 @@ setup.hideCap = () => {
 <</timed>>
 
 
-<<timed 165s>>
+<<timed 260s>>
     <<append "#btnContainer">>
     <<button "Try to go on">>
             <<goto $nextpass>>
@@ -4040,7 +4054,7 @@ setup.hideCap = () => {
 <</timed>>
 
 
-<<timed 165s>>
+<<timed 193s>>
     <<append "#btnContainer">>
     <<button "Try to go on">>
             <<goto $nextpass>>
@@ -4130,7 +4144,7 @@ setup.hideCap = () => {
 <</timed>>
 
 
-<<timed 135s>>
+<<timed 125s>>
     <<append "#btnContainer">>
     <<button "Let's find it">>
             <<goto $nextpass>>
@@ -4273,7 +4287,7 @@ setup.hideCap = () => {
 <</timed>>
 
 
-<<timed 135s>>
+<<timed 125s>>
     <<append "#btnContainer">>
     <<button "Let's find it">>
             <<goto $nextpass>>
@@ -4413,7 +4427,7 @@ setup.hideCap = () => {
 <</timed>>
 
 
-<<timed 140s>>
+<<timed 163s>>
     <<append "#btnContainer">>
     <<button "Can this be home?">>
             <<goto $nextpass>>
@@ -4501,7 +4515,7 @@ setup.hideCap = () => {
 <</timed>>
 
 
-<<timed 140s>>
+<<timed 192s>>
     <<append "#btnContainer">>
     <<button "Can this be home?">>
             <<goto $nextpass>>
@@ -4592,7 +4606,7 @@ setup.hideCap = () => {
 <</timed>>
 
 
-<<timed 140s>>
+<<timed 163s>>
     <<append "#btnContainer">>
     <<button "Can this be home?">>
             <<goto $nextpass>>
@@ -4677,7 +4691,7 @@ setup.hideCap = () => {
 <</timed>>
 
 
-<<timed 140s>>
+<<timed 192s>>
     <<append "#btnContainer">>
     <<button "Can this be home?">>
             <<goto $nextpass>>
@@ -4817,7 +4831,7 @@ setup.hideCap = () => {
 <</timed>>
 
 
-<<timed 140s>>
+<<timed 142s>>
     <<append "#btnContainer">>
     <<button "The end. Unless...">>
             <<goto $nextpass>>
@@ -4955,7 +4969,7 @@ setup.hideCap = () => {
 <</timed>>
 
 
-<<timed 140s>>
+<<timed 210s>>
     <<append "#btnContainer">>
     <<button "The end. Unless...">>
             <<goto $nextpass>>
@@ -4967,8 +4981,37 @@ setup.hideCap = () => {
 <<set $prevpass to "23_story">>
 <<set $pass to "credits">>
 <<include "headertrack">>
-<main>
-<span>CREDITS</span>
+<main class="credits">
+<section>
+  <p class="bold"><i>I am Bird</i> is a project by Marie Klimis and produced by <a href="https://www.koro.org.uk/" class="linky" target="_blank" rel="noreferrer">Koro</a></p>
+  
+  <p>We aim to create inclusive and affordable immersive experiences in public spaces. If you enjoyed our work and would like to see more of it, sign up for our newsletter, follow us on social media or donate to support future similar projects.</p>
+  <div class="btn-container" id="btnContainer">
+  <a href="" target="_blank" rel="noreferrer">
+  <button>Donate</button>
+  </a>
+
+  <a href="https://www.instagram.com/koroproductions_" target="_blank" rel="noreferrer">
+  <button>Follow us</button>
+  </a>
+  <a href="https://www.koro.org.uk/contact" target="_blank" rel="noreferrer">
+  <button>Sign up</button>
+  </a>
+</div>
+</section>
+
+
+<section class="credits">
+  <h3 class="bold">Credits</h3>
+  
+  <p> Writer & book designer: Marie Klimis</p>
+  <p> Composer: Nicola T Chang</p>
+   <p> Voiceover: Nicole Acquah</p>
+    <p>Programmer: Suzanna Hurst</p>
+  
+  
+  <p>Commissioned by Farnham Maltings with the support of National Rural Touring Forum (NRTF), Esmée Fairbairn Foundation and Rothschild Foundation</p>
+</section>
 </main>
 
 <<include "navbuttonsend">>

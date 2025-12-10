@@ -1,98 +1,68 @@
 
 
 const vttText = `
-00:00:00.000 --> 00:00:13.000
-Sand martins don’t do well alone. We are sociable creatures, it’s in our blood. 
+00:00:11.000 --> 00:00:13.000
+Arriving in Morocco felt like a dream. 
 
-00:00:13.000 --> 00:00:22.000
-This was probably the first time in my entire life I had been truly alone, and it terrified me. 
+00:00:13.000 --> 00:00:26.000
+An oasis of peace, food and rest. 
+I remember being so happy. So proud. I’d crossed the Sahara, man! If I could do that, I could do anything. 
 
-00:00:22.000 --> 00:00:31.000
-I looked at the grey sky, and that when I spotted another martin flying in the distance. 
+00:00:26.000 --> 00:00:35.000
+It was wonderful to meet other travellers. There were all kinds of birds stopping in Morocco. Geese, cuckoos, swallows. 
 
-00:00:31.000 --> 00:00:40.000
-I called to him, but he didn’t hear me. So I took off and tried to catch up with him in the air. 
+00:00:35.000 --> 00:00:42.000
+We came from all over Africa. We all had different reasons to be here; we would have never talked to each other before. 
 
-00:00:40.000 --> 00:00:43.000
-“Excuse me”, I gasped. 
+00:00:42.000 --> 00:00:49.000
+But the crossing had brought all us migrants together, suddenly making us feel like family. 
 
-00:00:43.000 --> 00:00:43.000
-He turned toward me. 
+00:00:49.000 --> 00:00:56.000
+And then, one day, in the middle of that menagerie, I met Banjoko. 
 
-00:00:43.000 --> 00:00:52.000
-“Hi”, he said. “You’re new here, aren’t you?” 
+00:00:56.000 --> 00:01:02.000
+The first time I saw him, I felt I was looking at myself in a pool of water. I was stunned. 
 
-00:00:52.000 --> 00:00:59.000
-“How do you know?” I asked. He didn’t reply. He smiled. It was the first smile I’d got since I arrived. 
+00:01:02.000 --> 00:01:07.000
+Then I stepped closer, and so did he. 
 
-00:00:59.000 --> 00:01:03.000
-“Where are you going?” I asked. 
+00:01:07.000 --> 00:01:10.000
+“Hi”, I said. 
 
-00:01:03.000 --> 00:01:09.000
-“Hounslow”, he said. “In the suburbs. Did you really expect to find a decent place to stay in central London?” He laughed. 
+00:01:10.000 --> 00:01:14.000
+How could I explain this? I felt like I knew him. 
 
-00:01:09.000 --> 00:01:19.000
-“Come on. I’ll show you.” 
+00:01:14.000 --> 00:01:18.000
+When you meet birds from your own species far from home, you just click. 
 
-00:01:19.000 --> 00:01:22.000
-We flew for half an hour, following the river. 
+00:01:18.000 --> 00:01:27.000
+The world around is so unsettling, so unfamiliar, that you can feel an instant connection to total strangers.  
 
-00:01:22.000 --> 00:01:29.000
-He asked me lots of questions, about my journey, about my family, about home. 
+00:01:27.000 --> 00:01:29.000
+“Hi Bird”, he replied.
 
-00:01:29.000 --> 00:01:34.000
-You can always trust another sand martin to make you feel comfortable and have good chat. 
+00:01:29.000 --> 00:01:32.000
+“I’m Mawusi”, I said. 
 
-00:01:34.000 --> 00:01:38.000
-Then suddenly, he pointed at something below on the riverbed and we landed. 
+00:01:32.000 --> 00:01:39.000
+“Sweet. I’m Banjoko, but I got used to people calling me Bird. Nobody could pronounce my actual name.” 
 
-00:01:38.000 --> 00:01:43.000
-Ahead of me was the most terrifying nest I had ever seen. 
+00:01:39.000 --> 00:01:46.000
+“So you already went to Europe, then?” 
+“I did, once, last spring. You’ll see, you’ll never be the same after that. 
 
-00:01:43.000 --> 00:01:50.000
-A gigantic construction of a dozen towers carved on the sandy faces of the bank, flanked by countless tiny windows. 
+00:01:46.000 --> 00:01:51.000
+It’s hard to be in a place where nobody understands your name, where you are from or what you are. 
 
-00:01:50.000 --> 00:02:00.000
-And coming in and out of those holes: sand martins. There were hundreds of them, flying around and chittering in a terrible cacophony. 
+00:01:51.000 --> 00:01:58.000
+Where nobody can tell whether you are a swallow, a sand martin or a willow warbler. To them it’s all the same, to them you are just another bird.”
 
-00:02:00.000 --> 00:02:04.000
-After the loneliness of the last few weeks, I was in shock. 
+00:01:58.000 --> 00:02:05.000
+I didn’t reply. He smiled.
 
-00:02:04.000 --> 00:02:08.000
-“What is this?” I asked my companion. 
+00:02:05.000 --> 00:02:13.000
+“Don’t worry, there are good things too. And it’s easier when you travel in good company. So… would you like to join me, Bird?”
 
-00:02:08.000 --> 00:02:12.000
-“Our community”, he said. “Do you like it?” 
-
-00:02:12.000 --> 00:02:18.000
-I didn’t know what to answer. I had never seen so many birds living so close together. 
-
-00:02:18.000 --> 00:02:24.000
-“Is it safe?” Was my first thought. “What if there is a fire or something?” 
-
-00:02:24.000 --> 00:02:38.000
-He shrugged. “Look, this is a migrants’ nest. Of course it’s different from what you had back home. Less spacious. Colder. But it’s a good nest. You’ll get used to it. You just need to dive in.” 
-
-00:02:38.000 --> 00:02:46.000
-And he did. He flew inside one of the openings and disappeared. 
-
-00:02:46.000 --> 00:02:55.000
-I stood there, unsure about what to do. This was so different from anything I had imagined. How could this ever be home? 
-
-00:02:55.000 --> 00:03:02.000
-Then all of a sudden, I heard the voice of Nunyati in my head. 
-
-00:03:02.000 --> 00:03:13.000
-“Home is an elusive concept, Mawusi. You never know where you’ll find it.” 
-
-00:03:13.000 --> 00:03:20.000
-I looked at the giant nest. I could hear the sound of dozens of sand martins coming from within, chatting, laughing. 
-
-00:03:20.000 --> 00:03:26.000
-It was cold outside, it looked so much warmer inside. 
-
-00:03:26.000 --> 00:03:32.000
-So I closed my eyes. I took a deep breath. And I dove in.
 
 `
 function srtToCues(srt) {

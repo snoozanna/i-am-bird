@@ -182,6 +182,7 @@ button:hover, button:focus, button:active {
   gap:1rem;    
   justify-content: center;
   align-items: flex-start;
+  margin-block-start: 1rem;
 }
 
 
@@ -424,14 +425,20 @@ font-size: 2.2rem;
 p{
   font-size: 2rem;
   margin-block-end: 1.5rem;
-  line-height: 2.6rem;
+  line-height: 2.8rem;
   font-weight: 400;
   letter-spacing: -0.03rem;
 }
 
-p.bold{
+p.bold, h3.bold{
   font-weight: bold;
 }
+
+a.linky{
+  text-decoration: underline;
+}
+
+
 
 
 span.accent{
@@ -785,4 +792,19 @@ input[type="text"]::placeholder{
     font-size: 2rem;
     font-weight: 600;
     text-align: center;
+   
+}
+
+
+/* CREDITS  */
+main.credits > section{
+  margin-block-end: 3rem;
+}
+
+main.credits > section.credits > h3{
+  margin-block-end: 1rem;
+}
+
+main.credits > section.credits > p{
+  margin-block-end: 1rem;
 }
