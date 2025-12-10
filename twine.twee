@@ -1399,7 +1399,7 @@ setup.hideCap = () => {
 <p>
   You can enable or disable captions by clicking on this symbol.
   <div class="inline-icon">
-    <<link [img[assets/img/captions.png]]>>
+    <<link [img[assets/img/sub.png]]>>
       <<set $captions to true>>
       <<replace "#audioMount">>
         <audio id="audioPlayer" src="assets/audio/soundcheck.mp3" autoplay>Audio is not supported on your device</audio>
