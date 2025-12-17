@@ -742,8 +742,10 @@ input[type="text"]::placeholder{
   /* font-size: 3rem; */
 }
 
-main.credits > section > .btn-container > button{
-  width: initial;
+main.credits > section > .btn-container.credits > a{
+  display: flex;
+      width: 100%;
+      justify-content: center;
 }
 }
 
@@ -798,4 +800,9 @@ main.credits > section.credits > h3{
 
 main.credits > section.credits > p{
   margin-block-end: 1rem;
+}
+
+.btn-container.credits{
+  align-items: inherit;
+    width: inherit;
 }

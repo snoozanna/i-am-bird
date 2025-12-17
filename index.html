@@ -166,13 +166,16 @@ setup.addCaptions = (cuekey) =>  {
   track.mode = "hidden"; // since we're rendering manually
 
 const cues = {
-track_1: [[7.000,18.000,"I remember being born. They told me it’s not possible, but I do."],
+track_1: [[7.000,11.000,"I remember being born."],
+[12.000,18.000,"They told me it’s not possible, but I do."],
 [18.000,26.000,"I remember the darkness. It was hot, humid, quite claustrophobic."],
 [26.000,40.000,"I remember feeling stuck. That place was too small for me. Even then, I could feel that. Even then, I knew greater things awaited."],
 [40.000,50.000,"I remember hearing voices outside, they were calling me, inviting me to break free."],
 [50.000,63.000,"There was an urge, deep inside my bones, to escape. To open my wings, to fly away, towards the light, towards infinity."],
 [63.000,67.000,"The sky is the limit they say."],
-[67.000,78.000,"So I pushed. I hit that wall as hard as I could. And then, a little crack, and I saw it. Freedom."]], 
+[67.000,72.000,"So I pushed. I hit that wall as hard as I could."], 
+[72.500,80.000,"And then, a little crack, and I saw it."], 
+[81.000,84.000,"Freedom."]], 
 track_2: [[5.000,8.500,"I’ve always known I was meant to go away."],
 [9.000,18.000,"I grew up looking at the travellers. Every year in spring they were going, hundreds of them, taking over the sky."],
 [18.000,23.000,"I remember asking my mom: “Can I go too?”"],
@@ -1450,7 +1453,7 @@ setup.hideCap = () => {
 
 
 
-&lt;&lt;timed 80s&gt;&gt;
+&lt;&lt;timed 82s&gt;&gt;
     &lt;&lt;append &quot;#btnContainer&quot;&gt;&gt;
     &lt;&lt;button &quot;Follow the light&quot;&gt;&gt;
             &lt;&lt;goto $nextpass&gt;&gt;
@@ -1632,7 +1635,7 @@ setup.hideCap = () => {
 
 &lt;&lt;timed 160s&gt;&gt;
     &lt;&lt;append &quot;#btnContainer&quot;&gt;&gt;
-    &lt;&lt;button &quot;Find out more&quot;&gt;&gt;
+    &lt;&lt;button &quot;Fly&quot;&gt;&gt;
             &lt;&lt;goto $nextpass&gt;&gt;
         &lt;&lt;/button&gt;&gt;
     &lt;&lt;/append&gt;&gt;
@@ -4357,16 +4360,12 @@ setup.hideCap = () => {
   &lt;p class=&quot;bold&quot;&gt;&lt;i&gt;I am Bird&lt;/i&gt; is a project by Marie Klimis and produced by &lt;a href=&quot;https://www.koro.org.uk/&quot; class=&quot;linky&quot; target=&quot;_blank&quot; rel=&quot;noreferrer&quot;&gt;Koro&lt;/a&gt;&lt;/p&gt;
   
   &lt;p&gt;We aim to create inclusive and affordable immersive experiences in public spaces. If you enjoyed our work and would like to see more of it, sign up for our newsletter, follow us on social media or donate to support future similar projects.&lt;/p&gt;
-  &lt;div class=&quot;btn-container&quot; id=&quot;btnContainer&quot;&gt;
+  &lt;div class=&quot;btn-container credits&quot; id=&quot;btnContainer&quot;&gt;
   &lt;a href=&quot;&quot; target=&quot;_blank&quot; rel=&quot;noreferrer&quot;&gt;
   &lt;button&gt;Donate&lt;/button&gt;
   &lt;/a&gt;
-
-  &lt;a href=&quot;https://www.instagram.com/koroproductions_&quot; target=&quot;_blank&quot; rel=&quot;noreferrer&quot;&gt;
-  &lt;button&gt;Follow us&lt;/button&gt;
-  &lt;/a&gt;
   &lt;a href=&quot;https://www.koro.org.uk/contact&quot; target=&quot;_blank&quot; rel=&quot;noreferrer&quot;&gt;
-  &lt;button&gt;Sign up&lt;/button&gt;
+  &lt;button&gt;Follow us&lt;/button&gt;
   &lt;/a&gt;
 &lt;/div&gt;
 &lt;/section&gt;
