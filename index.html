@@ -1131,6 +1131,7 @@ setup.hideCap = () => {
 &lt;p&gt;  current passage: $pass&lt;/p&gt;
 &lt;p&gt;  userchoices.captions: $userchoices.captions&lt;/p&gt;
 &lt;p&gt;  userchoices.time: $userchoices.time&lt;/p&gt;
+&lt;p&gt;  userchoices.bird: $userchoices.bird&lt;/p&gt;
 &lt;p&gt;  userchoices.way: $userchoices.way&lt;/p&gt;
 &lt;p&gt;  userchoices.door: $userchoices.door&lt;/p&gt;
 &lt;p&gt;  userchoices.reason: $userchoices.reason&lt;/p&gt;
@@ -1150,6 +1151,7 @@ setup.hideCap = () => {
 &lt;&lt;set $userchoices to {
   captions: false,
     time: &quot;day&quot;,
+    bird: &quot;sand&quot;,
     way: &quot;stars&quot;,
     door: &quot;eat&quot;,
     reason: &quot;fear&quot;,
@@ -1222,6 +1224,7 @@ setup.hideCap = () => {
         &lt;&lt;else&gt;&gt;
             No content provided.
         &lt;&lt;/if&gt;&gt;
+        
 &lt;/main&gt;
 
 &lt;&lt;include &quot;navbuttonsb&quot;&gt;&gt;
@@ -1268,7 +1271,7 @@ setup.hideCap = () => {
         &lt;&lt;else&gt;&gt;
             No content provided.
         &lt;&lt;/if&gt;&gt;
-   /* &lt;&lt;include &quot;wallet&quot;&gt;&gt; */
+   
 &lt;/main&gt;
 
 &lt;&lt;include &quot;navbuttonsdir&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="25" name="_templateStoryTrans" tags="nobr" position="600,350" size="100,100">&lt;&lt;include &quot;headerdir&quot;&gt;&gt;
@@ -1551,6 +1554,7 @@ setup.hideCap = () => {
     &lt;&lt;append &quot;#btnContainer&quot;&gt;&gt;
     &lt;&lt;button &quot;Travel by night&quot;&gt;&gt;
           &lt;&lt;set $userchoices.time to &quot;night&quot;&gt;&gt;
+          &lt;&lt;set $userchoices.bird to &quot;willow&quot;&gt;&gt;
             &lt;&lt;goto &quot;3_dir&quot;&gt;&gt;
         &lt;&lt;/button&gt;&gt;
     &lt;&lt;/append&gt;&gt;
@@ -1560,6 +1564,7 @@ setup.hideCap = () => {
     &lt;&lt;append &quot;#btnContainer&quot;&gt;&gt;
     &lt;&lt;button &quot;Travel by day&quot;&gt;&gt;
       &lt;&lt;set $userchoices.time to &quot;day&quot;&gt;&gt;
+      &lt;&lt;set $userchoices.bird to &quot;sand&quot;&gt;&gt;
             &lt;&lt;goto &quot;7_dir&quot;&gt;&gt;
         &lt;&lt;/button&gt;&gt;
     &lt;&lt;/append&gt;&gt;
@@ -4351,7 +4356,12 @@ setup.hideCap = () => {
             &lt;&lt;goto $nextpass&gt;&gt;
         &lt;&lt;/button&gt;&gt;
     &lt;&lt;/append&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="186" name="credits" tags="nobr" position="725,2350" size="100,100">&lt;&lt;set $prevpass to &quot;23_story&quot;&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="186" name="credits" tags="nobr" position="725,2350" size="100,100">&lt;&lt;if $userchoices.bird is &quot;sand&quot;&gt;&gt;
+ &lt;&lt;set $prevpass to &quot;23_story&quot;&gt;&gt;
+&lt;&lt;else&gt;&gt;
+    &lt;&lt;set $prevpass to &quot;22_story&quot;&gt;&gt;
+ &lt;&lt;/if&gt;&gt;
+
 &lt;&lt;set $pass to &quot;credits&quot;&gt;&gt;
 &lt;&lt;include &quot;headertrack&quot;&gt;&gt;
 

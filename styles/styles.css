@@ -8,6 +8,7 @@
 --indigo: #321068;
 --white: #ffffff;
 --offblack: #000000;
+--greyblack: #414040; 
 --purple: #7d75a3;
 --color1: var(--indigo);
 --color2: var(--purple);
@@ -173,8 +174,8 @@ button,
 }
 
 button:hover, button:focus, button:active {
-  background-color: var(--color3);
-  color: var(--offblack)
+  background-color: var(--greyblack);
+  color: white;
 }
 
 .btn-container{

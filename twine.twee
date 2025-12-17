@@ -1116,6 +1116,7 @@ setup.hideCap = () => {
 <p>  current passage: $pass</p>
 <p>  userchoices.captions: $userchoices.captions</p>
 <p>  userchoices.time: $userchoices.time</p>
+<p>  userchoices.bird: $userchoices.bird</p>
 <p>  userchoices.way: $userchoices.way</p>
 <p>  userchoices.door: $userchoices.door</p>
 <p>  userchoices.reason: $userchoices.reason</p>
@@ -1138,6 +1139,7 @@ setup.hideCap = () => {
 <<set $userchoices to {
   captions: false,
     time: "day",
+    bird: "sand",
     way: "stars",
     door: "eat",
     reason: "fear",
@@ -1216,6 +1218,7 @@ setup.hideCap = () => {
         <<else>>
             No content provided.
         <</if>>
+        
 </main>
 
 <<include "navbuttonsb">>
@@ -1270,7 +1273,7 @@ setup.hideCap = () => {
         <<else>>
             No content provided.
         <</if>>
-   /* <<include "wallet">> */
+   
 </main>
 
 <<include "navbuttonsdir">>
@@ -1605,6 +1608,7 @@ setup.hideCap = () => {
     <<append "#btnContainer">>
     <<button "Travel by night">>
           <<set $userchoices.time to "night">>
+          <<set $userchoices.bird to "willow">>
             <<goto "3_dir">>
         <</button>>
     <</append>>
@@ -1614,6 +1618,7 @@ setup.hideCap = () => {
     <<append "#btnContainer">>
     <<button "Travel by day">>
       <<set $userchoices.time to "day">>
+      <<set $userchoices.bird to "sand">>
             <<goto "7_dir">>
         <</button>>
     <</append>>
@@ -4987,7 +4992,12 @@ setup.hideCap = () => {
 
 
 :: credits [nobr]
-<<set $prevpass to "23_story">>
+  <<if $userchoices.bird is "sand">>
+ <<set $prevpass to "23_story">>
+<<else>>
+    <<set $prevpass to "22_story">>
+ <</if>>
+
 <<set $pass to "credits">>
 <<include "headertrack">>
 
