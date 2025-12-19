@@ -5007,7 +5007,7 @@ setup.hideCap = () => {
   
   <p>We aim to create inclusive and affordable immersive experiences in public spaces. If you enjoyed our work and would like to see more of it, sign up for our newsletter, follow us on social media or donate to support future similar projects.</p>
   <div class="btn-container credits" id="btnContainer">
-  <a href="" target="_blank" rel="noreferrer">
+  <a href="https://www.justgiving.com/charity/koroproductionsltd" target="_blank" rel="noreferrer">
   <button>Donate</button>
   </a>
   <a href="https://www.koro.org.uk/contact" target="_blank" rel="noreferrer">
